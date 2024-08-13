@@ -1,0 +1,344 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+  .pricing{
+    width: 100%;
+    height: 140dvh;
+    background-color: var(--background);
+    background-image: url("../../imgs//background/Frame-1000002867.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15%;
+    padding: 5% 0;
+}
+
+  .pricingApresentation{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 15%;
+    color: var(--fontColor);
+  }
+
+  .pricingTitle{
+    font-size: 3vw;
+    font-family: "Anta", sans-serif;
+}
+
+.pricingTitleSpan{
+    font-size: 1.6vw;
+    background-color: var(--secondary);
+    color: #fff;
+    padding: .5%;
+    border-radius: 7px;
+    margin: 0 1%;
+    text-transform: uppercase;}
+
+.pricingDescription{
+    margin: 0 auto;
+    font-size: 2.5vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+ 
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 95%;
+  padding: 0 6%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    border-radius: 1em;
+  }
+  
+
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+
+
+
+
+@media (min-width: 901px) and (max-width: 1200px){
+
+    .pricing{
+        width: 100%;
+        height: 155dvh;
+        background-color: var(--background);
+        background-image: url("../../imgs//background/Frame-1000002867.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5%;
+        padding: 5% 0;
+    }
+    
+      .pricingApresentation{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 15%;
+      }
+    
+      .pricingTitle{
+        font-size: 6vw;
+        font-family: "Anta", sans-serif;
+    }
+    
+    .pricingTitleSpan{
+        font-size: 2vw;
+        background-color: var(--backround2);
+        color: #fff;
+        padding: .5%;
+        border-radius: 7px;
+        margin: 0 1%;
+        text-transform: uppercase;}
+    
+    .pricingDescription{
+        margin: 0 auto;
+        font-size: 2.6vw;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+    }
+     
+    
+    
+    
+    
+    .swiper {
+        width: 100%;
+        height: 65%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      
+    
+
+}
+@media (min-width: 601px) and (max-width: 900px){
+
+
+    
+    .pricing{
+        width: 100%;
+        height: 155dvh;
+        background-color: var(--background);
+        background-image: url("../../imgs//background/Frame-1000002867.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5%;
+        padding: 5% 0;
+    }
+    
+      .pricingApresentation{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 15%;
+        align-items: center;
+      }
+    
+      .pricingTitle{
+        font-size: 10vw;
+        font-family: "Anta", sans-serif;
+    }
+    
+    .pricingTitleSpan{
+        font-size: 5vw;
+        background-color: var(--backround2);
+        color: #fff;
+        padding: .5%;
+        border-radius: 7px;
+        margin: 0 1%;
+        text-transform: uppercase;}
+    
+    .pricingDescription{
+        font-size: 6vw;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+     
+    
+    
+    
+    
+    .swiper {
+        width: 100%;
+        height: 45%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      
+    
+
+}
+@media (max-width: 600px){
+
+
+
+    
+    
+    .pricing{
+      width: 100%;
+      height: 179dvh;
+      background-color: var(--background);
+      background-image: url("../../imgs//background/Frame-1000002867.png"); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 5%;
+      padding: 5% 0;
+    }
+    
+      .pricingApresentation{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 21%;
+        align-items: center;
+      }
+    
+      .pricingTitle{
+        font-size: 14vw;
+        font-family: "Anta", sans-serif;
+    }
+    
+    .pricingTitleSpan{
+      font-size: 9vw;
+      background-color: var(--backround2);
+      color: #fff;
+      padding: .5%;
+      border-radius: 7px;
+      margin: 0 1%;
+      text-transform: uppercase;
+      }
+    
+    .pricingDescription{
+      margin: 6% auto;
+      font-size: 9vw;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+    }
+     
+    
+    
+    
+    
+    .swiper {
+        width: 100%;
+        height: 45%;
+        z-index: 99;
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+      
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      
+    
+}

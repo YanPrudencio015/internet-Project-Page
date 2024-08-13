@@ -1,0 +1,551 @@
+
+
+
+ .card{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 5%;
+   flex-direction: column;
+   color: #eee;
+   cursor: default;
+   border-radius: 2em;
+   background:var(--MainColor);
+   border-radius: 10px;
+   transition: .6s ease-in;
+  }
+
+
+.glassBackground{
+  border: solid 1px var(--background);
+  position: relative;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardTitle{
+    letter-spacing: 0.6vw;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Anta", sans-serif;
+    position: relative;
+    top: -6.7%;
+    background-color: var(--MainColor);
+    border: solid 1px var(--background);
+    padding: 1% 3%;
+    border-radius: 10px;
+  }
+  
+  .cardPrice{
+  font-size: 4vw;
+  font-family: "Kanit", sans-serif;
+}
+
+.pricingHr{
+  width: 80%;
+  background-color: #eee;
+}
+
+
+.cardPlainDescriptionList{
+  width: 90%;
+  height: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style: none;
+}
+
+.cardPlainItems{
+  width: 80%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  font-family: "Kanit", sans-serif;
+}
+
+.pricingIcon{
+  position: absolute;
+  left: 0;
+  font-size: 1.5vw;
+}
+
+.cardPlainItemsValue{
+  font-size: 1.4vw;
+}
+
+
+.cardPlainItems:nth-last-child(2) .cardPlainItemstext {
+  font-size: 1vw;
+}
+.cardPlainItemstext{
+  margin-left: 5%;
+  font-size: 1.5vw;
+}
+
+
+.princingBtn{
+  font-size: 1.2vw;
+  padding: 2%;
+  color: var(--fontColor);
+  font-family: "Poppins", sans-serif;  
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: var(--quarternary);
+  border: solid 1px transparent;
+}
+.princingBtn:hover{
+  border: solid 1px var(--secondary);
+  color: var(--secondary);
+}
+.princingBtn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--MainColor);
+  z-index: -1;
+  transition: .6s ease-in-out;
+}
+
+.princingBtn:hover::before{
+  right: 0%;
+  transition: .4s ease-in;
+} 
+
+
+
+/* .card{
+  width: 95%;
+  height: 95%;
+  background-color: #720455;
+  position: absolute;
+  transition: .3s ease-in;
+  right: 6%;
+  bottom: 2%;
+} */
+
+
+@media (min-width: 901px) and (max-width: 1200px){
+  
+ .card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
+  flex-direction: column;
+  color: #eee;
+  cursor: default;
+  border-radius: 2em;
+  background:var(--MainColor);
+  border-radius: 10px;
+  transition: .6s ease-in;
+ }
+
+
+.glassBackground{
+ border: solid 1px var(--background);
+ position: relative;
+ width: 90%;
+ height: 90%;
+ border-radius: 10px;
+ display: flex;
+ justify-content: space-around;
+ flex-direction: column;
+ align-items: center;
+}
+
+.cardTitle{
+   letter-spacing: 0.6vw;
+   font-size: 2vw;
+   text-transform: uppercase;
+   font-family: "Bebas Neue", sans-serif;
+   font-family: "Anta", sans-serif;
+   position: relative;
+   top: -6.7%;
+   background-color: var(--MainColor);
+   border: solid 1px var(--background);
+   padding: 1% 3%;
+   border-radius: 10px;
+ }
+ 
+ .cardPrice{
+ font-size: 5.5vw;
+ font-family: "Kanit", sans-serif;
+}
+
+.pricingHr{
+ width: 80%;
+ background-color: #eee;
+}
+
+
+.cardPlainDescriptionList{
+ width: 90%;
+ height: 38%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ flex-direction: column;
+ list-style: none;
+}
+
+.cardPlainItems{
+ width: 80%;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ flex-direction: row;
+ position: relative;
+ font-family: "Kanit", sans-serif;
+}
+
+.pricingIcon{
+ position: absolute;
+ left: 0;
+ font-size: 2.5vw;
+}
+
+.cardPlainItemsValue{
+  font-size: 1.8vw;
+}
+
+
+.cardPlainItems:nth-last-child(2) .cardPlainItemstext {
+ font-size: 1.2vw;
+}
+.cardPlainItemstext{
+ margin-left: 5%;
+ font-size:1.9vw;
+}
+
+
+.princingBtn{
+  font-size: 1.7vw;
+  padding: 2% 15%;
+ color: var(--fontColor);
+ font-family: "Poppins", sans-serif;  
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ background-color: var(--quarternary);
+ border: solid 1px transparent;
+}
+.princingBtn:hover{
+ border: solid 1px var(--secondary);
+ color: var(--secondary);
+}
+.princingBtn::before{
+ content: "";
+ position: absolute;
+ top: 0;
+ right: 100%;
+ width: 100%;
+ height: 100%;
+ background-color: var(--MainColor);
+ z-index: -1;
+ transition: .6s ease-in-out;
+}
+
+.princingBtn:hover::before{
+ right: 0%;
+ transition: .4s ease-in;
+} 
+}
+
+
+@media (min-width: 601px) and (max-width: 900px){
+   
+ .card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
+  flex-direction: column;
+  color: #eee;
+  cursor: default;
+  border-radius: 2em;
+  background:var(--MainColor);
+  border-radius: 10px;
+  transition: .6s ease-in;
+ }
+
+
+.glassBackground{
+ border: solid 1px var(--background);
+ position: relative;
+ width: 90%;
+ height: 90%;
+ border-radius: 10px;
+ display: flex;
+ justify-content: space-around;
+ flex-direction: column;
+ align-items: center;
+}
+
+.cardTitle{
+  letter-spacing: 1vw;
+  font-size: 5vw;
+   text-transform: uppercase;
+   font-family: "Bebas Neue", sans-serif;
+   font-family: "Anta", sans-serif;
+   position: relative;
+   top: -6.7%;
+   background-color: var(--MainColor);
+   border: solid 1px var(--background);
+   padding: 1% 3%;
+   border-radius: 10px;
+ }
+ 
+ .cardPrice{
+ font-size: 8vw;
+ font-family: "Kanit", sans-serif;
+}
+
+.pricingHr{
+ width: 80%;
+ background-color: #eee;
+}
+
+
+.cardPlainDescriptionList{
+ width: 90%;
+ height: 38%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ flex-direction: column;
+ list-style: none;
+}
+
+.cardPlainItems{
+ width: 80%;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ flex-direction: row;
+ position: relative;
+ font-family: "Kanit", sans-serif;
+}
+
+.pricingIcon{
+ position: absolute;
+ left: 0;
+ font-size: 3.5vw;
+}
+
+
+.cardPlainItemsValue{
+  font-size: 3vw;
+}
+
+.cardPlainItems:nth-last-child(2) .cardPlainItemstext {
+ font-size: 2.1vw;
+}
+.cardPlainItemstext{
+  margin-left: 5%;
+  font-size: 2.9vw;
+}
+
+
+.princingBtn{
+  font-size: 3.7vw;
+  padding: 2% 15%;
+ color: var(--fontColor);
+ font-family: "Poppins", sans-serif;  
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ background-color: var(--quarternary);
+ border: solid 1px transparent;
+}
+.princingBtn:hover{
+ border: solid 1px var(--secondary);
+ color: var(--secondary);
+}
+.princingBtn::before{
+ content: "";
+ position: absolute;
+ top: 0;
+ right: 100%;
+ width: 100%;
+ height: 100%;
+ background-color: var(--MainColor);
+ z-index: -1;
+ transition: .6s ease-in-out;
+}
+
+.princingBtn:hover::before{
+ right: 0%;
+ transition: .4s ease-in;
+} 
+}
+
+
+
+@media (max-width: 600px){
+
+
+    
+ .card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
+  flex-direction: column;
+  color: #eee;
+  background: var(--MainColor);
+  border-radius: 10px;
+  transition: .6s ease-in;
+ }
+
+
+.glassBackground{
+  border: solid 1px var(--background);
+  position: relative;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardTitle{
+  letter-spacing: 1vw;
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Anta", sans-serif;
+  position: relative;
+  top: -5.9%;
+  background-color: var(--MainColor);
+  border: solid 1px var(--background);
+  padding: 1% 3%;
+  border-radius: 10px;
+ }
+ 
+ .cardPrice{
+ font-size: 18vw;
+ font-family: "Kanit", sans-serif;
+}
+
+.pricingHr{
+ width: 80%;
+ background-color: #eee;
+}
+
+
+.cardPlainDescriptionList{
+  width: 90%;
+  height: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style: none;
+}
+
+.cardPlainItems{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  font-family: "Kanit", sans-serif;
+}
+
+.pricingIcon{
+ position: absolute;
+ left: 0;
+ font-size: 7vw;
+}
+
+
+.cardPlainItemsValue{
+  font-size: 9vw;
+}
+
+.cardPlainItems:nth-last-child(2) .cardPlainItemstext {
+  font-size: 5.7vw;
+  margin-right: -19%;
+}
+.cardPlainItemstext{
+  margin-left: 5%;
+  font-size: 7vw;
+}
+
+
+.princingBtn{
+  font-size: 6vw;
+  padding: 2% 10%;
+  color: var(--fontColor);
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: var(--quarternary);
+}
+.princingBtn:hover{
+ border: solid 1px var(--secondary);
+ color: var(--secondary);
+}
+.princingBtn::before{
+ content: "";
+ position: absolute;
+ top: 0;
+ right: 100%;
+ width: 100%;
+ height: 100%;
+ background-color: var(--MainColor);
+ z-index: -1;
+ transition: .6s ease-in-out;
+}
+
+.princingBtn:hover::before{
+ right: 0%;
+ transition: .4s ease-in;
+} 
+}
+
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/

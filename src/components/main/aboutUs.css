@@ -1,0 +1,844 @@
+
+
+
+.aboutSection{
+    width: 100%;
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutSectionLeft, .aboutSectionRight{
+    width: 100%;
+    height: 90%;
+    background-color: var(--secondary);
+}
+
+
+.aboutSectionLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.aboutUsImage{
+    width: 21vw;
+    height: 47vh;
+}
+
+.img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6em 1em 5em 1em;
+}
+
+
+.AboutUsTextSection{
+    width: 50%;
+    height: 80%;
+    padding: 2% 0;
+    position: relative;
+}
+.AboutUsTextSection::before,.AboutUsTextSection::after{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: var(--background);
+    left: 25%;
+    transition: .2s ease-in;
+}
+
+.AboutUsTextSection::before{
+    top: 0;
+}
+.AboutUsTextSection:hover::before{
+    left: 15%;
+    width: 70%;
+    transition: .6s ease-in;
+}
+
+.AboutUsTextSection::after{
+    bottom: 0;
+}
+.AboutUsTextSection:hover::after{
+    left: 15%;
+    width: 70%;
+    transition: .6s ease-in;
+}
+
+
+.AboutUsText{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.8vw;
+    font-family: "Quicksand", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    overflow: auto;
+    transition: .8s ease-in-out;
+    cursor: pointer;
+}
+
+.AboutUsText::-webkit-scrollbar{
+    width: 0.6vw;
+    height: 5vh;
+    padding: 0 2%;
+    transition: .6s ease-in;
+}
+
+
+
+.AboutUsText::-webkit-scrollbar-track{
+    background-color: var(--background);
+}
+.AboutUsText::-webkit-scrollbar-thumb{
+    background:var(--secondary);
+}
+
+
+
+.aboutSectionRight{
+    position: relative;
+}
+
+.TestemunialsSection{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.mySwiperAbout {
+    width: 100%;
+    height: 100%;
+    padding: 2% 5%;
+}
+  
+  .swiperSlideAbout {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 10px 10px 10px 10px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    font-family: "Roboto", sans-serif;
+
+  }
+
+  .clientComment{
+    width: 90%;
+    height: 90%;
+    border-radius: 1em 4em 1em 4em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .clienPhoto{
+    position: absolute;
+    left: -4vh;
+    bottom: 0;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 0.3em;
+    object-fit: cover;
+} */
+
+.swiper-slide img {
+    display: block;
+    width: 6%;
+    height: 26%;
+    object-fit: cover;
+    position: absolute;
+    top: 17vh;
+    left: -1.1vw;
+    border-radius: 15%
+}
+
+.clientCommentText{
+    width: 100%;
+    height: 80%;
+}
+
+.quoteIcon{
+    font-size: 2vw;
+    color: var(--quarternary);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.clientCommentText{
+    font-size: 1.2vw;
+    overflow: auto;
+    text-align: center;
+    padding: 0 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ysabeau Infant", sans-serif;
+}
+
+.clientInformation{
+    position: absolute;
+    bottom: 0vh;
+    left: 1.3vw;
+    background-color: var(--secondary);
+    z-index: -1;
+    border-radius: 0em 1em 1em 0em;
+    padding: 0 2%;
+    color: var(--fontColor-secondary);
+    font-family: "Quicksand", sans-serif;
+    font-size: .9vw;
+}
+
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+
+
+
+
+
+
+
+@media (min-width: 901px) and (max-width: 1200px){
+    .aboutSection{
+        width: 100%;
+        background-color: var(--background);
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .aboutSectionLeft, .aboutSectionRight{
+        width: 100%;
+        height: 90%;
+        background-color: var(--secondary);
+    }
+    
+    
+    .aboutSectionLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 2%;
+        position: relative;
+    }
+    
+    .aboutUsImage{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    .img{
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0em 0em 0em 0em;
+        opacity: .4;
+    }
+    
+    
+    .AboutUsTextSection{
+        width: 100%;
+        height: 100%;
+        padding: 2% 0;
+        position: relative;
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AboutUsTextSection::before,.AboutUsTextSection::after{
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: var(--background);
+        left: 25%;
+        transition: .2s ease-in;
+        opacity: 0;
+    }
+    
+    .AboutUsTextSection::before{
+        top: 0;
+    }
+    .AboutUsTextSection:hover::before{
+        left: 15%;
+        width: 70%;
+        transition: .6s ease-in;
+    }
+    
+    .AboutUsTextSection::after{
+        bottom: 0;
+    }
+    .AboutUsTextSection:hover::after{
+        left: 15%;
+        width: 70%;
+        transition: .6s ease-in;
+    }
+    
+    
+    .AboutUsText{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.8vw;
+        font-family: "Quicksand", sans-serif;
+        font-family: "Montserrat", sans-serif;
+        overflow: auto;
+        transition: .8s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    
+    .AboutUsText::-webkit-scrollbar{
+        width: 0.6vw;
+        height: 5vh;
+        padding: 0 2%;
+        transition: .6s ease-in;
+    }
+    
+    
+    
+    .AboutUsText::-webkit-scrollbar-track{
+        background-color: var(--background);
+    }
+    .AboutUsText::-webkit-scrollbar-thumb{
+        background:var(--MainColor);
+    }
+    
+    
+    
+
+    .aboutSectionRight{
+        position: relative;
+    }
+    
+    .TestemunialsSection{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    
+    
+    .mySwiperAbout {
+        width: 100%;
+        height: 100%;
+        padding: 2% 5%;
+    }
+      
+      .swiperSlideAbout {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        border-radius: 10px 10px 10px 10px;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+        font-family: "Roboto", sans-serif;
+    
+      }
+    
+      .clientComment{
+        width: 90%;
+        height: 90%;
+        border-radius: 1em 4em 1em 4em;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 8%;
+        height: 26%;
+        object-fit: cover;
+        position: absolute;
+        top: 16.9vh;
+        left: -1.9vw;
+        border-radius: 15% 15% 0% 15%;
+    }
+    
+    .clientCommentText{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .quoteIcon{
+        font-size: 2vw;
+        color: var(--quarternary);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    
+    .clientCommentText{
+        font-size:1.3vw;
+        overflow: auto;
+        text-align: center;
+        padding: 0 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Ysabeau Infant", sans-serif;
+    }
+    
+    .clientInformation{
+        position: absolute;
+        bottom: 0vh;
+        left: 1.3vw;
+        background-color: var(--secondary);
+        z-index: -1;
+        border-radius: 0em 1em 1em 0em;
+        padding: 0 2%;
+        color: var(--fontColor-secondary);
+        font-family: "Quicksand", sans-serif;
+        font-size: .9vw;
+    }
+    
+    
+}
+
+
+
+@media (min-width: 601px) and (max-width: 900px){
+
+    .aboutSection{
+        width: 100%;
+        background-color: var(--background);
+        height: 75vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .aboutSectionLeft, .aboutSectionRight{
+        width: 100%;
+        height: 90%;
+        background-color: var(--secondary);
+    }
+    
+    
+    .aboutSectionLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 2%;
+        position: relative;
+    }
+    
+    .aboutUsImage{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    .img{
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0em 0em 0em 0em;
+        opacity: .1;
+    }
+    
+    
+    .AboutUsTextSection{
+        width: 100%;
+        height: 100%;
+        padding: 2% 0;
+        position: relative;
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AboutUsTextSection::before,.AboutUsTextSection::after{
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: var(--background);
+        left: 25%;
+        transition: .2s ease-in;
+        opacity: 0;
+    }
+    
+    .AboutUsTextSection::before{
+        top: 0;
+    }
+    .AboutUsTextSection:hover::before{
+        left: 15%;
+        width: 70%;
+        transition: .6s ease-in;
+    }
+    
+    .AboutUsTextSection::after{
+        bottom: 0;
+    }
+    .AboutUsTextSection:hover::after{
+        left: 15%;
+        width: 70%;
+        transition: .6s ease-in;
+    }
+    
+    
+    .AboutUsText{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.9vw;
+        font-family: "Quicksand", sans-serif;
+        font-family: "Montserrat", sans-serif;
+        overflow: auto;
+        transition: .8s ease-in-out;
+    }
+    
+    .AboutUsText::-webkit-scrollbar{
+        width: 0.6vw;
+        height: 5vh;
+        padding: 0 2%;
+        transition: .6s ease-in;
+    }
+    
+    
+    
+    .AboutUsText::-webkit-scrollbar-track{
+        background-color: var(--background);
+    }
+    .AboutUsText::-webkit-scrollbar-thumb{
+        background:var(--MainColor);
+    }
+    
+    
+    
+
+    
+    .mySwiperAbout {
+        width: 100%;
+        height: 100%;
+        padding: 2% 5%;
+    }
+      
+      .swiperSlideAbout {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        border-radius: 10px 10px 10px 10px;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+        font-family: "Roboto", sans-serif;
+    
+      }
+    
+      .clientComment{
+        width: 90%;
+        height: 90%;
+        border-radius: 1em 4em 1em 4em;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 8%;
+        height: 26%;
+        object-fit: cover;
+        position: absolute;
+        top: 11.9vh;
+        left: -1.7vw;
+        border-radius: 15% 15% 0% 15%;
+    }
+    
+    .clientCommentText{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .quoteIcon{
+        font-size: 2vw;
+        color: var(--quarternary);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    
+    .clientCommentText{
+        font-size:1.3vw;
+        overflow: auto;
+        text-align: center;
+        padding: 0 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Ysabeau Infant", sans-serif;
+    }
+    
+    .clientInformation{
+        position: absolute;
+        bottom: 0vh;
+        left: 1.3vw;
+        background-color: var(--secondary);
+        z-index: -1;
+        border-radius: 0em 1em 1em 0em;
+        padding: 0 2%;
+        color: var(--fontColor-secondary);
+        font-family: "Quicksand", sans-serif;
+        font-size: .9vw;
+    }
+    
+}
+@media (max-width: 600px){
+
+    .aboutSection{
+        width: 100%;
+        background-color: var(--background);
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .aboutSectionLeft, .aboutSectionRight{
+        width: 100%;
+        height: 90%;
+        background-color: var(--secondary);
+    }
+    
+    
+    .aboutSectionLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 2%;
+        position: relative;
+    }
+    
+    .aboutUsImage{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    .img{
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0em 0em 0em 0em;
+        opacity: .1;
+    }
+    
+    
+    .AboutUsTextSection{
+        width: 100%;
+        height: 100%;
+        padding: 2% 0;
+        position: relative;
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AboutUsTextSection::before,.AboutUsTextSection::after{
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: var(--background);
+        left: 25%;
+        transition: .2s ease-in;
+        opacity: 0;
+    }
+    
+    .AboutUsTextSection::before{
+        top: 0;
+    }
+    .AboutUsTextSection:hover::before{
+        left: 15%;
+        width: 70%;
+        transition: .6s ease-in;
+    }
+    
+    .AboutUsTextSection::after{
+        bottom: 0;
+    }
+    .AboutUsTextSection:hover::after{
+        left: 15%;
+        width: 70%;
+        transition: .6s ease-in;
+    }
+    
+    
+    .AboutUsText{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 4.4vw;
+        font-family: "Quicksand", sans-serif;
+        font-family: "Montserrat", sans-serif;
+        overflow: auto;
+        transition: .8s ease-in-out;
+    }
+    
+    .AboutUsText::-webkit-scrollbar{
+        width: 0.6vw;
+        height: 5vh;
+        padding: 0 2%;
+        transition: .6s ease-in;
+    }
+    
+    
+    
+    .AboutUsText::-webkit-scrollbar-track{
+        background-color: var(--background);
+    }
+    .AboutUsText::-webkit-scrollbar-thumb{
+        background:var(--MainColor);
+    }
+
+
+
+
+
+
+     
+    .mySwiperAbout {
+        width: 100%;
+        height: 100%;
+        padding: 2% 5%;
+    }
+      
+      .swiperSlideAbout {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        border-radius: 10px 10px 10px 10px;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-family: "Roboto", sans-serif;
+    
+      }
+    
+      .clientComment{
+        width: 90%;
+        height: 90%;
+        border-radius: 1em 4em 1em 4em;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 12%;
+        height: 16%;
+        object-fit: cover;
+        position: absolute;
+        top: 38vh;
+        left: 74vw;
+        border-radius: 15% 15% 0% 15%;
+    }
+    
+    .clientCommentText{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .quoteIcon{
+        font-size: 6vw;
+        color: var(--quarternary);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    
+    .clientCommentText{
+        font-size:5.5vw;
+        overflow: auto;
+        text-align: center;
+        padding: 0 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Ysabeau Infant", sans-serif;
+    }
+    
+    .clientInformation{
+        position: absolute;
+        bottom: -1vh;
+        left: 1.3vw;
+        background-color: var(--secondary);
+        z-index: -1;
+        border-radius: 1em 1em 1em 1em;
+        padding: 0 2%;
+        color: var(--fontColor-secondary);
+        font-family: "Quicksand", sans-serif;
+        font-size: 4vw
+    }
+
+
+}
