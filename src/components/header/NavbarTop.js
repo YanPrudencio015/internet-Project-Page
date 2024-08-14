@@ -64,8 +64,7 @@ function NavbarTop(props) {
             </button>
 
 
-            {/* <ul className="socialDropDown"> */}
-            <ul className={ socialMenuOpen? "socialDropDown" :"socialDropDown active"}>
+            <ul className={ socialMenuOpen? "socialDropDown active" :"socialDropDown "}>
                 <li className="socialItem">
                     <i className="socialIcon fa-brands fa-whatsapp"></i>
                         <p className="socialName" >WhatsApp</p>
