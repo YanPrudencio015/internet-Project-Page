@@ -35,6 +35,18 @@ function NavbarMobile(props) {
                     onClick={()=>{setDarkMode(!darkMode);dispatch({type:"OPEN"})}}
                     ></i>
             </div>
+
+            <ul className="socialMidiaListMobile">
+                <li className="socialMidiaItemMobile">
+                    <i className="socialIconMobile fa-brands fa-whatsapp"></i>
+                </li>
+                <li className="socialMidiaItemMobile">
+                    <i className="socialIconMobile fa-brands fa-instagram"></i>
+                </li>
+                <li className="socialMidiaItemMobile">
+                    <i className="socialIconMobile fa-brands fa-facebook"></i>
+                </li>
+            </ul>
         </section>
     );
 }

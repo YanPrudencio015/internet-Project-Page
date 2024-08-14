@@ -16,6 +16,14 @@ function NavbarTop(props) {
 
     // console.log(menuMobileToggleStore)
 
+
+
+    // social dropdown Open
+
+    const [socialMenuOpen, setSocialMenuOpen] = useState(false)
+
+    console.log(socialMenuOpen)
+
     return (
         // <section className="NavbarTop">
         <section className={menuMobileToggleStore? "NavbarTop active": "NavbarTop"}>
@@ -25,11 +33,12 @@ function NavbarTop(props) {
                 <button className="plainsBtnOption">sua empresa</button>
             </nav>
             <ul className="menu">
-                <li className="menuItem">Menu</li>
-                <li className="menuItem">Planos</li>
-                <li className="menuItem">Sobre</li>
-                <li className="menuItem">Contato</li>
-                <li className="menuItem">Localização</li>
+                <li tabIndex={0} className="menuItem">Menu</li>
+                <li tabIndex={0} className="menuItem">Planos</li>
+                <li tabIndex={0} className="menuItem">Sobre</li>
+                <li tabIndex={0} className="menuItem">Contato</li>
+                <li tabIndex={0} className="menuItem">Localização</li>
+                <li className="menuItem" onClick={()=> setSocialMenuOpen(!socialMenuOpen)}>Social</li>
             </ul>
 
             <i onClick={() => setDarkMode(!darkMode)} className="fa-solid StyleModeIcon fa-circle-half-stroke"></i>
@@ -53,6 +62,23 @@ function NavbarTop(props) {
                     <span className="bars" id="bar3"></span>
                 </span>
             </button>
+
+
+            {/* <ul className="socialDropDown"> */}
+            <ul className={ socialMenuOpen? "socialDropDown" :"socialDropDown active"}>
+                <li className="socialItem">
+                    <i className="socialIcon fa-brands fa-whatsapp"></i>
+                        <p className="socialName" >WhatsApp</p>
+                    </li>
+                <li className="socialItem">
+                    <i className="socialIcon fa-brands fa-instagram"></i>
+                        <p className="socialName" >Instagram</p>
+                    </li>
+                <li className="socialItem">
+                    <i className="socialIcon fa-brands fa-facebook"></i>
+                        <p className="socialName" >Facebook</p>
+                    </li>
+            </ul>
         </section>
     );
 }
