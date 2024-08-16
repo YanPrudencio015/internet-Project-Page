@@ -36,17 +36,6 @@ function NavbarMobile(props) {
                     ></i>
             </div>
 
-            <ul className="socialMidiaListMobile">
-                <li className="socialMidiaItemMobile">
-                    <i className="socialIconMobile fa-brands fa-whatsapp"></i>
-                </li>
-                <li className="socialMidiaItemMobile">
-                    <i className="socialIconMobile fa-brands fa-instagram"></i>
-                </li>
-                <li className="socialMidiaItemMobile">
-                    <i className="socialIconMobile fa-brands fa-facebook"></i>
-                </li>
-            </ul>
         </section>
     );
 }

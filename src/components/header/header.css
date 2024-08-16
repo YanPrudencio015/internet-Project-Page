@@ -100,7 +100,7 @@
 
 
 .menu{
-    width: 35%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -363,90 +363,21 @@ canvas {
 }
 
 
-
-.socialDropDown{
-  width: 10vw;
-  height: 18vh;
-  position: absolute;
-  left: 150vh;
-  top: 100%;
-  background-color: var(--secondary);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  border-radius: 4px;
-  padding: 0.3%;
-  overflow: hidden;
-  opacity: 0;
-  /* display: none; */
-  transition: .6s ease-in-out;
-  pointer-events: none;
-}
-.socialDropDown.active{
-  opacity: 1;
-  display: flex;
-  top: 6vh;
-  transition: .3s ease-in-out;
-  pointer-events: all;
-  
-}
-
-
-
-.socialItem{
-  width: 100%;
-  height: 30%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
-  position: relative;
-  transition: .6s ease-in;
-  
-}
-
-.socialItem:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-
-}
-
-
 .socialIcon{
-  position: absolute;
-  left: -30%;
-  padding: 1%;
-  font-size: 1.3vw;
-  transition: .8s ease-in-out;
-}
-.socialItem:hover .socialIcon{
-  left: 8%;
-  transition: .3s ease-in-out;
-
-}
-.socialName{
-  position: absolute;
-  transition: .6s ease-in;
-  left: 2vw;
-  color: var(--fontColor);
-  font-size: 1.3vw;
+  font-size: 2vw;
+  padding: 0.3%;
+  border-radius: 0.2vw;
+  background-color: #9BEC00;
+  color: #fff;
+  cursor: pointer;
+  transition: .6s ease-in-out;
 }
 
-
-
-
-.socialItem:hover > .socialName{
-  transition: .3s ease-in-out;
-  position: absolute;
-  left: 3vw;
+.socialIcon:hover{
+  background-color: var(--background);
+  transition: .6s ease-in-out;
+  color: #9BEC00;
 }
-.socialItem:hover > .socialName, .socialItem:hover > .socialIcon{
-  color: var(--fontColor-secondary);
-}
-
 
 
 /* 
@@ -495,17 +426,17 @@ canvas {
   }
   
   .viabandTitle{
-      font-size: 2vw;
-      cursor: pointer;
-      font-family: "Open Sans", sans-serif;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase;
-      position: relative;
-      transition: 600ms;
-      overflow: hidden;
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: 600ms;
+    overflow: hidden;
   }
   .viabandTitle::before{
       content: "";
@@ -644,21 +575,21 @@ canvas {
   
   
   .clientButton{
-    width: 15%;
+    width: 10%;
     height: 80%;
     border: solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4%;
-    border-radius: 10px;
+    border-radius: 6px;
     cursor: pointer;
     font-family: "Quicksand", sans-serif;
     position: relative;
     overflow: hidden;
     z-index: 1;
     transition: .6s ease;
-    color: #8f44fd;
+    color: var(--secondary);
   }
   .clientButton::before{
       content: "";
@@ -666,13 +597,12 @@ canvas {
       right: 100%;
       width: 100%;
       height: 100%;
-      background-color: var(--purple2);
-      background-color: #8f44fd;
+      background-color: var(--secondary);
       z-index: -1;
       transition: .6s ease;
   }
   .clientButton:hover{
-      color: #fff;
+      color: var(--fontColor);
       transition: .6s ease;
   }
   .clientButton:hover::before{
@@ -684,7 +614,7 @@ canvas {
   
   
   .clientTextBtn{
-    font-size: 1.6vw;
+    font-size: 1.4vw;
   }
   
   
@@ -813,91 +743,25 @@ canvas {
       overflow: hidden;
       position: relative;
     }
-  
+
+
+
+    .socialIcon{
+  font-size: 2vw;
+  padding: 0.3%;
+  border-radius: 0.2vw;
+  background-color: #9BEC00;
+  color: #fff;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+}
+.socialIcon:hover{
+  background-color: var(--background);
+  transition: .6s ease-in-out;
+  color: #9BEC00;
+}
   
 
-    .socialDropDown{
-      width: 10%;
-      height: 18vh;
-      position: absolute;
-      left: 72.5vw;
-      top: 100%;
-      background-color: var(--secondary);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      list-style: none;
-      border-radius: 4px;
-      padding: 0.3%;
-      overflow: hidden;
-      opacity: 0;
-      /* display: none; */
-      transition: .6s ease-in-out;
-      pointer-events: none;
-    }
-    .socialDropDown.active{
-      opacity: 1;
-      display: flex;
-      top: 86%;
-      transition: .3s ease-in-out;
-      pointer-events: all;
-      
-    }
-    
-    
-    
-    .socialItem{
-      width: 100%;
-      height: 30%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      font-family: "Open Sans", sans-serif;
-      position: relative;
-      transition: .6s ease-in;
-      
-    }
-    
-    .socialItem:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-      cursor: pointer;
-    
-    }
-    
-    
-    .socialIcon{
-      position: absolute;
-      left: -30%;
-      padding: 1%;
-      font-size: 1.3vw;
-      transition: .8s ease-in-out;
-    }
-    .socialItem:hover .socialIcon{
-      left: 8%;
-      transition: .3s ease-in-out;
-    
-    }
-    .socialName{
-      position: absolute;
-      transition: .6s ease-in;
-      left: 2vw;
-      color: var(--fontColor);
-      font-size: 1.3vw;
-    }
-    
-    
-    
-    
-    .socialItem:hover > .socialName{
-      transition: .3s ease-in-out;
-      position: absolute;
-      left: 3vw;
-    }
-    .socialItem:hover > .socialName, .socialItem:hover > .socialIcon{
-      color: var(--fontColor-secondary);
-    }
     
   
   
@@ -1404,90 +1268,20 @@ canvas {
 
 
 
-
-
-  
-  .socialDropDown{
-    width: 17vw;
-    height: 18vh;
-    position: absolute;
-    left: 75vw;
-    top: 100%;
-    background-color: var(--secondary);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    border-radius: 4px;
-    padding: 0.3%;
-    overflow: hidden;
-    opacity: 0;
-    /* display: none; */
-    transition: .6s ease-in-out;
-    pointer-events: none;
-  }
-  .socialDropDown.active{
-    opacity: 1;
-    display: flex;
-    top: 86%;
-    transition: .3s ease-in-out;
-    pointer-events: all;
-    
-  }
-  
-  
-  
-  .socialItem{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: "Open Sans", sans-serif;
-    position: relative;
-    transition: .6s ease-in;
-    
-  }
-  
-  .socialItem:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-  
-  }
-  
-  
   .socialIcon{
-    position: absolute;
-    left: -30%;
-    padding: 1%;
-    font-size: 2vw;
-    transition: .8s ease-in-out;
-  }
-  .socialItem:hover .socialIcon{
-    left: 3vw;
-    transition: .3s ease-in-out;
-  
-  }
-  .socialName{
-    position: absolute;
-    transition: .6s ease-in;
-    left: 2vw;
-    color: var(--fontColor);
-    font-size: 1.9vw;
+    font-size: 3.5vw;
+    padding: 0.6%;
+    border-radius: 1.1vw;
+    background-color: #9BEC00;
+    color: #fff;
+    cursor: pointer;
+    transition: .6s ease-in-out;
   }
   
-  
-  
-  
-  .socialItem:hover > .socialName{
-    transition: .3s ease-in-out;
-    position: absolute;
-    left: 6vw;
-  }
-  .socialItem:hover > .socialName, .socialItem:hover > .socialIcon{
-    color: var(--fontColor-secondary);
+  .socialIcon:hover{
+    background-color: var(--background);
+    transition: .6s ease-in-out;
+    color: #9BEC00;
   }
 
 
@@ -2001,139 +1795,21 @@ canvas {
   }
 
 
-
-  .socialDropDown{
-    width: 17vw;
-    height: 18vh;
-    position: absolute;
-    left: 75vw;
-    top: 100%;
-    background-color: var(--secondary);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    border-radius: 4px;
-    padding: 0.3%;
-    overflow: hidden;
-    opacity: 0;
-    transition: .6s ease-in-out;
-    pointer-events: none;
-    display: none;
-    
-  }
-  .socialDropDown.active{
-    opacity: 1;
-    display: flex;
-    top: 86%;
-    transition: .3s ease-in-out;
-    pointer-events: all;
-    display: none;
-    
-  }
-  
-  
-  
-  .socialItem{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: "Open Sans", sans-serif;
-    position: relative;
-    transition: .6s ease-in;
-    
-  }
-  
-  .socialItem:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-  
-  }
-  
-  
   .socialIcon{
-    position: absolute;
-    left: -30%;
-    padding: 1%;
-    font-size: 2vw;
-    transition: .8s ease-in-out;
-  }
-  .socialItem:hover .socialIcon{
-    left: 3vw;
-    transition: .3s ease-in-out;
-  
-  }
-  .socialName{
-    position: absolute;
-    transition: .6s ease-in;
-    left: 2vw;
-    color: var(--fontColor);
-    font-size: 1.9vw;
-  }
-  
-  
-  
-  
-  .socialItem:hover > .socialName{
-    transition: .3s ease-in-out;
-    position: absolute;
-    left: 6vw;
-  }
-  .socialItem:hover > .socialName, .socialItem:hover > .socialIcon{
-    color: var(--fontColor-secondary);
-  }
-
-
-
-
-  .socialMidiaListMobile{
-    width: 23%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 13vw;
-    align-items: center;
-    list-style: none;
     font-size: 9vw;
-    margin-bottom: 3vw;
-    position: absolute;
-    left: 3vw;
-    top: 36vh;
-    border-radius: 15px;
-  }
-
-  .socialMidiaItemMobile{
-    width: 90%;
-    height: 21%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background);
-    border-radius: 3vw;
-  }
-
-
-  .socialIconMobile{
-    font-size: 9vw;
+    padding: 1% 8%;
+    border-radius: 1.1vw;
+    background-color: #9BEC00;
     color: #fff;
-  }
-  .socialMidiaItemMobile:nth-child(1){
-    background-color: #15F5BA;
-  }
-  .socialMidiaItemMobile:nth-child(2){
-    background: #FF4E88 85%;
-  }
-  .socialMidiaItemMobile:nth-child(3){
-    background: #4158A6;
+    cursor: pointer;
+    transition: .6s ease-in-out;
   }
   
-
-
+  .socialIcon:hover{
+    background-color: var(--background);
+    transition: .6s ease-in-out;
+    color: #9BEC00;
+  }
 
   }
   
