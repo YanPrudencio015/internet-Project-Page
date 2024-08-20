@@ -1,6 +1,6 @@
 import React from "react";
 import './main.css'
-import Pricing from "./Pricing";
+import Pricing from "./pricing/Pricing";
 import AboutUs from "./AboutUs";
 
 

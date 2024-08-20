@@ -1,12 +1,14 @@
 import React, { useContext, useState } from "react";
-import { darkModeContext } from "../../APIContext/BtnsContext";
+import { darkModeContext } from "../../../APIContext/BtnsContext";
 import { useSelector, useDispatch } from "react-redux";
-import {MenuMobileToggle} from '../../reducers/btnMenuReducer'
+import {MenuMobileToggle} from '../../../reducers/btnMenuReducer'
+import './navbarTop.css'
+
+
 // Define the action type
 function NavbarTop(props) {
     // Dark mode toggle 
     const [darkMode, setDarkMode] = useContext(darkModeContext);
-
 
     // Menu mobile toggle 
 

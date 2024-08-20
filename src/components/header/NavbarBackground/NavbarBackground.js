@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-
+import './navbarback.css'
 
 
 function NavbarBackground(props){
@@ -8,6 +8,7 @@ function NavbarBackground(props){
     const columns = Math.floor(window.innerWidth / 20);
     const matrix = useRef(Array.from({ length: columns }, () => 0));
 
+    
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
@@ -21,7 +22,7 @@ function NavbarBackground(props){
 
             ctx.fillStyle = 'hsl(291, 100%, 50%)'; // purple color
 
-            ctx.font = '15pt Arial';
+            ctx.font = '15pt Arial ';
 
             matrix.current.forEach((value, index) => {
                 const text = String.fromCharCode(Math.floor(Math.random() * 128));
@@ -36,6 +37,8 @@ function NavbarBackground(props){
 
             requestAnimationFrame(draw);
         };
+
+
 
         draw();
 

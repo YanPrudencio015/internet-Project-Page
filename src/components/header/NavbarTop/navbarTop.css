@@ -1,0 +1,2348 @@
+
+
+.NavbarTop{
+    width: 100%;
+    height: 7vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    color: var(--fontColor);
+}
+
+
+
+.viabandTitle{
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: 600ms;
+    overflow: hidden;
+}
+.viabandTitle::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary) ;
+    position: absolute;
+    bottom: 10%;
+    right: 100%;
+    transition: .5s ease-in;
+}
+.viabandTitle:hover::before{
+    
+    right: 0;
+    width: 100%;
+    transition: .5s ease-in;
+}
+
+.plains{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.plainsBtnOption{
+    border: none;
+    font-size: 1.2vw;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+}
+
+.plainsBtnOption:hover{
+    color:  var(--secondary) ;
+    color:  var(--backround) ;
+}
+.plainsBtnOption::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary) ;
+    background-color: var(--MainColor) ;
+    position: absolute;
+    bottom: -100%;
+    transition: .5s ease-in;
+    z-index: -1;
+}
+.plainsBtnOption:hover::before{
+    transition: .5s ease-in-out;
+    bottom: 0%;
+    
+}
+
+
+.menu{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5%;
+    font-family: "Montserrat", sans-serif;
+}
+.menuItem{
+    position: relative;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: .9vw;
+  
+}
+.menuItem::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    right: 100px;
+    bottom: 0%;
+
+    transition: .6s ease;
+}
+
+.menuItem:hover::before, .menuItem:focus::before{
+    right: 0px;
+}
+
+.menuItem::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    left: 100px;
+    top: 0%;
+    transition: .6s ease;
+}
+
+.menuItem:hover::after, .menuItem:focus::after{
+    left: 0px;
+}
+
+
+
+.menuItem:hover{
+    /* color: var(--secondary); */
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.StyleModeIcon{
+  font-size: 1.8vw;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.StyleModeIcon.Dark{
+  color: #8f44fd;
+}
+
+
+
+.clientButton{
+  width: 10%;
+  height: 80%;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: .6s ease;
+  color: var(--secondary);
+  font-weight: 300;
+  
+}
+.clientButton::before{
+  content: "";
+  position: absolute;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  background-color:var(--secondary);
+  z-index: -1;
+  transition: .6s ease;
+}
+.clientButton:hover{
+  border: solid 1px transparent;
+  color: var(--fontColor);
+    transition: .6s ease;
+}
+.clientButton:hover::before{
+    right: 0;
+    transition: .6s ease;
+}
+
+
+
+
+.clientTextBtn{
+  font-size: 1.3vw;
+}
+
+
+
+
+
+
+.socialIcon{
+  font-size: 2vw;
+  padding: 0%;
+  border-radius: 0.5vw;
+  background-color: #9BEC00;
+  color: #fff;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+  width: 8%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcon:hover{
+  background-color: var(--background);
+  transition: .6s ease-in-out;
+  color: #9BEC00;
+}
+
+
+
+
+
+
+
+
+
+
+
+.button {
+    background: rgb(255 255 255 / 16%);
+    border: 0;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.6;
+    scale: 0.7;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.175s;
+    display: none;
+    background-color: var(--secondary);
+  }
+  
+  .button:hover {
+    opacity: 1;
+    background: #8f44fd;
+  }
+
+
+  
+  /* burger-1 */
+
+.burger-1 {
+    scale: 0.75;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.3s;
+  }
+  
+  .burger-1 .bars {
+    width: 100%;
+    height: 4px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .burger-1 #bar2 {
+    transition-duration: 0.6s;
+  }
+  
+  .burger-1 #bar1,
+  .burger-1 #bar3 {
+    width: 70%;
+  }
+  
+  .is-closed.burger-1 .bars {
+    position: absolute;
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 {
+    transition-duration: 0.3s;
+    transform: rotate(180deg);
+  }
+
+
+
+
+
+  @media (min-width: 901px) and (max-width: 1200px)  and (orientation:portrait){
+    
+  /* NavbarTop style */
+  .NavbarTop{
+    width: 100%;
+    height: 7vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+}
+
+.viabandTitle{
+  font-size: 1.5vw;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+  transition: 600ms;
+  overflow: hidden;
+}
+.viabandTitle::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary) ;
+    position: absolute;
+    bottom: 10%;
+    right: 100%;
+    transition: .5s ease-in;
+}
+.viabandTitle:hover::before{
+    right: 0;
+    width: 100%;
+    transition: .5s ease-in;
+}
+
+.plains{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.plainsBtnOption{
+    border: none;
+    font-size: 1.6vw;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+}
+
+.plainsBtnOption:hover{
+    color:  var(--secondary) ;
+    color:  var(--backround) ;
+
+}
+.plainsBtnOption::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary) ;
+    background-color: var(--MainColor) ;
+    position: absolute;
+    bottom: -100%;
+    transition: .5s ease-in;
+    z-index: -1;
+}
+.plainsBtnOption:hover::before{
+    transition: .5s ease-in-out;
+    bottom: 0%;
+    
+}
+
+
+.menu{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menuItem{
+    position: relative;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+.menuItem::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    right: 100%;
+    bottom: 0%;
+
+    transition: .6s ease;
+}
+
+.menuItem:hover::before, .menuItem:focus::before{
+    right: 0px;
+}
+
+.menuItem::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    transition: .6s ease;
+}
+
+.menuItem:hover::after, .menuItem:focus::after{
+    left: 0px;
+}
+
+
+
+.menuItem:hover{
+    /* color: var(--secondary); */
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.StyleModeIcon{
+  font-size: 1.8vw;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.StyleModeIcon.Dark{
+  color: #8f44fd;
+}
+
+
+
+.clientButton{
+  width: 10%;
+  height: 80%;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: .6s ease;
+  color: var(--secondary);
+}
+.clientButton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: .6s ease;
+}
+.clientButton:hover{
+    color: var(--fontColor);
+    transition: .6s ease;
+}
+.clientButton:hover::before{
+    right: 0;
+    transition: .6s ease;
+}
+
+
+
+
+.clientTextBtn{
+  font-size: 1.4vw;
+}
+
+
+
+
+
+
+
+.socialIcon{
+  font-size: 2vw;
+  padding: 0.3%;
+  border-radius: 0.2vw;
+  background-color: #9BEC00;
+  color: #fff;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+}
+.socialIcon:hover{
+  background-color: var(--background);
+  transition: .6s ease-in-out;
+  color: #9BEC00;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+.button {
+    background: rgb(255 255 255 / 16%);
+    border: 0;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.6;
+    scale: 0.7;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.175s;
+    display: none;
+    background-color: var(--secondary);
+  }
+  
+  .button:hover {
+    opacity: 1;
+    background: #8f44fd;
+  }
+
+
+  
+  /* burger-1 */
+
+.burger-1 {
+    scale: 0.75;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.3s;
+  }
+  
+  .burger-1 .bars {
+    width: 100%;
+    height: 4px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .burger-1 #bar2 {
+    transition-duration: 0.6s;
+  }
+  
+  .burger-1 #bar1,
+  .burger-1 #bar3 {
+    width: 70%;
+  }
+  
+  .is-closed.burger-1 .bars {
+    position: absolute;
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 {
+    transition-duration: 0.3s;
+    transform: rotate(180deg);
+  }
+
+
+
+
+
+  }
+  @media (min-width: 901px) and (max-width: 1200px) and (orientation:landscape){
+    
+  /* NavbarTop style */
+  .NavbarTop{
+    width: 100%;
+    height: 7vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+}
+
+.NavbarTop.active{
+  background-color: var(--MainColor);
+  color: #fff;
+  position: fixed;
+}
+
+.viabandTitle{
+  font-size: 1.5vw;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+  transition: 600ms;
+  overflow: hidden;
+}
+.viabandTitle::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary) ;
+    position: absolute;
+    bottom: 10%;
+    right: 100%;
+    transition: .5s ease-in;
+}
+.viabandTitle:hover::before{
+    right: 0;
+    width: 100%;
+    transition: .5s ease-in;
+}
+
+.plains{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.plainsBtnOption{
+    border: none;
+    font-size: 1.6vw;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+}
+
+.plainsBtnOption:hover{
+    color:  var(--secondary) ;
+    color:  var(--backround) ;
+
+}
+.plainsBtnOption::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary) ;
+    background-color: var(--MainColor) ;
+    position: absolute;
+    bottom: -100%;
+    transition: .5s ease-in;
+    z-index: -1;
+}
+.plainsBtnOption:hover::before{
+    transition: .5s ease-in-out;
+    bottom: 0%;
+    
+}
+
+
+.menu{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menuItem{
+    position: relative;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+.menuItem::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    right: 100%;
+    bottom: 0%;
+
+    transition: .6s ease;
+}
+
+.menuItem:hover::before, .menuItem:focus::before{
+    right: 0px;
+}
+
+.menuItem::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    transition: .6s ease;
+}
+
+.menuItem:hover::after, .menuItem:focus::after{
+    left: 0px;
+}
+
+
+
+.menuItem:hover{
+    /* color: var(--secondary); */
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.StyleModeIcon{
+  font-size: 1.8vw;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.StyleModeIcon.Dark{
+  color: #8f44fd;
+}
+
+
+
+.clientButton{
+  width: 10%;
+  height: 80%;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: .6s ease;
+  color: var(--secondary);
+}
+.clientButton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: .6s ease;
+}
+.clientButton:hover{
+    color: var(--fontColor);
+    transition: .6s ease;
+}
+.clientButton:hover::before{
+    right: 0;
+    transition: .6s ease;
+}
+
+
+
+
+.clientTextBtn{
+  font-size: 1.4vw;
+}
+
+
+
+
+
+
+
+.socialIcon{
+  font-size: 2vw;
+  padding: 0.3%;
+  border-radius: 0.2vw;
+  background-color: #9BEC00;
+  color: #fff;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+}
+.socialIcon:hover{
+  background-color: var(--background);
+  transition: .6s ease-in-out;
+  color: #9BEC00;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+.button {
+    background: rgb(255 255 255 / 16%);
+    border: 0;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.6;
+    scale: 0.7;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.175s;
+    display: none;
+    background-color: var(--secondary);
+  }
+  
+  .button:hover {
+    opacity: 1;
+    background: #8f44fd;
+  }
+
+
+  
+  /* burger-1 */
+
+.burger-1 {
+    scale: 0.75;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.3s;
+  }
+  
+  .burger-1 .bars {
+    width: 100%;
+    height: 4px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .burger-1 #bar2 {
+    transition-duration: 0.6s;
+  }
+  
+  .burger-1 #bar1,
+  .burger-1 #bar3 {
+    width: 70%;
+  }
+  
+  .is-closed.burger-1 .bars {
+    position: absolute;
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 {
+    transition-duration: 0.3s;
+    transform: rotate(180deg);
+  }
+
+
+
+  }
+  
+
+
+  @media (min-width: 601px) and (max-width: 900px) and (orientation:portrait){
+     /* NavbarTop style */
+  .NavbarTop{
+    width: 100%;
+    height: 6vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+}
+
+.NavbarTop.active{
+  background-color: var(--MainColor);
+  color: #fff;
+  position: fixed;
+}
+
+.viabandTitle{
+    font-size: 3vw;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: 600ms;
+    overflow: hidden;
+}
+.viabandTitle::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary) ;
+    position: absolute;
+    bottom: 10%;
+    right: 100%;
+    transition: .5s ease-in;
+}
+.viabandTitle:hover::before{
+    
+    right: 0;
+    width: 100%;
+    transition: .5s ease-in;
+}
+
+.plains{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%;
+    display: none;
+}
+
+.plainsBtnOption{
+    border: none;
+    font-size: 1.6vw;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+}
+
+.plainsBtnOption:hover{
+    color:  var(--secondary) ;
+    color:  var(--backround) ;
+
+}
+.plainsBtnOption::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary) ;
+    background-color: var(--MainColor) ;
+    position: absolute;
+    bottom: -100%;
+    transition: .5s ease-in;
+    z-index: -1;
+}
+.plainsBtnOption:hover::before{
+    transition: .5s ease-in-out;
+    bottom: 0%;
+    
+}
+
+
+.menu{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menuItem{
+    position: relative;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 1.8vw;
+    font-weight: 300;
+}
+.menuItem::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    right: 100%;
+    bottom: 0%;
+
+    transition: .6s ease;
+}
+
+.menuItem:hover::before, .menuItem:focus::before{
+    right: 0px;
+}
+
+.menuItem::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    transition: .6s ease;
+}
+
+.menuItem:hover::after,  .menuItem:focus::after{
+    left: 0px;
+}
+
+
+
+.menuItem:hover{
+    /* color: var(--secondary); */
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.StyleModeIcon{
+  font-size: 1.8vw;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  display: none;
+}
+.StyleModeIcon.Dark{
+  color: #8f44fd;
+}
+
+
+
+
+.clientButton{
+  width: 15%;
+  height: 100%;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: .6s ease;
+  color: #8f44fd;
+
+  display: none;
+}
+.clientButton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple2);
+    background-color: #8f44fd;
+    z-index: -1;
+    transition: .6s ease;
+}
+.clientButton:hover{
+    color: #fff;
+    transition: .6s ease;
+}
+.clientButton:hover::before{
+    right: 0;
+    transition: .6s ease;
+}
+
+
+
+
+.clientTextBtn{
+  font-size: 1.6vw;
+}
+
+
+
+
+
+
+
+
+
+
+.button {
+  background: rgb(255 255 255 / 16%);
+  border: 0;
+  width: 11vw;
+  height: 9vh;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.6;
+  scale: 0.7;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.175s;
+  background-color: var(--secondary);
+  }
+  
+  .button:hover {
+    opacity: 1;
+    background: #8f44fd;
+  }
+
+
+  
+  /* burger-1 */
+
+.burger-1 {
+    scale: 0.75;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.3s;
+  }
+  
+  .burger-1 .bars {
+    width: 100%;
+    height: 4px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .burger-1 #bar2 {
+    transition-duration: 0.6s;
+  }
+  
+  .burger-1 #bar1,
+  .burger-1 #bar3 {
+    width: 70%;
+  }
+  
+  .is-closed.burger-1 .bars {
+    position: absolute;
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 {
+    transition-duration: 0.3s;
+    transform: rotate(180deg);
+  }
+
+  }
+  @media (min-width: 601px) and (max-width: 900px) and (orientation:landscape){
+     /* NavbarTop style */
+  .NavbarTop{
+    width: 100%;
+    height: 5vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+}
+
+.NavbarTop.active{
+  background-color: var(--MainColor);
+  color: #fff;
+  position: fixed;
+}
+
+.viabandTitle{
+    font-size: 2.5vw;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: 600ms;
+    overflow: hidden;
+}
+.viabandTitle::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary) ;
+    position: absolute;
+    bottom: 5%;
+    right: 100%;
+    transition: .5s ease-in;
+}
+.viabandTitle:hover::before{
+    
+    right: 0;
+    width: 100%;
+    transition: .5s ease-in;
+}
+
+.plains{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%;
+    display: none;
+}
+
+.plainsBtnOption{
+    border: none;
+    font-size: 1.6vw;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+}
+
+.plainsBtnOption:hover{
+    color:  var(--secondary) ;
+    color:  var(--backround) ;
+
+}
+.plainsBtnOption::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary) ;
+    background-color: var(--MainColor) ;
+    position: absolute;
+    bottom: -100%;
+    transition: .5s ease-in;
+    z-index: -1;
+}
+.plainsBtnOption:hover::before{
+    transition: .5s ease-in-out;
+    bottom: 0%;
+    
+}
+
+
+.menu{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menuItem{
+  position: relative;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+.menuItem::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    right: 100%;
+    bottom: 0%;
+
+    transition: .6s ease;
+}
+
+.menuItem:hover::before, .menuItem:focus::before{
+    right: 0px;
+}
+
+.menuItem::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    transition: .6s ease;
+}
+
+.menuItem:hover::after,  .menuItem:focus::after{
+    left: 0px;
+}
+
+
+
+.menuItem:hover{
+    /* color: var(--secondary); */
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.StyleModeIcon{
+  font-size: 1.8vw;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  display: none;
+}
+.StyleModeIcon.Dark{
+  color: #8f44fd;
+}
+
+
+
+
+.clientButton{
+  width: 15%;
+  height: 100%;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: .6s ease;
+  color: #8f44fd;
+
+  display: none;
+}
+.clientButton::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple2);
+    background-color: #8f44fd;
+    z-index: -1;
+    transition: .6s ease;
+}
+.clientButton:hover{
+    color: #fff;
+    transition: .6s ease;
+}
+.clientButton:hover::before{
+    right: 0;
+    transition: .6s ease;
+}
+
+
+
+
+.clientTextBtn{
+  font-size: 1.6vw;
+}
+
+
+
+
+
+
+
+.socialIcon{
+  font-size: 2.6vw;
+  padding: 0%;
+  border-radius: 0.7vw;
+  background-color: #9BEC00;
+  color: #fff;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+  width: 9%;
+  height: 86%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcon:hover{
+  background-color: var(--background);
+  transition: .6s ease-in-out;
+  color: #9BEC00;
+}
+
+
+
+
+
+
+
+
+
+
+.button {
+  background: rgb(255 255 255 / 16%);
+  border: 0;
+  width: 7vw;
+  height: 7vh;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.6;
+  scale: 0.7;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.175s;
+  background-color: var(--secondary);
+  }
+  
+  .button:hover {
+    opacity: 1;
+    background: #8f44fd;
+  }
+
+
+  
+  /* burger-1 */
+
+.burger-1 {
+    scale: 0.75;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.3s;
+  }
+  
+  .burger-1 .bars {
+    width: 100%;
+    height: 4px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .burger-1 #bar2 {
+    transition-duration: 0.6s;
+  }
+  
+  .burger-1 #bar1,
+  .burger-1 #bar3 {
+    width: 70%;
+  }
+  
+  .is-closed.burger-1 .bars {
+    position: absolute;
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.3s;
+  }
+  
+  .is-closed.burger-1 {
+    transition-duration: 0.3s;
+    transform: rotate(180deg);
+  }
+
+  }
+
+
+
+  @media  (max-width: 600px) and (orientation: portrait) {
+
+   /* NavbarTop style */
+   .NavbarTop{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+    z-index: 101;
+    position: relative;
+    transition: top 0.6s ease-in;
+  }
+  
+  .NavbarTop.active{
+    background-color: var(--MainColor);
+    color: #fff;
+    position: fixed;
+  }
+  
+  .viabandTitle{
+    font-size: 8vw;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: 600ms;
+    overflow: hidden;
+  }
+
+  .viabandTitle.active{
+    color: var(--secondary);
+  }
+
+
+  .viabandTitle::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary);
+    position: absolute;
+    bottom: 15%;
+    right: 100%;
+    transition: .5s ease-in;
+  }
+  .viabandTitle:hover::before{  
+      right: 0;
+      width: 100%;
+      transition: .5s ease-in;
+  }
+  
+  .plains{
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 5%;
+      display: none;
+  }
+  
+  .plainsBtnOption{
+      border: none;
+      font-size: 1.6vw;
+      font-family: "Montserrat", sans-serif;
+      background-color: transparent;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      padding: 0 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--fontColor);
+  }
+  
+  .plainsBtnOption:hover{
+      color:  var(--secondary) ;
+      color:  var(--backround) ;
+
+  }
+  .plainsBtnOption::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: var(--secondary) ;
+      background-color: var(--MainColor) ;
+      position: absolute;
+      bottom: -100%;
+      transition: .5s ease-in;
+      z-index: -1;
+  }
+  .plainsBtnOption:hover::before{
+      transition: .5s ease-in-out;
+      bottom: 0%;
+      
+  }
+  
+  
+  .menu{
+      width: 70%;
+      height: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 5%;
+      font-family: "Montserrat", sans-serif;
+  }
+  
+  .menuItem{
+      position: relative;
+      height: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      text-transform: uppercase;
+      font-size: 2vw;
+  }
+  .menuItem::before{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: var(--secondary);
+      position: absolute;
+      right: 100%;
+      bottom: 0%;
+  
+      transition: .6s ease;
+  }
+  
+  .menuItem:hover::before, .menuItem:focus::before{
+      right: 0px;
+  }
+  
+  .menuItem::after{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: var(--secondary);
+      position: absolute;
+      left: 100%;
+      top: 0%;
+      transition: .6s ease;
+  }
+  
+  .menuItem:hover::after{
+      left: 0px;
+  }
+  
+  
+  
+  .menuItem:hover{
+      /* color: var(--secondary); */
+      cursor: pointer;
+      transition: .3s;
+  }
+  
+  .StyleModeIcon{
+    font-size: 1.8vw;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    display: none;
+  }
+  .StyleModeIcon.Dark{
+    color: #8f44fd;
+  }
+  
+  
+  .clientButton{
+    width: 15%;
+    height: 100%;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .6s ease;
+    color: #8f44fd;
+
+    display: none;
+  }
+  .clientButton::before{
+      content: "";
+      position: absolute;
+      right: 100%;
+      width: 100%;
+      height: 100%;
+      background-color: var(--purple2);
+      background-color: #8f44fd;
+      z-index: -1;
+      transition: .6s ease;
+  }
+  .clientButton:hover{
+      color: #fff;
+      transition: .6s ease;
+  }
+  .clientButton:hover::before{
+      right: 0;
+      transition: .6s ease;
+  }
+  
+  
+  
+  
+  .clientTextBtn{
+    font-size: 1.6vw;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .button {
+    background: rgb(255 255 255 / 16%);
+    border: 0;
+    width: 21vw;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    padding: 0;
+    opacity:1;
+    scale: 0.7;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.175s;
+    background-color: var(--secondary);
+    z-index: 100;
+    }
+    
+    .button:hover {
+      opacity: 1;
+    }
+    
+  
+  
+    
+    /* burger-1 */
+  
+  .burger-1 {
+    scale: 1.3;
+    position: relative;
+    width: 55%;
+    height: 53%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+    transition-duration: 0.3s;
+    }
+    
+    .burger-1 .bars {
+      width: 100%;
+      height: 4px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+    }
+    
+    .burger-1 #bar2 {
+      transition-duration: 0.6s;
+    }
+    
+    .burger-1 #bar1,
+    .burger-1 #bar3 {
+      width: 70%;
+    }
+    
+    .is-closed.burger-1 .bars {
+      position: absolute;
+      transition-duration: 0.3s;
+    }
+    
+    .is-closed.burger-1 #bar2 {
+      transform: scaleX(0);
+      transition-duration: 0.3s;
+    }
+    
+    .is-closed.burger-1 #bar1 {
+      width: 100%;
+      transform: rotate(45deg);
+      transition-duration: 0.3s;
+    }
+    
+    .is-closed.burger-1 #bar3 {
+      width: 100%;
+      transform: rotate(-45deg);
+      transition-duration: 0.3s;
+    }
+    
+    .is-closed.burger-1 {
+      transition-duration: 0.3s;
+      transform: rotate(180deg);
+    }
+
+
+
+
+
+
+    .socialIcon{
+      font-size: 9vw;
+      padding: 1% 8%;
+      border-radius: 1.1vw;
+      background-color: #9BEC00;
+      color: #fff;
+      cursor: pointer;
+      transition: .6s ease-in-out;
+    }
+    
+    .socialIcon:hover{
+      background-color: var(--background);
+      transition: .6s ease-in-out;
+      color: #9BEC00;
+    }
+  
+
+
+  }
+
+
+
+  @media  (max-width: 600px) and (orientation: landscape) {
+   .NavbarTop{
+    width: 100%;
+    height: 8vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+    z-index: 101;
+    position: relative;
+    transition: top 0.6s ease-in;
+  }
+
+
+   
+  .NavbarTop.active{
+    background-color: var(--MainColor);
+    color: #fff;
+    position: fixed;
+  }
+  
+  .viabandTitle{
+    font-size: 4vw;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: 600ms;
+    overflow: hidden;
+  }
+
+  .viabandTitle.active{
+    color: var(--secondary);
+  }
+
+
+  .viabandTitle::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary);
+    position: absolute;
+    bottom: 15%;
+    right: 100%;
+    transition: .5s ease-in;
+  }
+  .viabandTitle:hover::before{  
+      right: 0;
+      width: 100%;
+      transition: .5s ease-in;
+  }
+  
+  .plains{
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 5%;
+      display: none;
+  }
+  
+  .plainsBtnOption{
+      border: none;
+      font-size: 1.6vw;
+      font-family: "Montserrat", sans-serif;
+      background-color: transparent;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      padding: 0 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--fontColor);
+  }
+  
+  .plainsBtnOption:hover{
+      color:  var(--secondary) ;
+      color:  var(--backround) ;
+
+  }
+  .plainsBtnOption::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: var(--secondary) ;
+      background-color: var(--MainColor) ;
+      position: absolute;
+      bottom: -100%;
+      transition: .5s ease-in;
+      z-index: -1;
+  }
+  .plainsBtnOption:hover::before{
+      transition: .5s ease-in-out;
+      bottom: 0%;
+      
+  }
+  
+  
+  .menu{
+      width: 70%;
+      height: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 5%;
+      font-family: "Montserrat", sans-serif;
+  }
+  
+  .menuItem{
+      position: relative;
+      height: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      text-transform: uppercase;
+      font-size: 2vw;
+  }
+  .menuItem::before{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: var(--secondary);
+      position: absolute;
+      right: 100%;
+      bottom: 0%;
+  
+      transition: .6s ease;
+  }
+  
+  .menuItem:hover::before, .menuItem:focus::before{
+      right: 0px;
+  }
+  
+  .menuItem::after{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: var(--secondary);
+      position: absolute;
+      left: 100%;
+      top: 0%;
+      transition: .6s ease;
+  }
+  
+  .menuItem:hover::after{
+      left: 0px;
+  }
+  
+  
+  
+  .menuItem:hover{
+      /* color: var(--secondary); */
+      cursor: pointer;
+      transition: .3s;
+  }
+  
+  .StyleModeIcon{
+    font-size: 1.8vw;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    display: none;
+  }
+  .StyleModeIcon.Dark{
+    color: #8f44fd;
+  }
+  
+
+  .socialIcon{
+    font-size: 5vw;
+    padding: 0.3% 8%;
+    border-radius: 0.2vw;
+    background-color: #9BEC00;
+    color: #fff;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+  }
+
+  .socialIcon:hover{
+    background-color: var(--background);
+    transition: .6s ease-in-out;
+    color: #9BEC00;
+  }
+  
+  .clientButton{
+    width: 15%;
+    height: 100%;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .6s ease;
+    color: #8f44fd;
+
+    display: none;
+  }
+  .clientButton::before{
+      content: "";
+      position: absolute;
+      right: 100%;
+      width: 100%;
+      height: 100%;
+      background-color: var(--purple2);
+      background-color: #8f44fd;
+      z-index: -1;
+      transition: .6s ease;
+  }
+  .clientButton:hover{
+      color: #fff;
+      transition: .6s ease;
+  }
+  .clientButton:hover::before{
+      right: 0;
+      transition: .6s ease;
+  }
+  
+  
+  
+  
+  .clientTextBtn{
+    font-size: 1.6vw;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .button {
+    background: rgb(255 255 255 / 16%);
+    border: 0;
+    width: 10vw;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    padding: 0;
+    opacity: 1;
+    scale: 0.7;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.175s;
+    background-color: var(--secondary);
+    z-index: 100;
+
+    }
+    
+    .button:hover {
+      opacity: 1;
+    }
+    
+  
+  
+    
+    /* burger-1 */
+  
+  .burger-1 {
+    scale: 1.1;
+    position: relative;
+    width: 55%;
+    height: 53%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+    transition-duration: 0.3s;
+    }
+    
+    .burger-1 .bars {
+      width: 100%;
+      height: 4px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+    }
+    
+    .burger-1 #bar2 {
+      transition-duration: 0.6s;
+    }
+    
+    .burger-1 #bar1,
+    .burger-1 #bar3 {
+      width: 70%;
+    }
+    
+    .is-closed.burger-1 .bars {
+      position: absolute;
+      transition-duration: 0.3s;
+    }
+    
+    .is-closed.burger-1 #bar2 {
+      transform: scaleX(0);
+      transition-duration: 0.3s;
+    }
+    
+    .is-closed.burger-1 #bar1 {
+      width: 100%;
+      transform: rotate(45deg);
+      transition-duration: 0.3s;
+    }
+    
+    .is-closed.burger-1 #bar3 {
+      width: 100%;
+      transform: rotate(-45deg);
+      transition-duration: 0.3s;
+    }
+    
+    .is-closed.burger-1 {
+      transition-duration: 0.3s;
+      transform: rotate(180deg);
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

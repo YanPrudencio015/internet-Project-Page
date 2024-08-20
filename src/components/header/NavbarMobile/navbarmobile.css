@@ -1,0 +1,720 @@
+
+.navbarMobile {
+    position: fixed;
+    top: 7%;
+    left: 100%;
+    background-color: var(--MainColor);
+    width: 50%;
+    height: 40%;
+    z-index: 100;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+    transition: top 0.6s ease-in;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding-top: 2%;
+    transition: .6s;
+    display: none;
+  }
+  
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+    
+  .navbarMobile {
+    position: fixed;
+    top: 7%;
+    left: 100%;
+    background-color: var(--MainColor);
+    width: 50%;
+    height: 40%;
+    z-index: 100;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+    transition: top 0.6s ease-in;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding-top: 2%;
+    transition: .6s;
+    display: none;
+}
+}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+  .navbarMobile {
+    position: fixed;
+    top: 7%;
+    left: 100%;
+    background-color: var(--MainColor);
+    width: 50%;
+    height: 40%;
+    z-index: 100;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+    transition: top 0.6s ease-in;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding-top: 2%;
+    transition: .6s;
+    display: none;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+    .navbarMobile {
+        position: fixed;
+        top: 5.8%;
+        left: 100%;
+        background-color: var(--MainColor);
+        width: 50%;
+        height: 40%;
+        z-index: 100;
+        border-bottom-left-radius: 6%;
+        border-bottom-right-radius: 6%;
+        transition: top 0.6s ease-in;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 5%;
+        padding-top: 2%;
+        transition: .6s;
+    }
+    
+    .navbarMobile.active {
+      left: 50%;
+      top: 5.8%;
+      transition: .6s;
+    }
+  
+    .clientBtn{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      padding: 3%;
+      border-radius: 10px;
+      border: none;
+      gap: 5%;
+      color: var(--purple2);
+    }
+  
+    .clientIcon,.clientText{
+      font-size: 3vw;
+    }
+  
+    .clientText{
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  
+  
+    .plainsOptions{
+      width: 100%;
+      height: 55%;
+      padding: 5%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      gap: 18%;
+    }
+  
+    .plainsBtnOptions{
+      font-size: 3vw;
+      text-transform: uppercase;
+      padding: 5% 10%;
+      border: solid 1px var(--background);
+      border-radius: 5px;
+      color: var(--fontColor);
+      background-color: var(--MainColor);
+      font-family: "Roboto", sans-serif;
+      transition: .2s ease-in;
+      font-weight: 400;
+    }
+    .plainsBtnOptions:focus{
+      transition: .2s ease-in;
+      color: var(--fontColor);
+      background-color: var(--background);
+      border: solid 1px transparent;
+      letter-spacing: 1vw;
+    }
+  
+    .optionsMenuList{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 5%;
+      width: 90%;
+      height: 30%;
+      font-weight: 500;
+      display: none;
+    }
+    
+    .optionsMenuItem{
+      font-size: 8vw;
+      font-family: "Quicksand", sans-serif;
+      font-family: "Bebas Neue", sans-serif;
+      color: var(--fontColor);
+      position: relative;
+    }
+    .optionsMenuItem::before{
+      content: "";
+      background-color: var(--background);
+      width: 1%;
+      height: 1px;
+      position: absolute;
+      top: 100%;
+      transition: .6s ease-in-out;
+      opacity: 0;
+    }
+    .optionsMenuItem:hover::before{
+      opacity: 1;
+      transition: .6s ease-in-out;
+      width: 100%;
+    }
+  
+  
+    .darkModeOption{
+      background-color: var(--background);
+      width: 25%;
+      height: 8%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s ease-in;
+      position: relative;
+      border-radius: 2em;
+      cursor: default;
+      position: relative;
+      margin: 2% 0;
+      transition: .6s ease-in-out;  
+      background-color: transparent;
+    }
+  
+      .darkModeOption.active{
+      background-color: var(--quarternary);
+  
+      transition: .6s ease-in-out;  
+    }
+    
+   .iconAparence{
+      position: absolute;
+      left: 0%;
+      font-size: 6vw;
+      cursor: default;
+      transition: .6s ease-in-out;  
+    }
+  
+  
+   .iconAparence.active{
+      transform: rotateZ(180deg);
+      left: 52%;
+      transition: .6s ease-in-out; 
+      color: var(--background); 
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+            /* NavbarMobile style */
+    /* NavbarMobile style */
+    /* NavbarMobile style */
+
+
+    .navbarMobile {
+      position: fixed;
+      top: 5%;
+      left: 100%;
+      background-color: var(--MainColor);
+      width: 35%;
+      height: 89%;
+      z-index: 100;
+      border-bottom-left-radius: 3%;
+      border-bottom-right-radius: 3%;
+      transition: top 0.6s ease-in;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      gap: 5%;
+      padding-top: 2%;
+      transition: .6s;
+    }
+    
+    .navbarMobile.active {
+        left: 65%;
+        top: 5%;
+        transition: .6s;
+    
+    }
+  
+    .clientBtn{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      padding: 3%;
+      border-radius: 10px;
+      border: none;
+      gap: 5%;
+      color: var(--purple2);
+    }
+  
+    .clientIcon,.clientText{
+      font-size: 3vw;
+    }
+  
+    .clientText{
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  
+  
+    .plainsOptions{
+      width: 100%;
+      height: 55%;
+      padding: 5%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      gap: 18%;
+    }
+  
+    .plainsBtnOptions{
+      font-size: 3vw;
+      text-transform: uppercase;
+      padding: 5% 10%;
+      border: solid 1px var(--background);
+      border-radius: 5px;
+      color: var(--fontColor);
+      background-color: var(--MainColor);
+      font-family: "Roboto", sans-serif;
+      transition: .2s ease-in;
+      font-weight: 400;
+    }
+    .plainsBtnOptions:focus{
+      transition: .2s ease-in;
+      color: var(--fontColor);
+      background-color: var(--background);
+      border: solid 1px transparent;
+      letter-spacing: 1vw;
+    }
+  
+    .optionsMenuList{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 5%;
+      width: 90%;
+      height: 30%;
+      font-weight: 500;
+      display: none;
+    }
+    
+    .optionsMenuItem{
+      font-size: 8vw;
+      font-family: "Quicksand", sans-serif;
+      font-family: "Bebas Neue", sans-serif;
+      color: var(--fontColor);
+      position: relative;
+    }
+    .optionsMenuItem::before{
+      content: "";
+      background-color: var(--background);
+      width: 1%;
+      height: 1px;
+      position: absolute;
+      top: 100%;
+      transition: .6s ease-in-out;
+      opacity: 0;
+    }
+    .optionsMenuItem:hover::before{
+      opacity: 1;
+      transition: .6s ease-in-out;
+      width: 100%;
+    }
+  
+  
+    .darkModeOption{
+      background-color: var(--background);
+      width: 25%;
+      height: 7%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s ease-in;
+      position: relative;
+      border-radius: 2em;
+      cursor: default;
+      position: relative;
+      margin: 2% 0;
+      transition: .6s ease-in-out;  
+      background-color: transparent;
+    }
+  
+      .darkModeOption.active{
+      background-color: var(--quarternary);
+  
+      transition: .6s ease-in-out;  
+    }
+    
+   .iconAparence{
+      position: absolute;
+      left: 0%;
+      font-size: 4.5vw;
+      cursor: default;
+      transition: .6s ease-in-out;  
+    }
+  
+  
+   .iconAparence.active{
+      transform: rotateZ(180deg);
+      left: 52%;
+      transition: .6s ease-in-out; 
+      color: var(--background); 
+    }
+}
+@media (max-width: 600px) and (orientation: portrait){
+    
+
+    /* NavbarMobile style */
+    /* NavbarMobile style */
+    /* NavbarMobile style */
+
+
+    .navbarMobile {
+        position: fixed;
+        top: -100%;
+        left: 10%;
+        background-color: var(--MainColor);
+        width: 94%;
+        height: 86%;
+        z-index: 100;
+        border-bottom-left-radius: 6%;
+        border-bottom-right-radius: 6%;
+        transition: top 0.6s ease-in;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 5%;
+        padding-top: 2%;
+        transition: 600ms ease-in;
+    }
+    
+    .navbarMobile.active {
+        top: 10%;
+        left: 10%;
+        transition: 600ms ease-in;
+    }
+  
+    .clientBtn{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      padding: 2%;
+      border-radius: 10px;
+      border: none;
+      gap: 5%;
+      color: var(--purple2);
+    }
+  
+    .clientIcon,.clientText{
+      font-size: 7vw;
+    }
+  
+    .clientText{
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  
+  
+    .plainsOptions{
+      width: 100%;
+      height: 32%;
+      padding: 5%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      gap: 3%;
+    }
+  
+    .plainsBtnOptions{
+      font-size: 6.3vw;
+      text-transform: uppercase;
+      padding: 5% 10%;
+      border: solid 1px var(--background);
+      border-radius: 5px;
+      color: var(--fontColor-secondary);
+      color: var(--fontColor);
+      background-color: var(--background);
+      background-color: var(--MainColor);
+      font-family: "Roboto", sans-serif;
+      transition: .2s ease-in;
+      font-weight: 400;
+    }
+    .plainsBtnOptions:focus{
+      transition: .2s ease-in;
+      color: var(--fontColor);
+      background-color: var(--background);
+      border: solid 1px transparent;
+      letter-spacing: 1vw;
+    }
+  
+    .optionsMenuList{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 5%;
+      width: 90%;
+      height: 32%;
+    }
+    
+    .optionsMenuItem{
+      font-size: 7vw;
+      font-family: "Bebas Neue", sans-serif;
+      font-family: "Quicksand", sans-serif;
+      color: var(--fontColor);
+      position: relative;
+      font-weight: 600;
+    }
+    .optionsMenuItem::before{
+      content: "";
+      background-color: var(--background);
+      width: 1%;
+      height: 1px;
+      position: absolute;
+      top: 100%;
+      transition: .6s ease-in-out;
+      opacity: 0;
+    }
+    .optionsMenuItem:hover::before{
+      opacity: 1;
+      transition: .6s ease-in-out;
+      width: 100%;
+    }
+  
+  
+    .darkModeOption{
+      background-color: var(--background);
+      width: 25%;
+      height: 7%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s ease-in;
+      position: relative;
+      border-radius: 2em;
+      cursor: default;
+      position: relative;
+      margin: 8% 0;
+      transition: .6s ease-in-out;
+      background-color: transparent;
+    }
+  
+      .darkModeOption.active{
+      background-color: var(--quarternary);
+  
+      transition: .6s ease-in-out;  
+    }
+    
+   .iconAparence{
+      position: absolute;
+      left: 0%;
+      font-size: 12.1vw;
+      cursor: default;
+      transition: .6s ease-in-out;  
+    }
+  
+  
+   .iconAparence.active{
+      transform: rotateZ(180deg);
+      left: 52%;
+      transition: .6s ease-in-out; 
+      color: var(--background); 
+    }
+    
+}
+@media (max-width: 600px) and (orientation: landscape){
+  
+  .navbarMobile {
+    position: fixed;
+    top: -100%;
+    left: 53%;
+    background-color: var(--MainColor);
+    width: 50%;
+    height: 86%;
+    z-index: 100;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+    transition: top 0.6s ease-in;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding-top: 2%;
+    transition: 600ms ease-in;
+}
+
+.navbarMobile.active {
+    top: 8%;
+    left: 53%;
+    transition: 600ms ease-in;
+}
+
+.clientBtn{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1%;
+  border-radius: 3px;
+  border: none;
+  gap: 5%;
+  color: var(--purple2);
+}
+
+.clientIcon,.clientText{
+  font-size: 3vw;
+}
+
+.clientText{
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+.plainsOptions{
+  width: 100%;
+  height: 32%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 3%;
+}
+
+.plainsBtnOptions{
+  font-size: 2.8vw;
+  text-transform: uppercase;
+  padding: 1% 12%;
+  border: solid 1px var(--background);
+  border-radius: 8px;
+  color: var(--fontColor-secondary);
+  color: var(--fontColor);
+  background-color: var(--background);
+  background-color: var(--MainColor);
+  font-family: "Roboto", sans-serif;
+  transition: .2s ease-in;
+  font-weight: 400;
+}
+
+.plainsBtnOptions:focus{
+  transition: .2s ease-in;
+  color: var(--fontColor);
+  background-color: var(--background);
+  border: solid 1px transparent;
+  letter-spacing: 1vw;
+}
+
+.optionsMenuList{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+  width: 90%;
+  height: 32%;
+}
+
+.optionsMenuItem{
+  font-size: 3.7vw;
+  font-family: "Quicksand", sans-serif;
+  color: var(--fontColor);
+  position: relative;
+  font-weight: 600;
+}
+
+
+.optionsMenuItem::before{
+  content: "";
+  background-color: var(--background);
+  width: 1%;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  transition: .6s ease-in-out;
+  opacity: 0;
+}
+.optionsMenuItem:hover::before{
+  opacity: 1;
+  transition: .6s ease-in-out;
+  width: 100%;
+}
+
+
+.darkModeOption{
+  background-color: var(--background);
+  width: 25%;
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease-in;
+  position: relative;
+  border-radius: 2em;
+  cursor: default;
+  position: relative;
+  margin: 8% 0;
+  transition: .6s ease-in-out;
+  background-color: transparent;
+}
+
+  .darkModeOption.active{
+  background-color: var(--quarternary);
+
+  transition: .6s ease-in-out;  
+}
+
+.iconAparence{
+  position: absolute;
+  left: 0%;
+  font-size: 6.1vw;
+  cursor: default;
+  transition: .6s ease-in-out;  
+}
+
+
+.iconAparence.active{
+  transform: rotateZ(180deg);
+  left: 52%;
+  transition: .6s ease-in-out; 
+  color: var(--background); 
+}
+}

@@ -2,9 +2,9 @@ import React from "react";
 import './header.css'
 
 // conponents
-import NavbarTop from './NavbarTop'
-import NavbarBackground from './NavbarBackground'
-import NavbarMobile from './NavbarMobile'
+import NavbarTop from './NavbarTop/NavbarTop'
+import NavbarBackground from './NavbarBackground/NavbarBackground'
+import NavbarMobile from './NavbarMobile/NavbarMobile'
 
 import {MenuMobileProvider} from '../../APIContext/BtnsContext'
 

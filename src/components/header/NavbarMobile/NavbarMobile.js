@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
+import { darkModeContext, } from "../../../APIContext/BtnsContext";
 
-import { darkModeContext, } from "../../APIContext/BtnsContext";
-
+import './navbarmobile.css'
 
 function NavbarMobile(props) {
     const [darkMode, setDarkMode] = useContext(darkModeContext)
@@ -41,3 +41,4 @@ function NavbarMobile(props) {
 }
 
 export default NavbarMobile;
+

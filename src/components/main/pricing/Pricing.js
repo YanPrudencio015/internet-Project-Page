@@ -6,13 +6,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './main.css';
+// import './main.css';
+
+import './pricing.css'
 
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import Card from './cards/Card';
-import {CardPricing} from '../main/cards/cardDetails'
+import Card from '../cards/Card';
+// import {CardPricing} from '../main/cards/cardDetails'
+import {CardPricing} from '../../main/cards/cardDetails'
 
 
 
