@@ -233,7 +233,7 @@
 
     .navbarMobile {
       position: fixed;
-      top: 5%;
+      top:13%;
       left: 100%;
       background-color: var(--MainColor);
       width: 35%;
@@ -253,7 +253,7 @@
     
     .navbarMobile.active {
         left: 65%;
-        top: 5%;
+        top: 13%;
         transition: .6s;
     
     }

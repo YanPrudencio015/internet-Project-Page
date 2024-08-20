@@ -1086,7 +1086,7 @@
     .aboutSection{
         width: 100%;
         background-color: var(--background);
-        height: 75vh;
+        height: 20em;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -1113,8 +1113,8 @@
     
 .sobreNostitulo{
     position: absolute;
-    top: -14%;
-    left: 2%;
+    top: -15%;
+    left: 27%;
     font-size: 3vw;
     color: var(--fontColor);
     background-color: var(--background);
@@ -1159,7 +1159,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3.1vh;
+    font-size: 6.1vh;
     background-color: var(--background);
     border-radius: 0em 0em 20em 20em;
     font-family: "Bebas Neue", sans-serif;
@@ -1290,7 +1290,7 @@
         height: 26%;
         object-fit: cover;
         position: absolute;
-        top: 11.9vh;
+        top: 18.3vh;
         left: -1.7vw;
         border-radius: 15% 15% 0% 15%;
     }
