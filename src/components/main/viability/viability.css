@@ -1,0 +1,656 @@
+
+.viabilitySection{
+    width: 100%;
+    height: 20em;
+    background: var(--MainColor);
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url('./../../../imgs/background/Frame-1000002867.png');
+    background-attachment: fixed;
+    /* background-size: cover; */
+
+}
+
+.viabilityCard{
+    width: 40%;
+    height: 30vh;
+    background-color: var(--MainColor);
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 5%;
+}
+
+.h3ViabilityTitle{ 
+    font-size: 1.2vw;
+    font-family: "Quicksand", sans-serif;
+}
+
+.h1ViabilityTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.7vw;
+    width: 100%;
+    padding: 0 5%;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.viabilityBtn{
+    width: 18%;
+    height: 7.7vh;
+    color: var(--fontColor);
+    background-color: var(--MainColor);
+    border-radius: 0.6em;
+    box-shadow: none;
+    border: none;
+    font-size: 1.2vw;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.viabilityBtn::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.viabilityBtn:hover::after{
+    top:0%;
+    transition: .2s ease-in-out;
+}
+.viabilityBtn:hover{
+    /* scale: .9; */
+    letter-spacing: .1vw;
+}
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+    
+.viabilitySection{
+    width: 100%;
+    height: 20em;
+    background: var(--MainColor);
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url('./../../../imgs/background/Frame-1000002867.png');
+    background-attachment: fixed;
+    /* background-size: cover; */
+
+}
+
+.viabilityCard{
+    width: 40%;
+    height: 30vh;
+    background-color: var(--MainColor);
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 5%;
+}
+
+.h3ViabilityTitle{ 
+    font-size: 1.2vw;
+    font-family: "Quicksand", sans-serif;
+}
+
+.h1ViabilityTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.7vw;
+    width: 100%;
+    padding: 0 5%;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.viabilityBtn{
+    width: 18%;
+    height: 7.7vh;
+    color: var(--fontColor);
+    background-color: var(--MainColor);
+    border-radius: 0.6em;
+    box-shadow: none;
+    border: none;
+    font-size: 1.2vw;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.viabilityBtn::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.viabilityBtn:hover::after{
+    top:0%;
+    transition: .2s ease-in-out;
+}
+.viabilityBtn:hover{
+    /* scale: .9; */
+    letter-spacing: .1vw;
+}
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+}
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+    
+.viabilitySection{
+    width: 100%;
+    height: 20em;
+    background: var(--MainColor);
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url('./../../../imgs/background/Frame-1000002867.png');
+    background-attachment: fixed;
+    /* background-size: cover; */
+
+}
+
+.viabilityCard{
+    width: 40%;
+    height: 30vh;
+    background-color: var(--MainColor);
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 5%;
+}
+
+.h3ViabilityTitle{ 
+    font-size: 1.6vw;
+    font-family: "Quicksand", sans-serif;
+}
+
+.h1ViabilityTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.2vw;
+    width: 100%;
+    padding: 0 5%;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.viabilityBtn{
+    width: 24%;
+    height: 31.7vh;
+    color: var(--fontColor);
+    background-color: var(--MainColor);
+    border-radius: 0.6em;
+    box-shadow: none;
+    border: none;
+    font-size: 1.7vw;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.viabilityBtn::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.viabilityBtn:hover::after{
+    top:0%;
+    transition: .2s ease-in-out;
+}
+.viabilityBtn:hover{
+    /* scale: .9; */
+    letter-spacing: .1vw;
+}
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+}
+
+
+
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+       
+.viabilitySection{
+    width: 100%;
+    height: 25em;
+    background: var(--MainColor);
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("../../../imgs/background/Frame-1000002867.png");
+    background-attachment: fixed;
+
+}
+
+.viabilityCard{
+    width: 100%;
+    height: 14vh;
+    background-color: var(--MainColor);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 0%;
+    border-radius: 0%;
+}
+
+.h3ViabilityTitle{ 
+    font-size: 3.2vw;
+    font-family: "Quicksand", sans-serif;
+}
+
+.h1ViabilityTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.4vw;
+    width: 50%;
+    padding: 0 5%;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.viabilityBtn{
+    width: 57%;
+    height: 7.7vh;
+    color: var(--fontColor);
+    background-color: var(--secondary);
+    border-radius: 0.6em;
+    box-shadow: none;
+    border: none;
+    font-size: 4.2vw;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.viabilityBtn::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.viabilityBtn:hover::after{
+    top:0%;
+    transition: .2s ease-in-out;
+}
+.viabilityBtn:hover{
+    /* scale: .9; */
+    letter-spacing: .1vw;
+}
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+       
+.viabilitySection{
+    width: 100%;
+    height: 25em;
+    background: var(--MainColor);
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("../../../imgs/background/Frame-1000002867.png");
+    background-attachment: fixed;
+
+}
+
+.viabilityCard{
+    width: 100%;
+    height: 25vh;
+    background-color: var(--MainColor);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 0%;
+    border-radius: 0%;
+}
+
+.h3ViabilityTitle{ 
+    font-size: 3.2vw;
+    font-family: "Quicksand", sans-serif;
+}
+
+.h1ViabilityTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.4vw;
+    width: 50%;
+    padding: 0 5%;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.viabilityBtn{
+    width: 57%;
+    height: 7.7vh;
+    color: var(--fontColor);
+    background-color: var(--secondary);
+    border-radius: 0.6em;
+    box-shadow: none;
+    border: none;
+    font-size: 4.2vw;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.viabilityBtn::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.viabilityBtn:hover::after{
+    top:0%;
+    transition: .2s ease-in-out;
+}
+.viabilityBtn:hover{
+    /* scale: .9; */
+    letter-spacing: .1vw;
+}
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+}
+
+
+
+@media (max-width: 600px) and (orientation: portrait){
+.viabilitySection{
+    width: 100%;
+    height: 20em;
+    background: var(--MainColor);
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url('./../../../imgs/background/Frame-1000002867.png');
+    background-attachment: fixed;
+    /* background-size: cover; */
+
+}
+
+.viabilityCard{
+    width: 90%;
+    height: 15vh;
+    background-color: var(--MainColor);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 0%;
+}
+
+.h3ViabilityTitle{ 
+    font-size: 3vw;
+    font-family: "Quicksand", sans-serif;
+}
+
+.h1ViabilityTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 5vw;
+    width: 100%;
+    padding: 0 5%;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.viabilityBtn{
+    width: 68%;
+    height: 6vh;
+    color: var(--fontColor);
+    background-color: var(--secondary);
+    border-radius: 0.6em;
+    box-shadow: none;
+    border: none;
+    font-size: 5vw;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.viabilityBtn::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.viabilityBtn:hover::after{
+    top:0%;
+    transition: .2s ease-in-out;
+}
+.viabilityBtn:hover{
+    /* scale: .9; */
+    letter-spacing: .1vw;
+}
+}
+
+
+
+
+@media (max-width: 600px) and (orientation: landscape){
+.viabilitySection{
+    width: 100%;
+    height: 20em;
+    background: var(--MainColor);
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url('./../../../imgs/background/Frame-1000002867.png');
+    background-attachment: fixed;
+    /* background-size: cover; */
+
+}
+
+.viabilityCard{
+    width: 43%;
+    height: 30vh;
+    background-color: var(--MainColor);
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 5%;
+}
+
+.h3ViabilityTitle{ 
+    font-size: 2.2vw;
+    font-family: "Quicksand", sans-serif;
+}
+
+.h1ViabilityTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.2vw;
+    width: 100%;
+    padding: 0 5%;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.viabilityBtn{
+    width: 26%;
+    height: 17.7vh;
+    color: var(--fontColor);
+    background-color: var(--MainColor);
+    border-radius: 0.6em;
+    box-shadow: none;
+    border: none;
+    font-size: 2.5vw;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.viabilityBtn::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.viabilityBtn:hover::after{
+    top:0%;
+    transition: .2s ease-in-out;
+}
+.viabilityBtn:hover{
+    /* scale: .9; */
+    letter-spacing: .1vw;
+}}

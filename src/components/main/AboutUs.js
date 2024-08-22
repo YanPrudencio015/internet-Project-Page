@@ -73,10 +73,10 @@ function AboutUs() {
                         className="mySwiperAbout"
                         slidesPerView={slidesPerView}
                         loop={true}
-                        autoplay={{
-                            delay: 4500,
-                            disableOnInteraction: false,
-                        }}
+                        // autoplay={{
+                        //     delay: 4500,
+                        //     disableOnInteraction: false,
+                        // }}
                         spaceBetween={10}
                         modules={[Autoplay, Pagination]}
                     >
