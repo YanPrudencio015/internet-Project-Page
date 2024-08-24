@@ -1,7 +1,7 @@
 import React from "react";
 import './main.css'
 import Pricing from "./pricing/Pricing";
-import AboutUs from "./AboutUs";
+import AboutUs from "./aboutUs/AboutUs";
 import Viability from '../main/viability/Viability';
 import Doubts from '../main/doubts/Doubts'
 

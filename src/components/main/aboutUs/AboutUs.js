@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './aboutUs.css';
-import image from '../../imgs/viabandTeam.jpg';
-import clientImg from '../../imgs/clientPhoto/client7.jpg';
+import image from '../../../imgs/viabandTeam.jpg';
+import clientImg from '../../../imgs/clientPhoto/client7.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';

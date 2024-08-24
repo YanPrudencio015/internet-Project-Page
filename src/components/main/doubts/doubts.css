@@ -1,0 +1,444 @@
+
+
+.doubtsSection{
+    width: 100%;
+    height: 81em;
+    margin: 0% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.FAQ-Title{
+    font-size: 9vh;
+    width: 80%;
+    color: var(--fontColor);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+.accordion {
+    width: 80%;
+    height: 10%;
+    background-color: var(--MainColor);
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+
+
+}
+.accordion.active{
+    height: 40%;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.iconArrow.active{
+    transform:  rotateZ(180deg);
+}
+
+.accordionBtn {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 1%;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Open Sans", sans-serif;
+    color: var(--fontColor);
+}
+
+.textAnswer {
+    height: 0; /* Não usaremos isso diretamente agora */
+    opacity: 0;
+    padding: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 1.5vw;
+    font-weight: 300;
+    font-family: "Quicksand", sans-serif;
+    color: var(--fontColor);
+}
+
+.textAnswer.active {
+    height: 15%; 
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 1;
+    padding: 0% 1% 100% 2%;
+}
+
+
+.FAQ-Footer{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FAQ-MoreQuestion{
+    font-size: 3vw;
+    width: 50%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.FAQ-Btn{
+    width: 50%;
+    background-color: var(--quarternary);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    border: none;
+    border-radius: 10px;
+    gap: 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.FAQ-Btn::after{
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--MainColor);
+    z-index: -1;
+    transition: .6s ease-in;
+}
+.FAQ-Btn:hover::after{
+    top: 0%;
+    transition: .3s ease-in-out;
+}
+
+.iconMessage, .iconWhatsAppFAQ{
+    font-size: 2vw;
+}
+
+
+.iconMessage{
+    transform: rotateY(180deg);
+}
+
+.FAQ-Span{
+    font-size: 2vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+    
+.doubtsSection{
+    width: 100%;
+    height: 87em;
+    margin: 0% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.FAQ-Title{
+    font-size: 13vh;
+    width: 100%;
+    color: var(--fontColor);
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1vw;
+}
+
+
+.accordion {
+    width: 80%;
+    height: 3%;
+    background-color: var(--MainColor);
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+
+}
+.accordion.active{
+    height: 30%;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.iconArrow.active{
+    transform:  rotateZ(180deg);
+}
+
+.accordionBtn {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 1%;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    font-size: 3vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Open Sans", sans-serif;
+    color: var(--fontColor);
+}
+
+.textAnswer {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    font-size: 2.7vw;
+    font-weight: 300;
+    font-family: "Quicksand", sans-serif;
+    color: var(--fontColor);
+}
+
+.textAnswer.active {
+    height: 15%; 
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 1;
+    padding: 0% 1% 155% 2%;
+}
+
+
+.FAQ-Footer{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FAQ-MoreQuestion{
+    font-size: 6.5vw;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.FAQ-Btn{
+    width: 76%;
+    background-color: var(--quarternary);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 18%;
+    border: none;
+    border-radius: 9px;
+    gap: 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.FAQ-Btn::after{
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--MainColor);
+    z-index: -1;
+    transition: .6s ease-in;
+}
+.FAQ-Btn:hover::after{
+    top: 0%;
+    transition: .3s ease-in-out;
+}
+
+.iconMessage, .iconWhatsAppFAQ{
+    font-size: 3vw;
+}
+
+
+.iconMessage{
+    transform: rotateY(180deg);
+}
+
+.FAQ-Span{
+    font-size: 3vw;
+    font-family: "Montserrat", sans-serif;
+}
+}
+@media (max-width: 600px) and (orientation: portrait){
+    
+
+.doubtsSection{
+    width: 100%;
+    height: 107em;
+    margin: 0% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.FAQ-Title{
+    font-size: 9vh;
+    width: 100%;
+    color: var(--fontColor);
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+.accordion {
+    width: 80%;
+    height: 3%;
+    background-color: var(--MainColor);
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+
+
+}
+.accordion.active{
+    height: 40%;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.iconArrow.active{
+    transform:  rotateZ(180deg);
+}
+
+.accordionBtn {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 1%;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    font-size: 6vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Open Sans", sans-serif;
+    color: var(--fontColor);
+}
+
+.textAnswer {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 300;
+    font-family: "Quicksand", sans-serif;
+    color: var(--fontColor);
+}
+
+.textAnswer.active {
+    height: 15%; 
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 1;
+    padding: 0% 1% 155% 2%;
+}
+
+
+.FAQ-Footer{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FAQ-MoreQuestion{
+    font-size: 10vw;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.FAQ-Btn{
+    width: 100%;
+    background-color: var(--quarternary);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    border: none;
+    border-radius: 16px;
+    gap: 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.FAQ-Btn::after{
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--MainColor);
+    z-index: -1;
+    transition: .6s ease-in;
+}
+.FAQ-Btn:hover::after{
+    top: 0%;
+    transition: .3s ease-in-out;
+}
+
+.iconMessage, .iconWhatsAppFAQ{
+    font-size: 7vw;
+}
+
+
+.iconMessage{
+    transform: rotateY(180deg);
+}
+
+.FAQ-Span{
+    font-size: 7vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+}
+@media (max-width: 600px) and (orientation: landscape){}
