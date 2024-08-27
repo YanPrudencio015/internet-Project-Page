@@ -1,247 +1,298 @@
 
 
-
 .aboutSection{
     width: 100%;
+    height: 140em;
     background-color: var(--background);
-    height: 100vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-.aboutSectionLeft, .aboutSectionRight{
-    width: 100%;
-    height: 90%;
-    background-color: var(--secondary);
-}
-
-
-.aboutSectionLeft{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 2%;
-    position: relative;
-}
-
-
-.sobreNostitulo{
-    position: absolute;
-    top: 1%;
-    left: 2%;
-    font-size: 3vw;
+    gap: 5%;
+    flex-direction: column;
+    margin: 4% 0;
     color: var(--fontColor);
-    background-color: var(--background);
-    border-radius: 8px 32px 8px 32px;
-    padding: 2%;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    /* position: relative; */
-    z-index: 1;
-    transition: .6s ease-in;
-    overflow: hidden;
-    cursor: default;
 }
 
-
-.clientTestimonials{
+.aboutPart1{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
-    background-color: var(--background);
-    border-radius: 0em 0em 0em 20em ;
+    gap: 2%;
+}
+
+.aboutUsTittle{
+    font-size: 5vw;
     font-family: "Bebas Neue", sans-serif;
-    color: var(--secondary);
-    position: relative;
 }
 
+.aboutUsPart1Info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    flex-direction: row;
+    align-items: center;
+    height: 40em;
+    gap: 10%;
 
-.aboutUsImage{
-    width: 21vw;
-    height: 47vh;
 }
 
-.img{
-    object-fit: cover;
-    max-width: 100%;
+.AboutUsLinksSection{
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     height: 100%;
-    border-radius: 6em 1em 5em 1em;
-}
-
-
-.AboutUsTextSection{
-    width: 50%;
-    height: 80%;
-    padding: 2% 0;
-    position: relative;
-}
-.AboutUsTextSection::before,.AboutUsTextSection::after{
-    position: absolute;
-    content: "";
-    width: 50%;
-    height: 1px;
-    background-color: var(--background);
-    left: 25%;
-    transition: .2s ease-in;
-}
-
-.AboutUsTextSection::before{
-    top: 0;
-}
-.AboutUsTextSection:hover::before{
-    left: 15%;
-    width: 70%;
-    transition: .6s ease-in;
-}
-
-.AboutUsTextSection::after{
-    bottom: 0;
-}
-.AboutUsTextSection:hover::after{
-    left: 15%;
-    width: 70%;
-    transition: .6s ease-in;
-}
-
-
-.AboutUsText{
-    width: 100%;
-    height: 100%;
+    flex-direction: column;
     text-align: center;
-    font-size: 1.8vw;
-    font-family: "Quicksand", sans-serif;
-    font-family: "Montserrat", sans-serif;
-    overflow: auto;
-    transition: .8s ease-in-out;
+    padding: 10% 0 0 0;
+    gap: 1%;
+}
+
+.AboutUsLinks{
+    font-size: 2vw;
+
+    padding: 2%;
     cursor: pointer;
-}
-
-.AboutUsText::-webkit-scrollbar{
-    width: 0.6vw;
-    height: 5vh;
-    padding: 0 2%;
-    transition: .6s ease-in;
-}
-
-
-
-.AboutUsText::-webkit-scrollbar-track{
-    background-color: var(--background);
-}
-.AboutUsText::-webkit-scrollbar-thumb{
-    background:var(--secondary);
-}
-
-
-
-.aboutSectionRight{
+    font-family: "Montserrat", sans-serif;
+    color: var(--fontColor);
     position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .6s ease-in-out;
 }
-
-.TestemunialsSection{
-    position: relative;
+.AboutUsLinks:hover{
+    color: var(--fontColor-secondary);
+}
+.AboutUsLinks:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
     width: 100%;
     height: 100%;
+    background-color: var(--quarternary);
+    z-index: -1;
+    transition: .6s ease-in-out;
 }
-
-
-
-
-.mySwiperAbout {
+.AboutUsLinks:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0%;
     width: 100%;
-    height: 95%;
-    padding: 2% 5%;
+    height: 100%;
+    background-color: var(--quarternary);
+    z-index: -1;
+    transition: .6s ease-in-out;
 }
-  
-  .swiperSlideAbout {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    border-radius: 10px 10px 10px 10px;
-    /* Center slide text vertically */
+.AboutUsLinks:nth-child(3)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--quarternary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(1):hover::after{
+    right: 0%;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(2):hover::after{
+    top: 0%;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(3):hover::after{
+    left: 0%;
+    transition: .6s ease-in-out;
+}
+
+.AboutUsText1{
+    color: var(--fontColor);
+    font-size: 2vw;
+    height: 100%;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+.BackgroundAourTeam{
+    width: 100%;
+    height: 35em;
+    position: relative;
+    background-color: var(--quarternary);
+    background-image: url("../../../imgs/nossoServicosImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.imgAourTeam{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.aboutPart2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 0 5%;
+}
+
+.aboutpart2InfoLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+.aboutpart2InfoLeft::after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--secondary);
+    position: absolute;
+    left: 100%;
+}
+
+.aboutUsTittleTwo{
+    font-size: 3vw;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 4px;
+}
+
+.AboutUsText2{
+    font-size: 1.9vw;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.NossoServicosImg{
+    max-width:100%;
+    height: 50%;
+}
+
+
+
+.aboutPart3{
+    width: 100%;
+    height: 22em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5%;
+    gap: 5%;
+    text-align: center;
+}
+
+
+.aboutPart3Left{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--MainColor);
+    gap: 5%;
+}
+
+.titleAbout3{
+    font-size: 3vw;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.AboutUsText3{
+    font-size: 1.9vw;
+    width: 100%;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Finlandica", sans-serif;
+    font-family: "Anta", sans-serif;
+    font-family: "Prompt", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+.aboutPart3Right{
+    width: 83%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.cardAbout{
+    height: 70%;
+    border: solid 1px var(--secondary);
+    border-radius: 2% 2% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 6% 0;
+    overflow: hidden;
+    position: relative;
+}
+.cardAbout::after{
+    content: "";
     width: 100%;
     height: 10%;
-    font-family: "Roboto", sans-serif;
-
-  }
-
-  .clientComment{
-    width: 90%;
-    height: 90%;
-    border-radius: 1em 4em 1em 4em;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* .clienPhoto{
     position: absolute;
-    left: -4vh;
-    bottom: 0;
-    width: 3vw;
-    height: 6vh;
-    border-radius: 0.3em;
-    object-fit: cover;
-} */
-
-.swiper-slide img {
-    display: block;
-    width: 6%;
-    height: 26%;
-    object-fit: cover;
-    position: absolute;
-    top: 17vh;
-    left: -1.1vw;
-    border-radius: 15%
-}
-
-.clientCommentText{
-    width: 100%;
-    height: 80%;
-}
-
-.quoteIcon{
-    font-size: 2vw;
-    color: var(--quarternary);
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-
-
-.clientCommentText{
-    font-size: 1.2vw;
-    overflow: auto;
-    text-align: center;
-    padding: 0 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Ysabeau Infant", sans-serif;
-}
-
-.clientInformation{
-    position: absolute;
-    bottom: 0vh;
-    left: 1.3vw;
+    bottom: 0%;
     background-color: var(--secondary);
-    z-index: -1;
-    border-radius: 0em 1em 1em 0em;
-    padding: 0 2%;
-    color: var(--fontColor-secondary);
-    font-family: "Quicksand", sans-serif;
-    font-size: .9vw;
 }
+
+.titleCardAbout{
+    font-size: 2.2vw;
+    color: var(--fontColor);
+    font-family: "Prompt", sans-serif;
+
+}
+
+.descCardAbout{
+    font-size: 0.9vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.NumberCount{
+    font-size: 3vw;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 
@@ -266,730 +317,873 @@
 
 
 @media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
-    .aboutSection{
-        width: 100%;
-        background-color: var(--background);
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .aboutSectionLeft, .aboutSectionRight{
-        width: 100%;
-        height: 90%;
-        background-color: var(--secondary);
-    }
-    
-    
-    .aboutSectionLeft{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 2%;
-        position: relative;
-    }
+  
 
-
-
-    
-.sobreNostitulo{
-    position: absolute;
-    top: 1%;
-    left: 2%;
-    font-size: 3vw;
-    color: var(--fontColor);
+.aboutSection{
+    width: 100%;
+    height: 140em;
     background-color: var(--background);
-    border-radius: 8px 32px 8px 32px;
-    padding: 2%;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    /* position: relative; */
-    z-index: 1;
-    transition: .6s ease-in;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-direction: column;
+    margin: 4% 0;
+    color: var(--fontColor);
 }
 
-
-
-.clientTestimonials{
+.aboutPart1{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.aboutUsTittle{
+    font-size: 5vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.aboutUsPart1Info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    flex-direction: row;
+    align-items: center;
+    height: 40em;
+    gap: 10%;
+
+}
+
+.AboutUsLinksSection{
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 10% 0 0 0;
+    gap: 1%;
+}
+
+.AboutUsLinks{
+    font-size: 2vw;
+
+    padding: 2%;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    color: var(--fontColor);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:hover{
+    color: var(--fontColor-secondary);
+}
+.AboutUsLinks:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--quarternary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--quarternary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(3)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--quarternary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(1):hover::after{
+    right: 0%;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(2):hover::after{
+    top: 0%;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(3):hover::after{
+    left: 0%;
+    transition: .6s ease-in-out;
+}
+
+.AboutUsText1{
+    color: var(--fontColor);
+    font-size: 2vw;
+    height: 100%;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+.BackgroundAourTeam{
+    width: 100%;
+    height: 35em;
+    position: relative;
+    background-color: var(--quarternary);
+    background-image: url("../../../imgs/nossoServicosImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
-    background-color: var(--background);
-    border-radius: 0em 0em 0em 20em ;
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--secondary);
+    background-attachment: fixed;
+    position: relative;
 }
-    
-    .aboutUsImage{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    
-    .img{
-        object-fit: cover;
-        max-width: 100%;
-        height: 100%;
-        border-radius: 0em 0em 0em 0em;
-        opacity: .4;
-    }
-    
-    
-    .AboutUsTextSection{
-        width: 100%;
-        height: 100%;
-        padding: 2% 0;
-        position: relative;
-        color: #eee;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .AboutUsTextSection::before,.AboutUsTextSection::after{
-        position: absolute;
-        content: "";
-        width: 50%;
-        height: 1px;
-        background-color: var(--background);
-        left: 25%;
-        transition: .2s ease-in;
-        opacity: 0;
-    }
-    
-    .AboutUsTextSection::before{
-        top: 0;
-    }
-    .AboutUsTextSection:hover::before{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    .AboutUsTextSection::after{
-        bottom: 0;
-    }
-    .AboutUsTextSection:hover::after{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    
-    .AboutUsText{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        font-size: 1.8vw;
-        font-family: "Quicksand", sans-serif;
-        font-family: "Montserrat", sans-serif;
-        overflow: auto;
-        transition: .8s ease-in-out;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-    }
-    
-    .AboutUsText::-webkit-scrollbar{
-        width: 0.6vw;
-        height: 5vh;
-        padding: 0 2%;
-        transition: .6s ease-in;
-    }
-    
-    
-    
-    .AboutUsText::-webkit-scrollbar-track{
-        background-color: var(--background);
-    }
-    .AboutUsText::-webkit-scrollbar-thumb{
-        background:var(--MainColor);
-    }
-    
-    
-    
 
-    .aboutSectionRight{
-        position: relative;
-    }
-    
-    .TestemunialsSection{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-    
-    
-    
-    
-    .mySwiperAbout {
-        width: 100%;
-        height: 100%;
-        padding: 2% 5%;
-    }
-      
-      .swiperSlideAbout {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        border-radius: 10px 10px 10px 10px;
-        /* Center slide text vertically */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 10%;
-        font-family: "Roboto", sans-serif;
-    
-      }
-    
-      .clientComment{
-        width: 90%;
-        height: 90%;
-        border-radius: 1em 4em 1em 4em;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .swiper-slide img {
-        display: block;
-        width: 8%;
-        height: 26%;
-        object-fit: cover;
-        position: absolute;
-        top: 16.9vh;
-        left: -1.9vw;
-        border-radius: 15% 15% 0% 15%;
-    }
-    
-    .clientCommentText{
-        width: 100%;
-        height: 80%;
-    }
-    
-    .quoteIcon{
-        font-size: 2vw;
-        color: var(--quarternary);
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    
-    
-    
-    .clientCommentText{
-        font-size:1.3vw;
-        overflow: auto;
-        text-align: center;
-        padding: 0 1%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Ysabeau Infant", sans-serif;
-    }
-    
-    .clientInformation{
-        position: absolute;
-        bottom: 0vh;
-        left: 1.3vw;
-        background-color: var(--secondary);
-        z-index: -1;
-        border-radius: 0em 1em 1em 0em;
-        padding: 0 2%;
-        color: var(--fontColor-secondary);
-        font-family: "Quicksand", sans-serif;
-        font-size: .9vw;
-    }
-    
+.imgAourTeam{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.aboutPart2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 0 5%;
+}
+
+.aboutpart2InfoLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+.aboutpart2InfoLeft::after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--secondary);
+    position: absolute;
+    left: 100%;
+}
+
+.aboutUsTittleTwo{
+    font-size: 3vw;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 4px;
+}
+
+.AboutUsText2{
+    font-size: 1.9vw;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.NossoServicosImg{
+    max-width:100%;
+    height: 50%;
+}
+
+
+
+.aboutPart3{
+    width: 100%;
+    height: 22em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5%;
+    gap: 5%;
+    text-align: center;
+}
+
+
+.aboutPart3Left{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--MainColor);
+    gap: 5%;
+}
+
+.titleAbout3{
+    font-size: 3vw;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.AboutUsText3{
+    font-size: 1.9vw;
+    width: 100%;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Finlandica", sans-serif;
+    font-family: "Anta", sans-serif;
+    font-family: "Prompt", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+.aboutPart3Right{
+    width: 83%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.cardAbout{
+    height: 70%;
+    border: solid 1px var(--secondary);
+    border-radius: 2% 2% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 6% 0;
+    overflow: hidden;
+    position: relative;
+}
+.cardAbout::after{
+    content: "";
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0%;
+    background-color: var(--secondary);
+}
+
+.titleCardAbout{
+    font-size: 2.2vw;
+    color: var(--fontColor);
+    font-family: "Prompt", sans-serif;
+
+}
+
+.descCardAbout{
+    font-size: 0.9vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.NumberCount{
+    font-size: 3vw;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+
     
 }
 
 @media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape ){
-    .aboutSection{
-        width: 100%;
-        background-color: var(--background);
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .aboutSectionLeft, .aboutSectionRight{
-        width: 100%;
-        height: 90%;
-        background-color: var(--secondary);
-    }
-    
-    
-    .aboutSectionLeft{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 2%;
-        position: relative;
-    }
+ 
 
-
-
-    
-.sobreNostitulo{
-
-    position: absolute;
-    top: -14%;
-    left: 25%;
-    font-size: 3vw;
-    color: var(--fontColor);
+.aboutSection{
+    width: 100%;
+    height: 140em;
     background-color: var(--background);
-    border-radius: 0px 0px 0px 0px;
-    padding: 2%;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    /* position: relative; */
-    z-index: 1;
-    transition: .6s ease-in;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-direction: column;
+    margin: 4% 0;
+    color: var(--fontColor);
 }
 
-
-
-
-.clientTestimonials{
+.aboutPart1{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.aboutUsTittle{
+    font-size: 5vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.aboutUsPart1Info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    flex-direction: row;
+    align-items: center;
+    height: 40em;
+    gap: 10%;
+
+}
+
+.AboutUsLinksSection{
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 10% 0 0 0;
+    gap: 1%;
+}
+
+.AboutUsLinks{
+    font-size: 2vw;
+
+    padding: 2%;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    color: var(--fontColor);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:hover{
+    color: var(--fontColor-secondary);
+}
+.AboutUsLinks:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--quarternary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--quarternary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(3)::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--quarternary);
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(1):hover::after{
+    right: 0%;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(2):hover::after{
+    top: 0%;
+    transition: .6s ease-in-out;
+}
+.AboutUsLinks:nth-child(3):hover::after{
+    left: 0%;
+    transition: .6s ease-in-out;
+}
+
+.AboutUsText1{
+    color: var(--fontColor);
+    font-size: 2vw;
+    height: 100%;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+.BackgroundAourTeam{
+    width: 100%;
+    height: 20em;
+    position: relative;
+    background-color: var(--quarternary);
+    background-image: url("../../../imgs/nossoServicosImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
-    background-color: var(--background);
-    border-radius: 0em 0em 15em 15em ;
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--secondary);
+    background-attachment: fixed;
+    position: relative;
 }
-    
-    .aboutUsImage{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    
-    .img{
-        object-fit: cover;
-        max-width: 100%;
-        height: 100%;
-        border-radius: 0em 0em 0em 0em;
-        opacity: .4;
-    }
-    
-    
-    .AboutUsTextSection{
-        width: 100%;
-        height: 100%;
-        padding: 2% 0;
-        position: relative;
-        color: #eee;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .AboutUsTextSection::before,.AboutUsTextSection::after{
-        position: absolute;
-        content: "";
-        width: 50%;
-        height: 1px;
-        background-color: var(--background);
-        left: 25%;
-        transition: .2s ease-in;
-        opacity: 0;
-    }
-    
-    .AboutUsTextSection::before{
-        top: 0;
-    }
-    .AboutUsTextSection:hover::before{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    .AboutUsTextSection::after{
-        bottom: 0;
-    }
-    .AboutUsTextSection:hover::after{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    
-    .AboutUsText{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        font-size: 1.8vw;
-        font-family: "Quicksand", sans-serif;
-        font-family: "Montserrat", sans-serif;
-        overflow: auto;
-        transition: .8s ease-in-out;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-    }
-    
-    .AboutUsText::-webkit-scrollbar{
-        width: 0.6vw;
-        height: 5vh;
-        padding: 0 2%;
-        transition: .6s ease-in;
-    }
-    
-    
-    
-    .AboutUsText::-webkit-scrollbar-track{
-        background-color: var(--background);
-    }
-    .AboutUsText::-webkit-scrollbar-thumb{
-        background:var(--MainColor);
-    }
-    
-    
-    
 
-    .aboutSectionRight{
-        position: relative;
-    }
-    
-    .TestemunialsSection{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-    
-    
-    
-    
-    .mySwiperAbout {
-        width: 100%;
-        height: 95%;
-        padding: 2% 5%;
-    }
-      
-      .swiperSlideAbout {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        border-radius: 10px 10px 10px 10px;
-        /* Center slide text vertically */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 10%;
-        font-family: "Roboto", sans-serif;
-    
-      }
-    
-      .clientComment{
-        width: 90%;
-        height: 90%;
-        border-radius: 1em 4em 1em 4em;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .swiper-slide img {
-        display: block;
-        width: 8%;
-        height: 26%;
-        object-fit: cover;
-        position: absolute;
-        top: 16.9vh;
-        left: -1.9vw;
-        border-radius: 15% 15% 0% 15%;
-    }
-    
-    .clientCommentText{
-        width: 100%;
-        height: 80%;
-    }
-    
-    .quoteIcon{
-        font-size: 2vw;
-        color: var(--quarternary);
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    
-    
-    
-    .clientCommentText{
-        font-size:1.3vw;
-        overflow: auto;
-        text-align: center;
-        padding: 0 1%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Ysabeau Infant", sans-serif;
-    }
-    
-    .clientInformation{
-        position: absolute;
-        bottom: 0vh;
-        left: 1.3vw;
-        background-color: var(--secondary);
-        z-index: -1;
-        border-radius: 0em 1em 1em 0em;
-        padding: 0 2%;
-        color: var(--fontColor-secondary);
-        font-family: "Quicksand", sans-serif;
-        font-size: .9vw;
-    }
-    
-    
+.imgAourTeam{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.aboutPart2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 0 5%;
+}
+
+.aboutpart2InfoLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+.aboutpart2InfoLeft::after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--secondary);
+    position: absolute;
+    left: 100%;
+}
+
+.aboutUsTittleTwo{
+    font-size: 5vw;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 4px;
+}
+
+.AboutUsText2{
+    font-size: 3vw;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.NossoServicosImg{
+    max-width:100%;
+    height: 50%;
+}
+
+
+
+.aboutPart3{
+    width: 100%;
+    height: 22em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5%;
+    gap: 5%;
+    text-align: center;
+}
+
+
+.aboutPart3Left{
+    width: 64%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--MainColor);
+    gap: 5%;
+}
+
+.titleAbout3{
+    font-size: 5vw;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.AboutUsText3{
+    font-size: 2.5vw;
+    width: 100%;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Finlandica", sans-serif;
+    font-family: "Anta", sans-serif;
+    font-family: "Prompt", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+
+.aboutPart3Right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.cardAbout{
+    height: 70%;
+    border: solid 1px var(--secondary);
+    border-radius: 2% 2% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 6% 0;
+    overflow: hidden;
+    position: relative;
+}
+.cardAbout::after{
+    content: "";
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0%;
+    background-color: var(--secondary);
+}
+
+.titleCardAbout{
+    font-size: 2.2vw;
+    color: var(--fontColor);
+    font-family: "Prompt", sans-serif;
+
+}
+
+.descCardAbout{
+    font-size: 1.2vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.NumberCount{
+    font-size: 3vw;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+
 }
 
 
 
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+  
 
     .aboutSection{
         width: 100%;
+        height: 140em;
         background-color: var(--background);
-        height: 85vh;
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
+        gap: 5%;
+        flex-direction: column;
+        margin: 4% 0;
+        color: var(--fontColor);
     }
     
-    .aboutSectionLeft, .aboutSectionRight{
+    .aboutPart1{
         width: 100%;
-        height: 90%;
-        background-color: var(--secondary);
-    }
-    
-    
-    .aboutSectionLeft{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
         gap: 2%;
-        position: relative;
-    }
-
-
-    
-.sobreNostitulo{
-    position: absolute;
-    top: -6%;
-    left: 1%;
-    font-size: 3vw;
-    color: var(--fontColor);
-    background-color: var(--background);
-    border-radius: 8px 32px 8px 32px;
-    padding: 2%;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    z-index: 1;
-    transition: .6s ease-in;
-    overflow: hidden;
-}
-
-
-
-.clientTestimonials{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vh;
-    background-color: var(--background);
-    border-radius: 0em 0em 20em 20em ;
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--secondary);
-}
-    
-    .aboutUsImage{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
     }
     
-    .img{
-        object-fit: cover;
-        max-width: 100%;
-        height: 100%;
-        border-radius: 0em 0em 0em 0em;
-        opacity: .1;
+    .aboutUsTittle{
+        font-size: 5vw;
+        font-family: "Bebas Neue", sans-serif;
     }
     
-    
-    .AboutUsTextSection{
-        width: 100%;
-        height: 100%;
-        padding: 2% 0;
-        position: relative;
-        color: #eee;
+    .aboutUsPart1Info{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 0 5%;
+        flex-direction: row;
         align-items: center;
-    }
-    .AboutUsTextSection::before,.AboutUsTextSection::after{
-        position: absolute;
-        content: "";
-        width: 50%;
-        height: 1px;
-        background-color: var(--background);
-        left: 25%;
-        transition: .2s ease-in;
-        opacity: 0;
+        height: 40em;
+        gap: 10%;
+    
     }
     
-    .AboutUsTextSection::before{
-        top: 0;
-    }
-    .AboutUsTextSection:hover::before{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    .AboutUsTextSection::after{
-        bottom: 0;
-    }
-    .AboutUsTextSection:hover::after{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    
-    .AboutUsText{
-        width: 100%;
+    .AboutUsLinksSection{
+        width: 15%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
         height: 100%;
+        flex-direction: column;
         text-align: center;
-        font-size: 2.9vw;
-        font-family: "Quicksand", sans-serif;
+        padding: 10% 0 0 0;
+        gap: 1%;
+    }
+    
+    .AboutUsLinks{
+        font-size: 2vw;
+    
+        padding: 2%;
+        cursor: pointer;
         font-family: "Montserrat", sans-serif;
-        overflow: auto;
-        transition: .8s ease-in-out;
+        color: var(--fontColor);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: .6s ease-in-out;
     }
-    
-    .AboutUsText::-webkit-scrollbar{
-        width: 0.6vw;
-        height: 5vh;
-        padding: 0 2%;
-        transition: .6s ease-in;
+    .AboutUsLinks:hover{
+        color: var(--fontColor-secondary);
     }
-    
-    
-    
-    .AboutUsText::-webkit-scrollbar-track{
-        background-color: var(--background);
-    }
-    .AboutUsText::-webkit-scrollbar-thumb{
-        background:var(--MainColor);
-    }
-    
-    
-    
-
-    
-    .mySwiperAbout {
+    .AboutUsLinks:nth-child(1)::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
         width: 100%;
-        height: 95%;
-        padding: 2% 5%;
+        height: 100%;
+        background-color: var(--quarternary);
+        z-index: -1;
+        transition: .6s ease-in-out;
     }
-      
-      .swiperSlideAbout {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        border-radius: 10px 10px 10px 10px;
-        /* Center slide text vertically */
+    .AboutUsLinks:nth-child(2)::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--quarternary);
+        z-index: -1;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(3)::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--quarternary);
+        z-index: -1;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(1):hover::after{
+        right: 0%;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(2):hover::after{
+        top: 0%;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(3):hover::after{
+        left: 0%;
+        transition: .6s ease-in-out;
+    }
+    
+    .AboutUsText1{
+        color: var(--fontColor);
+        font-size: 2vw;
+        height: 100%;
+        width: 100%;
+        font-family: "Quicksand", sans-serif;
+        
+    }
+    
+    .BackgroundAourTeam{
+        width: 100%;
+        height: 35em;
+        position: relative;
+        background-color: var(--quarternary);
+        background-image: url("../../../imgs/nossoServicosImg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-attachment: fixed;
+        position: relative;
+    }
+    
+    .imgAourTeam{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    
+    
+    .aboutPart2{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        padding: 0 5%;
+    }
+    
+    .aboutpart2InfoLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 100%;
+        position: relative;
+    }
+    .aboutpart2InfoLeft::after{
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: var(--secondary);
+        position: absolute;
+        left: 100%;
+    }
+    
+    .aboutUsTittleTwo{
+        font-size: 3vw;
+        font-family: "Bebas Neue", sans-serif;
+        letter-spacing: 4px;
+    }
+    
+    .AboutUsText2{
+        font-size: 1.9vw;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    .NossoServicosImg{
+        max-width:100%;
+        height: 50%;
+    }
+    
+    
+    
+    .aboutPart3{
+        width: 100%;
+        height: 22em;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 5%;
+        gap: 5%;
+        text-align: center;
+    }
+    
+    
+    .aboutPart3Left{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--MainColor);
+        gap: 5%;
+    }
+    
+    .titleAbout3{
+        font-size: 3vw;
+        font-family: "Bebas Neue", sans-serif;
+    
+    }
+    
+    .AboutUsText3{
+        font-size: 1.9vw;
+        width: 100%;
+        font-family: "Ysabeau Infant", sans-serif;
+        font-family: "Finlandica", sans-serif;
+        font-family: "Anta", sans-serif;
+        font-family: "Prompt", sans-serif;
+        font-family: "Quicksand", sans-serif;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    
+    .aboutPart3Right{
+        width: 83%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+    }
+    
+    .cardAbout{
+        height: 70%;
+        border: solid 1px var(--secondary);
+        border-radius: 2% 2% 10% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 6% 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .cardAbout::after{
+        content: "";
         width: 100%;
         height: 10%;
-        font-family: "Roboto", sans-serif;
-    
-      }
-    
-      .clientComment{
-        width: 90%;
-        height: 90%;
-        border-radius: 1em 4em 1em 4em;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .swiper-slide img {
-        display: block;
-        width: 8%;
-        height: 26%;
-        object-fit: cover;
         position: absolute;
-        top: 11.9vh;
-        left: -1.7vw;
-        border-radius: 15% 15% 0% 15%;
-    }
-    
-    .clientCommentText{
-        width: 100%;
-        height: 80%;
-    }
-    
-    .quoteIcon{
-        font-size: 2vw;
-        color: var(--quarternary);
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    
-    
-    
-    .clientCommentText{
-        font-size:1.3vw;
-        overflow: auto;
-        text-align: center;
-        padding: 0 1%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Ysabeau Infant", sans-serif;
-    }
-    
-    .clientInformation{
-        position: absolute;
-        bottom: 0vh;
-        left: 1.3vw;
+        bottom: 0%;
         background-color: var(--secondary);
-        z-index: -1;
-        border-radius: 0em 1em 1em 0em;
-        padding: 0 2%;
-        color: var(--fontColor-secondary);
-        font-family: "Quicksand", sans-serif;
-        font-size: .9vw;
     }
+    
+    .titleCardAbout{
+        font-size: 2.2vw;
+        color: var(--fontColor);
+        font-family: "Prompt", sans-serif;
+    
+    }
+    
+    .descCardAbout{
+        font-size: 0.9vw;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .NumberCount{
+        font-size: 3vw;
+        font-family: "Quicksand", sans-serif;
+    
+    }
+    
+    
     
 }
 
@@ -997,229 +1191,287 @@
 
     .aboutSection{
         width: 100%;
+        height: 140em;
         background-color: var(--background);
-        height: 85vh;
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
+        gap: 5%;
+        flex-direction: column;
+        margin: 4% 0;
+        color: var(--fontColor);
     }
     
-    .aboutSectionLeft, .aboutSectionRight{
+    .aboutPart1{
         width: 100%;
-        height: 90%;
-        background-color: var(--secondary);
-    }
-    
-    
-    .aboutSectionLeft{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
         gap: 2%;
-        position: relative;
-    }
-
-
-    
-.sobreNostitulo{
-    position: absolute;
-    top: -6%;
-    left: 1%;
-    font-size: 3vw;
-    color: var(--fontColor);
-    background-color: var(--background);
-    border-radius: 8px 32px 8px 32px;
-    padding: 2%;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    z-index: 1;
-    transition: .6s ease-in;
-    overflow: hidden;
-}
-
-
-
-.clientTestimonials{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vh;
-    background-color: var(--background);
-    border-radius: 0em 0em 20em 20em ;
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--secondary);
-}
-    
-    .aboutUsImage{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
     }
     
-    .img{
-        object-fit: cover;
-        max-width: 100%;
-        height: 100%;
-        border-radius: 0em 0em 0em 0em;
-        opacity: .1;
+    .aboutUsTittle{
+        font-size: 5vw;
+        font-family: "Bebas Neue", sans-serif;
     }
     
-    
-    .AboutUsTextSection{
-        width: 100%;
-        height: 100%;
-        padding: 2% 0;
-        position: relative;
-        color: #eee;
+    .aboutUsPart1Info{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 0 5%;
+        flex-direction: row;
         align-items: center;
-    }
-    .AboutUsTextSection::before,.AboutUsTextSection::after{
-        position: absolute;
-        content: "";
-        width: 50%;
-        height: 1px;
-        background-color: var(--background);
-        left: 25%;
-        transition: .2s ease-in;
-        opacity: 0;
+        height: 25em;
+        gap: 10%;
+    
     }
     
-    .AboutUsTextSection::before{
-        top: 0;
-    }
-    .AboutUsTextSection:hover::before{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    .AboutUsTextSection::after{
-        bottom: 0;
-    }
-    .AboutUsTextSection:hover::after{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    
-    .AboutUsText{
-        width: 100%;
+    .AboutUsLinksSection{
+        width: 15%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
         height: 100%;
+        flex-direction: column;
         text-align: center;
-        font-size: 2.9vw;
-        font-family: "Quicksand", sans-serif;
+        padding: 10% 0 0 0;
+        gap: 1%;
+    }
+    
+    .AboutUsLinks{
+        font-size: 2vw;
+    
+        padding: 2%;
+        cursor: pointer;
         font-family: "Montserrat", sans-serif;
-        overflow: auto;
-        transition: .8s ease-in-out;
+        color: var(--fontColor);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: .6s ease-in-out;
     }
-    
-    .AboutUsText::-webkit-scrollbar{
-        width: 0.6vw;
-        height: 5vh;
-        padding: 0 2%;
-        transition: .6s ease-in;
+    .AboutUsLinks:hover{
+        color: var(--fontColor-secondary);
     }
-    
-    
-    
-    .AboutUsText::-webkit-scrollbar-track{
-        background-color: var(--background);
-    }
-    .AboutUsText::-webkit-scrollbar-thumb{
-        background:var(--MainColor);
-    }
-    
-    
-    
-
-    
-    .mySwiperAbout {
+    .AboutUsLinks:nth-child(1)::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
         width: 100%;
-        height: 95%;
-        padding: 2% 5%;
+        height: 100%;
+        background-color: var(--quarternary);
+        z-index: -1;
+        transition: .6s ease-in-out;
     }
-      
-      .swiperSlideAbout {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        border-radius: 10px 10px 10px 10px;
-        /* Center slide text vertically */
+    .AboutUsLinks:nth-child(2)::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--quarternary);
+        z-index: -1;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(3)::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--quarternary);
+        z-index: -1;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(1):hover::after{
+        right: 0%;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(2):hover::after{
+        top: 0%;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(3):hover::after{
+        left: 0%;
+        transition: .6s ease-in-out;
+    }
+    
+    .AboutUsText1{
+        color: var(--fontColor);
+        font-size: 2vw;
+        height: 100%;
+        width: 100%;
+        font-family: "Quicksand", sans-serif;
+        
+    }
+    
+    .BackgroundAourTeam{
+        width: 100%;
+        height: 15em;
+        position: relative;
+        background-color: var(--quarternary);
+        background-image: url("../../../imgs/nossoServicosImg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-attachment: fixed;
+        position: relative;
+    }
+    
+    .imgAourTeam{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    
+    
+    .aboutPart2{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        padding: 0 5%;
+    }
+    
+    .aboutpart2InfoLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .aboutpart2InfoLeft::after{
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: var(--secondary);
+        position: absolute;
+        left: 100%;
+    }
+    
+    .aboutUsTittleTwo{
+        font-size: 4vw;
+        font-family: "Bebas Neue", sans-serif;
+        letter-spacing: 4px;
+    }
+    
+    .AboutUsText2{
+        font-size: 3vw;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    .NossoServicosImg{
+        max-width:100%;
+        height: 50%;
+    }
+    
+    
+    
+    .aboutPart3{
+        width: 100%;
+        height: 22em;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 5%;
+        gap: 5%;
+        text-align: center;
+    }
+    
+    
+    .aboutPart3Left{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--MainColor);
+        gap: 5%;
+    }
+    
+    .titleAbout3{
+        font-size: 5vw;
+        font-family: "Bebas Neue", sans-serif;
+    
+    }
+    
+    .AboutUsText3{
+        font-size: 2.3vw;
+        width: 100%;
+        font-family: "Ysabeau Infant", sans-serif;
+        font-family: "Finlandica", sans-serif;
+        font-family: "Anta", sans-serif;
+        font-family: "Prompt", sans-serif;
+        font-family: "Quicksand", sans-serif;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    
+    .aboutPart3Right{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 1%;
+    }
+    
+    .cardAbout{
+        height: 52%;
+        border: solid 1px var(--secondary);
+        border-radius: 2% 2% 10% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 6% 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .cardAbout::after{
+        content: "";
         width: 100%;
         height: 10%;
-        font-family: "Roboto", sans-serif;
-    
-      }
-    
-      .clientComment{
-        width: 90%;
-        height: 90%;
-        border-radius: 1em 4em 1em 4em;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .swiper-slide img {
-        display: block;
-        width: 8%;
-        height: 26%;
-        object-fit: cover;
         position: absolute;
-        top: 11.9vh;
-        left: -1.7vw;
-        border-radius: 15% 15% 0% 15%;
-    }
-    
-    .clientCommentText{
-        width: 100%;
-        height: 80%;
-    }
-    
-    .quoteIcon{
-        font-size: 2vw;
-        color: var(--quarternary);
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    
-    
-    
-    .clientCommentText{
-        font-size:1.3vw;
-        overflow: auto;
-        text-align: center;
-        padding: 0 1%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Ysabeau Infant", sans-serif;
-    }
-    
-    .clientInformation{
-        position: absolute;
-        bottom: 0vh;
-        left: 1.3vw;
+        bottom: 0%;
         background-color: var(--secondary);
-        z-index: -1;
-        border-radius: 0em 1em 1em 0em;
-        padding: 0 2%;
-        color: var(--fontColor-secondary);
-        font-family: "Quicksand", sans-serif;
-        font-size: .9vw;
     }
+    
+    .titleCardAbout{
+        font-size: 2.2vw;
+        color: var(--fontColor);
+        font-family: "Prompt", sans-serif;
+    
+    }
+    
+    .descCardAbout{
+        font-size: 1.2vw;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .NumberCount{
+        font-size: 3vw;
+        font-family: "Quicksand", sans-serif;
+    
+    }
+    
     
 }
 
@@ -1227,475 +1479,294 @@
 
 
 @media (max-width: 600px) and (orientation:portrait){
+  
 
     .aboutSection{
-        margin: 12% 0;
         width: 100%;
+        height: 256em;
         background-color: var(--background);
-        height: 65em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        flex-direction: column;
+        margin: 25% 0;
+        color: var(--fontColor);
+    }
+    
+    .aboutPart1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+    
+    .aboutUsTittle{
+        font-size: 15vw;
+        font-family: "Bebas Neue", sans-serif;
+    }
+    
+    .aboutUsPart1Info{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        flex-direction: column;
+        align-items: center;
+        height: 63em;
+        gap: 10%;
+    
+    }
+    
+    .AboutUsLinksSection{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 10% 0 0 0;
+        gap: 1%;
+    }
+    
+    .AboutUsLinks{
+        font-size: 8vw;
+    
+        padding: 2%;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        color: var(--fontColor);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:hover{
+        color: var(--fontColor-secondary);
+    }
+    .AboutUsLinks:nth-child(1)::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--quarternary);
+        z-index: -1;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(2)::after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--quarternary);
+        z-index: -1;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(3)::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--quarternary);
+        z-index: -1;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(1):hover::after{
+        right: 0%;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(2):hover::after{
+        top: 0%;
+        transition: .6s ease-in-out;
+    }
+    .AboutUsLinks:nth-child(3):hover::after{
+        left: 0%;
+        transition: .6s ease-in-out;
+    }
+    
+    .AboutUsText1{
+        color: var(--fontColor);
+        font-size: 5vw;
+        height: 100%;
+        width: 100%;
+        font-family: "Quicksand", sans-serif;
+        
+    }
+    
+    .BackgroundAourTeam{
+        width: 100%;
+        height: 20em;
+        position: relative;
+        background-color: var(--quarternary);
+        background-image: url("../../../imgs/nossoServicosImg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        position: relative;
+    }
+    
+    .imgAourTeam{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    
+    
+    .aboutPart2{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        padding: 0 5%;
+    }
+    
+    .aboutpart2InfoLeft{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-    }
-    
-    .aboutSectionLeft, .aboutSectionRight{
+        justify-content: space-evenly;
         width: 100%;
-        height: 90%;
-        background-color: var(--secondary);
-    }
-    
-    
-    .aboutSectionLeft{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 2%;
+        height: 100%;
         position: relative;
-    }
-
-
-    
-.sobreNostitulo{
-    position: absolute;
-    top: -7%;
-    left: 30%;
-    font-size: 7vw;
-    color: var(--fontColor);
-    background-color: var(--background);
-    border-radius: 0px 0px 0px 0px;
-    padding: 0%;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    /* position: relative; */
-    z-index: 1;
-    transition: .6s ease-in;
-    overflow: hidden;
-}
-
-
-
-.clientTestimonials{
-    width: 100%;
-    height: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vh;
-    background-color: var(--background);
-    border-radius: 0em 0em 0em 0em;
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--secondary);
-}
-
-
-    
-    .aboutUsImage{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    
-    .img{
-        object-fit: cover;
-        max-width: 100%;
-        height: 100%;
-        border-radius: 0em 0em 0em 0em;
-        opacity: .1;
-    }
-    
-    
-    .AboutUsTextSection{
-        width: 100%;
-        height: 100%;
         padding: 2% 0;
-        position: relative;
-        color: #eee;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-    .AboutUsTextSection::before,.AboutUsTextSection::after{
-        position: absolute;
+    .aboutpart2InfoLeft::after{
         content: "";
-        width: 50%;
+        width: 100%;
         height: 1px;
-        background-color: var(--background);
-        left: 25%;
-        transition: .2s ease-in;
-        opacity: 0;
-    }
-    
-    .AboutUsTextSection::before{
-        top: 0;
-    }
-    .AboutUsTextSection:hover::before{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    .AboutUsTextSection::after{
-        bottom: 0;
-    }
-    .AboutUsTextSection:hover::after{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    
-    .AboutUsText{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        font-size: 4.4vw;
-        font-family: "Quicksand", sans-serif;
-        font-family: "Montserrat", sans-serif;
-        overflow: auto;
-        transition: .8s ease-in-out;
-    }
-    
-    .AboutUsText::-webkit-scrollbar{
-        width: 0.6vw;
-        height: 5vh;
-        padding: 0 2%;
-        transition: .6s ease-in;
-    }
-    
-    
-    
-    .AboutUsText::-webkit-scrollbar-track{
-        background-color: var(--background);
-    }
-    .AboutUsText::-webkit-scrollbar-thumb{
-        background:var(--MainColor);
-    }
-
-
-
-
-
-
-     
-    .mySwiperAbout {
-        width: 100%;
-        height: 81%;
-        padding: 2% 5%;
-    }
-      
-      .swiperSlideAbout {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        border-radius: 10px 10px 10px 10px;
-        /* Center slide text vertically */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        font-family: "Roboto", sans-serif;
-    
-      }
-    
-      .clientComment{
-        width: 90%;
-        height: 90%;
-        border-radius: 1em 4em 1em 4em;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .swiper-slide img {
-        display: block;
-        width: 15%;
-        height: 17%;
-        object-fit: cover;
-        position: absolute;
-        top: 48vh;
-        left: 72vw;
-        border-radius: 0% 0% 0% 0%;
-    }
-    
-    .clientCommentText{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .quoteIcon{
-        font-size: 6vw;
-        color: var(--quarternary);
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    
-    
-    
-    .clientCommentText{
-        font-size:5.5vw;
-        overflow: auto;
-        text-align: center;
-        padding: 0 1%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Ysabeau Infant", sans-serif;
-    }
-    
-    .clientInformation{
-        position: absolute;
-        bottom: -1vh;
-        left: 1.3vw;
         background-color: var(--secondary);
-        z-index: -1;
-        border-radius: 1em 1em 1em 1em;
-        padding: 0 2%;
-        color: var(--fontColor-secondary);
-        font-family: "Quicksand", sans-serif;
-        font-size: 4vw
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
-
-
+    
+    .aboutUsTittleTwo{
+        font-size: 7vw;
+        font-family: "Bebas Neue", sans-serif;
+        letter-spacing: 4px;
+    }
+    
+    .AboutUsText2{
+        font-size: 6vw;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    .NossoServicosImg{
+        max-width:100%;
+        height: 100%;
+    }
+    
+    
+    
+    .aboutPart3{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5%;
+        gap: 5%;
+        text-align: center;
+    }
+    
+    
+    .aboutPart3Left{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--MainColor);
+        gap: 5%;
+    }
+    
+    .titleAbout3{
+        font-size: 10vw;
+        font-family: "Bebas Neue", sans-serif;
+    
+    }
+    
+    .AboutUsText3{
+        font-size: 6vw;
+        width: 100%;
+        font-family: "Ysabeau Infant", sans-serif;
+        font-family: "Finlandica", sans-serif;
+        font-family: "Anta", sans-serif;
+        font-family: "Prompt", sans-serif;
+        font-family: "Quicksand", sans-serif;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    
+    .aboutPart3Right{
+        width: 83%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 5%;
+    }
+    
+    .cardAbout{
+        height: 100%;
+        width: 95%;
+        border: solid 1px var(--secondary);
+        border-radius: 2% 2% 10% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 0 6% 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .cardAbout::after{
+        content: "";
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        bottom: 0%;
+        background-color: var(--secondary);
+    }
+    
+    .titleCardAbout{
+        font-size: 10vw;
+        color: var(--fontColor);
+        font-family: "Prompt", sans-serif;
+    }
+    
+    .descCardAbout{
+        font-size: 5.3vw;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .NumberCount{
+        font-size: 15vw;
+        font-family: "Quicksand", sans-serif;
+    }
+    
+    
 }
 @media (max-width: 600px) and (orientation: landscape){
-
-    .aboutSection{
-        width: 100%;
-        background-color: var(--background);
-        height: 81em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 7% 0;
-    }
-    
-    .aboutSectionLeft, .aboutSectionRight{
-        width: 100%;
-        height: 90%;
-        background-color: var(--secondary);
-    }
-    
-    
-    .aboutSectionLeft{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 2%;
-        position: relative;
-    }
-
-
-
-    
-.sobreNostitulo{
-    position: absolute;
-    top: -5%;
-    left: 35%;
-    font-size: 4vw;
-    color: var(--fontColor);
-    background-color: var(--background);
-    border-radius: 0px 0px 0px 0px;
-    padding: 1%;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    /* position: relative; */
-    z-index: 1;
-    transition: .6s ease-in;
-    overflow: hidden;
-}
-
-
-
-
-.clientTestimonials{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vh;
-    background-color: var(--background);
-    border-radius: 0em 0em 0em 0em ;
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--secondary);
-}
-    
-    .aboutUsImage{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    
-    .img{
-        object-fit: cover;
-        max-width: 100%;
-        height: 100%;
-        border-radius: 0em 0em 0em 0em;
-        opacity: .1;
-    }
-    
-    
-    .AboutUsTextSection{
-        width: 100%;
-        height: 100%;
-        padding: 2% 0;
-        position: relative;
-        color: #eee;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .AboutUsTextSection::before,.AboutUsTextSection::after{
-        position: absolute;
-        content: "";
-        width: 50%;
-        height: 1px;
-        background-color: var(--background);
-        left: 25%;
-        transition: .2s ease-in;
-        opacity: 0;
-    }
-    
-    .AboutUsTextSection::before{
-        top: 0;
-    }
-    .AboutUsTextSection:hover::before{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    .AboutUsTextSection::after{
-        bottom: 0;
-    }
-    .AboutUsTextSection:hover::after{
-        left: 15%;
-        width: 70%;
-        transition: .6s ease-in;
-    }
-    
-    
-    .AboutUsText{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        font-size: 4.4vw;
-        font-family: "Quicksand", sans-serif;
-        font-family: "Montserrat", sans-serif;
-        overflow: auto;
-        transition: .8s ease-in-out;
-    }
-    
-    .AboutUsText::-webkit-scrollbar{
-        width: 0.6vw;
-        height: 5vh;
-        padding: 0 2%;
-        transition: .6s ease-in;
-    }
-    
-    
-    
-    .AboutUsText::-webkit-scrollbar-track{
-        background-color: var(--background);
-    }
-    .AboutUsText::-webkit-scrollbar-thumb{
-        background:var(--MainColor);
-    }
-
-
-
-
-
-
-     
-    .mySwiperAbout {
-        width: 100%;
-        height: 90%;
-        padding: 2% 5%;
-    }
-      
-      .swiperSlideAbout {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        border-radius: 10px 10px 10px 10px;
-        /* Center slide text vertically */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        font-family: "Roboto", sans-serif;
-    
-      }
-    
-      .clientComment{
-        width: 90%;
-        height: 90%;
-        border-radius: 1em 4em 1em 4em;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .swiper-slide img {
-        display: block;
-        width: 12%;
-        height: 18%;
-        object-fit: cover;
-        position: absolute;
-        top: 59vh;
-        left: 69vw;
-        border-radius: 6% 6% 6% 6%;
-    }
-    
-    .clientCommentText{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .quoteIcon{
-        font-size: 6vw;
-        color: var(--quarternary);
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    
-    
-    
-    .clientCommentText{
-        font-size:4.8vw;
-        overflow: auto;
-        text-align: center;
-        padding: 0 1%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Ysabeau Infant", sans-serif;
-    }
-    
-    .clientInformation{
-        position: absolute;
-        bottom: -1vh;
-        left: 1.3vw;
-        background-color: var(--secondary);
-        z-index: -1;
-        border-radius: 1em 1em 1em 1em;
-        padding: 0 2%;
-        color: var(--fontColor-secondary);
-        font-family: "Quicksand", sans-serif;
-        font-size: 4vw
-    }
-
 
 }
