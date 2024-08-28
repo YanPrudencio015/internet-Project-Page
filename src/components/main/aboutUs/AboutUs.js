@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './aboutUs.css';
+import ScrollReveal from 'scrollreveal';
 
 import image1 from '../../../imgs/aboutUs.jpg';
 import image2 from '../../../imgs/nossoServicosImg.jpg';
@@ -13,9 +14,7 @@ function AboutUs() {
     const [numberOne, setNumberOne] = useState(0);
     const [numberTwo, setNumberTwo] = useState(0);
     const [numberThree, setNumberThree] = useState(0);
-    const [isVisibleOne, setVisibleOne] = useState(false);
-    const [isVisibleTwo, setVisibleTwo] = useState(false);
-    const [isVisibleThree, setVisibleThree] = useState(false);
+    const [activeCounter, setActiveCounter] = useState(null);
 
     const refOne = useRef(null);
     const refTwo = useRef(null);
@@ -23,114 +22,144 @@ function AboutUs() {
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-            if (entry.target === refOne.current) {
-                setVisibleOne(entry.isIntersecting);
-            }
-            if (entry.target === refTwo.current) {
-                setVisibleTwo(entry.isIntersecting);
-            }
-            if (entry.target === refThree.current) {
-                setVisibleThree(entry.isIntersecting);
+            if (entry.isIntersecting) {
+                const targetRef = entry.target;
+                if (targetRef === refOne.current && activeCounter === null) {
+                    setActiveCounter('one');
+                } else if (targetRef === refTwo.current && activeCounter === null) {
+                    setActiveCounter('two');
+                } else if (targetRef === refThree.current && activeCounter === null) {
+                    setActiveCounter('three');
+                }
             }
         }, { threshold: 0.1 });
 
-        if (refOne.current) {
-            observer.observe(refOne.current);
-        }
-        if (refTwo.current) {
-            observer.observe(refTwo.current);
-        }
-        if (refThree.current) {
-            observer.observe(refThree.current);
-        }
+        if (refOne.current) observer.observe(refOne.current);
+        if (refTwo.current) observer.observe(refTwo.current);
+        if (refThree.current) observer.observe(refThree.current);
 
         return () => {
-            if (refOne.current) {
-                observer.unobserve(refOne.current);
-            }
-            if (refTwo.current) {
-                observer.unobserve(refTwo.current);
-            }
-            if (refThree.current) {
-                observer.unobserve(refThree.current);
-            }
+            if (refOne.current) observer.unobserve(refOne.current);
+            if (refTwo.current) observer.unobserve(refTwo.current);
+            if (refThree.current) observer.unobserve(refThree.current);
         };
-    }, []);
+    }, [activeCounter]);
 
     useEffect(() => {
         let intervalId;
 
-        if (isVisibleOne) {
+        if (activeCounter === 'one') {
             intervalId = setInterval(() => {
                 setNumberOne(prevNumber => {
                     const newNumber = prevNumber + 1;
-
                     if (newNumber >= 20) {
                         clearInterval(intervalId);
+                        setActiveCounter('two'); // Move para o próximo contador
                         return newNumber;
                     }
-
                     return newNumber;
                 });
             }, 30);
         }
 
         return () => {
-            if (intervalId) {
-                clearInterval(intervalId);
-            }
+            if (intervalId) clearInterval(intervalId);
         };
-    }, [isVisibleOne]);
+    }, [activeCounter]);
 
     useEffect(() => {
         let intervalId;
 
-        if (isVisibleTwo) {
+        if (activeCounter === 'two') {
             intervalId = setInterval(() => {
                 setNumberTwo(prevNumber => {
                     const newNumber = prevNumber + 1;
-
                     if (newNumber >= 17) {
                         clearInterval(intervalId);
+                        setActiveCounter('three'); // Move para o próximo contador
                         return newNumber;
                     }
-
                     return newNumber;
                 });
             }, 30);
         }
 
         return () => {
-            if (intervalId) {
-                clearInterval(intervalId);
-            }
+            if (intervalId) clearInterval(intervalId);
         };
-    }, [isVisibleTwo]);
+    }, [activeCounter]);
 
     useEffect(() => {
         let intervalId;
 
-        if (isVisibleThree) {
+        if (activeCounter === 'three') {
             intervalId = setInterval(() => {
                 setNumberThree(prevNumber => {
                     const newNumber = prevNumber + 1;
-
                     if (newNumber >= 83) {
                         clearInterval(intervalId);
                         return newNumber;
                     }
-
                     return newNumber;
                 });
             }, 30);
         }
 
         return () => {
-            if (intervalId) {
-                clearInterval(intervalId);
-            }
+            if (intervalId) clearInterval(intervalId);
         };
-    }, [isVisibleThree]);
+    }, [activeCounter]);
+
+
+    // scroll animation
+
+    useEffect(()=>{
+        ScrollReveal().reveal(".aboutUsTittle",{
+            duration: 400,
+            opacity: 1,
+            distance: '70px',
+            origin: 'bottom',
+            easing: 'ease', 
+            // easing: 'ease-in-out', 
+        })
+        ScrollReveal().reveal(".AboutUsText1",{
+            duration: 300,
+            opacity: 1,
+            distance: '30px',
+            origin: 'left',
+            easing: 'ease-in-out', 
+        })
+        ScrollReveal().reveal(".AboutUsLinks",{
+            duration: 900,
+            opacity: 1,
+            distance: '30px',
+            origin: 'righ',
+            easing: 'ease-in-out', 
+        })
+        ScrollReveal().reveal(".aboutUsTittleTwo",{
+            duration: 300,
+            opacity: 1,
+            distance: '70px',
+            origin: 'righ',
+            easing: 'ease-in', 
+        })
+        ScrollReveal().reveal(".AboutUsText2",{
+            duration: 300,
+            opacity: 1,
+            distance: '30px',
+            origin: 'bottom',
+            easing: 'ease-in', 
+        })
+        ScrollReveal().reveal(".aboutPart3",{
+            duration: 700,
+            opacity: 1,
+            distance: '30px',
+            origin: 'bottom',
+            easing: 'ease', 
+        })
+
+    })
+
 
     return (
         <section className="aboutSection">

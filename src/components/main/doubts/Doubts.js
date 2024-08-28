@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 import "./doubts.css"
+import ScrollReveal from 'scrollreveal';
 
 const anwser = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -43,6 +44,44 @@ export default function Doubts(props){
         function handleAccordionActive(index){
             setToggleAccordion(prevIndex => prevIndex ===index ? null: index)
         }
+
+
+
+
+        useEffect(()=>{
+            ScrollReveal().reveal(".FAQ-Title",{
+                duration: 400,
+                opacity: 1,
+                distance: '70px',
+                origin: 'left',
+                easing: 'ease', 
+                // easing: 'ease-in-out', 
+            })
+            ScrollReveal().reveal(".accordion",{
+                duration: 400,
+                opacity: 1,
+                distance: '70px',
+                origin: 'right',
+                easing: 'ease', 
+                // easing: 'ease-in-out', 
+            })
+            ScrollReveal().reveal(".FAQ-MoreQuestion",{
+                duration: 400,
+                opacity: 1,
+                distance: '70px',
+                origin: 'left',
+                easing: 'ease', 
+                // easing: 'ease-in-out', 
+            })
+            ScrollReveal().reveal(".FAQ-Span",{
+                duration: 400,
+                opacity: 1,
+                distance: '70px',
+                origin: 'bottom',
+                easing: 'ease', 
+                // easing: 'ease-in-out', 
+            })
+        })
 
     return(
         <section className="doubtsSection">
