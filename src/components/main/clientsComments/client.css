@@ -609,7 +609,7 @@ transition: .2s ease-in-out;
     
     }
 }
-@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
     .clientSection{
         width: 100%;
         display: flex;
@@ -663,7 +663,7 @@ transition: .2s ease-in-out;
     
     .mySwiperAbout{
         width: 50%;
-        height: 25em;
+        height: 20em;
     }
     
     .swiperSlideAbout{
@@ -754,9 +754,9 @@ transition: .2s ease-in-out;
     
     .clientCommentText{
         width: 80%;
-        height: 80%;
+        height: 75%;
         display: flex;
-        font-size: 1.6vw;
+        font-size:1.5vw;
         font-family: "Montserrat", sans-serif;
         align-self: flex-start;
     
@@ -766,7 +766,7 @@ transition: .2s ease-in-out;
     .clientSection{
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding: 0 5%;
@@ -790,33 +790,39 @@ transition: .2s ease-in-out;
         background-color: var(--MainColor);
         transition: .3s ease-in;
         opacity: 0.6;
+        display: none;
     }
     
     
     
     .ClientCommentsTexts{
-        width: 50%;
+        width: 100%;
         height: 100%;
         position: relative;
         z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     
     .tittleClientSection{
-        font-size: 2.7vw;
+        font-size:9vw;
         font-family: "Bebas Neue", sans-serif;
     }
     
     .textClientSection{
-        width: 70%;
-        font-size: 1.3vw;
+        width: 100%;
+        font-size: 4.3vw;
         font-family: "Poppins", sans-serif;
     
     }
     
     
     .mySwiperAbout{
-        width: 50%;
-        height: 25em;
+        margin: 10% 0;
+        width: 100%;
+        height: 10em;
     }
     
     .swiperSlideAbout{
@@ -825,7 +831,7 @@ transition: .2s ease-in-out;
         align-items: center;
         flex-direction: row;
         position: relative;
-        border-radius: 0  20px 20px 0;
+        border-radius:20px;
         background-color: var(--background);
         cursor: pointer;
     }
@@ -842,6 +848,7 @@ transition: .2s ease-in-out;
         border-radius: 0px;
         transition: .3s ease;
         z-index: -1;
+        display: none;
     }
     .swiperSlideAbout:hover::before{
         width: 2%;
@@ -849,8 +856,8 @@ transition: .2s ease-in-out;
     }
     
     .clienPhoto{
-        width: 5%;
-        height: 2em;
+        width: 15%;
+        height: 3em;
         border-radius: 20em;
         object-fit: cover;
     }
@@ -868,7 +875,7 @@ transition: .2s ease-in-out;
     
     .commentsHeader{
         width: 100%;
-        height: 1.2em;
+        height:4em;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -878,6 +885,7 @@ transition: .2s ease-in-out;
         font-family: "Poppins", sans-serif;
         position: relative;
         overflow: hidden;
+        font-size: 6.5vw;
     }
     .clientName::after{
     content: "";
@@ -894,26 +902,25 @@ transition: .2s ease-in-out;
         transition: .2s ease-in-out;
     }
     .quoteIcon{
-        font-size: 1vw;
+        font-size: 5vw;
         color: var(--fontColor);
         transition: .1s ease-in-out;
     }
     
     .swiperSlideAbout:hover .quoteIcon{
         transition: .1s ease-in-out;
-        font-size: 2.5vw;
+        font-size: 7.5vw;
         color: var(--MainColor);
     
     }
     
     .clientCommentText{
-        width: 80%;
+        width: 100%;
         height: 80%;
         display: flex;
-        font-size: 1.3vw;
+        font-size: 4.1vw;
         font-family: "Montserrat", sans-serif;
         align-self: flex-start;
-    
     }
     
     
