@@ -61,7 +61,7 @@ export default function Doubts(props){
                 duration: 400,
                 opacity: 1,
                 distance: '70px',
-                origin: 'right',
+                origin: 'bottom',
                 easing: 'ease', 
                 // easing: 'ease-in-out', 
             })
