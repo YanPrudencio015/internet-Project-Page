@@ -56,37 +56,6 @@ function useSlidesPerView() {
 export default function Pricing() {
     const slidesPerView = useSlidesPerView();
 
-    useEffect(() => {
-        ScrollReveal().reveal('.pricingTitle', {
-            duration: 300,
-            // scale: 0.9, // Começa menor e aumenta
-            opacity: 0,
-            distance: '30px',
-            origin: 'bottom',
-            easing: 'ease-in-out', // Efeito de suavização,
-         
-
-        });
-        ScrollReveal().reveal('.pricingDescription', {
-            duration: 300,
-            // scale: 0.9, // Começa menor e aumenta
-            opacity: 1,
-            distance: '30px',
-            origin: 'left',
-            easing: 'ease-in-out', // Efeito de suavização,
-        });
-        
-        ScrollReveal().reveal('.mySwiper',{
-            duration:900,
-            opacity:1,
-            distance: '70px',
-            origin: 'bottom',
-            easing: 'ease', // Efeito de suavização,
-
-        })
-
-    }, []);
-
     return (
         <div className='pricing'>
             <div className='pricingApresentation'>

@@ -6,17 +6,6 @@ export default function Viability(props){
 
 
 
-
-    useEffect(()=>{
-        ScrollReveal().reveal(".viabilitySection",{
-            duration: 400,
-            opacity: 1,
-            distance: '70px',
-            origin: 'bottom',
-            easing: 'ease', 
-            // easing: 'ease-in-out', 
-        })
-    })
     return(
         <section className="viabilitySection">
             <div className="viabilityCard">

@@ -113,52 +113,6 @@ function AboutUs() {
 
     // scroll animation
 
-    useEffect(()=>{
-        ScrollReveal().reveal(".aboutUsTittle",{
-            duration: 400,
-            opacity: 1,
-            distance: '70px',
-            origin: 'bottom',
-            easing: 'ease', 
-            // easing: 'ease-in-out', 
-        })
-        ScrollReveal().reveal(".AboutUsText1",{
-            duration: 300,
-            opacity: 1,
-            distance: '30px',
-            origin: 'left',
-            easing: 'ease-in-out', 
-        })
-        ScrollReveal().reveal(".AboutUsLinks",{
-            duration: 900,
-            opacity: 1,
-            distance: '30px',
-            origin: 'righ',
-            easing: 'ease-in-out', 
-        })
-        ScrollReveal().reveal(".aboutUsTittleTwo",{
-            duration: 300,
-            opacity: 1,
-            distance: '70px',
-            origin: 'righ',
-            easing: 'ease-in', 
-        })
-        ScrollReveal().reveal(".AboutUsText2",{
-            duration: 300,
-            opacity: 1,
-            distance: '30px',
-            origin: 'bottom',
-            easing: 'ease-in', 
-        })
-        ScrollReveal().reveal(".aboutPart3",{
-            duration: 700,
-            opacity: 1,
-            distance: '30px',
-            origin: 'bottom',
-            easing: 'ease', 
-        })
-
-    })
 
 
     return (

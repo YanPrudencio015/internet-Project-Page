@@ -32,8 +32,8 @@ function NavbarTop(props) {
                 <li tabIndex={0} className="menuItem">Menu</li>
                 <li tabIndex={0} className="menuItem">Planos</li>
                 <li tabIndex={0} className="menuItem">Sobre</li>
-                <li tabIndex={0} className="menuItem">Contato</li>
                 <li tabIndex={0} className="menuItem">Localização</li>
+                {/* <li tabIndex={0} className="menuItem">Contato</li> */}
             </ul>
             <i tabIndex={0} className="socialIcon fa-brands fa-whatsapp"></i>
             {/* <i className="socialIcon fa-brands fa-instagram"></i>

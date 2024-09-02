@@ -47,42 +47,6 @@ export default function Doubts(props){
 
 
 
-
-        useEffect(()=>{
-            ScrollReveal().reveal(".FAQ-Title",{
-                duration: 400,
-                opacity: 1,
-                distance: '70px',
-                origin: 'left',
-                easing: 'ease', 
-                // easing: 'ease-in-out', 
-            })
-            ScrollReveal().reveal(".accordion",{
-                duration: 400,
-                opacity: 1,
-                distance: '70px',
-                origin: 'bottom',
-                easing: 'ease', 
-                // easing: 'ease-in-out', 
-            })
-            ScrollReveal().reveal(".FAQ-MoreQuestion",{
-                duration: 400,
-                opacity: 1,
-                distance: '70px',
-                origin: 'left',
-                easing: 'ease', 
-                // easing: 'ease-in-out', 
-            })
-            ScrollReveal().reveal(".FAQ-Span",{
-                duration: 400,
-                opacity: 1,
-                distance: '70px',
-                origin: 'bottom',
-                easing: 'ease', 
-                // easing: 'ease-in-out', 
-            })
-        })
-
     return(
         <section className="doubtsSection">
 

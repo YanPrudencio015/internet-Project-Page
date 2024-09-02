@@ -5,6 +5,7 @@ import AboutUs from "./aboutUs/AboutUs";
 import Viability from '../main/viability/Viability';
 import Doubts from '../main/doubts/Doubts';
 import ClientComment from './clientsComments/ClientsComments'
+import OfficeLocation from "./officeLocation/OfficeLocation";
 
 function Main(props){
     return(
@@ -14,6 +15,7 @@ function Main(props){
             <ClientComment/>
             <Viability/>
             <Doubts/>
+            <OfficeLocation/>
         </section>
     )
 }
