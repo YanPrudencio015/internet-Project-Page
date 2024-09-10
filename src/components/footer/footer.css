@@ -1,0 +1,1197 @@
+
+
+.footer{
+    width: 100%;
+    background-color: var(--MainColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    padding: 2% 0;
+    color: var(--fontColor);
+}
+
+.footerSection{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.title{
+    font-size: 1.6vw;
+    font-family: "Anta", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin: 5% 0;
+    color: var(--fontColor);
+}
+
+.socialIconFooterSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerSocialIcon{
+    font-size: 1.6vw;
+    margin: 0 5%;
+    padding: 4% 5%;
+    border: solid 1px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: var(--MainColor);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialIcon::after{
+    content: "";
+    position: absolute;
+    left: 23%;
+    top: 19%;
+    width: 55%;
+    height: 1em;
+    background-color: #fff;
+    border-radius: 20em;
+    z-index: -1;
+    opacity: 0;
+    transition: ease-in transform .6s;
+    transform: scale(1);
+}
+
+.footerSocialIcon:hover::after{
+    opacity: 1;
+    transition: ease-in transform .6s ;
+    transform: scale(6);
+}
+
+
+
+
+
+
+.footerSection:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linksFooterTitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    position: relative;
+}
+.linksFooterTitle::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary);
+}
+
+.LinkListFooter{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ListItemFooter{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.4vw;
+}
+.ListItemFooter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.footerSection:nth-child(3){
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+}
+
+.FooterContactTitle{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.3vw;
+}
+
+.footerContactList{
+    list-style: none;
+    align-items: center;
+}
+
+.footerContactListItem{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4vw;
+}
+
+.footerClientBtn{
+    margin: 5% 0;
+    font-size: 2vw;
+    font-family: "Quicksand", sans-serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: var(--secondary);
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    transition: .6s ease-out;
+    width: 100%;
+}
+.footerClientBtn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    transition: .6s ease-out;
+}
+
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+
+    
+    .footer{
+        width: 100%;
+        background-color: var(--MainColor);
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        flex-direction: row;
+        padding: 2% 0;
+        color: var(--fontColor);
+    }
+    
+    .footerSection{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    
+    }
+    
+    .title{
+        font-size: 2.5vw;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        display: block;
+        margin: 5% 0;
+        color: var(--fontColor);
+    }
+    
+    .socialIconFooterSection{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .footerSocialIcon{
+        width: 100%;
+        font-size: 2.8vw;
+        margin: 0 5%;
+        padding: 4% 4%;
+        border: solid 1px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: var(--MainColor);
+        position: relative;
+        
+    }
+    
+    .footerSocialIcon::after{
+        content: "";
+        position: absolute;
+        left: 23%;
+        top: 19%;
+        width: 55%;
+        height: 1em;
+        background-color: #fff;
+        border-radius: 20em;
+        z-index: -1;
+        opacity: 0;
+        transition: ease-in transform .6s;
+        transform: scale(1);
+    }
+    
+    .footerSocialIcon:hover::after{
+        opacity: 1;
+        transition: ease-in transform .6s ;
+        transform: scale(6);
+    }
+    
+    
+    
+    
+    
+    
+    .footerSection:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .linksFooterTitle{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.7vw;
+        position: relative;
+    }
+    .linksFooterTitle::after{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: var(--secondary);
+    }
+    
+    .LinkListFooter{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .ListItemFooter{
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.7vw;
+    }
+    .ListItemFooter:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    
+    .footerSection:nth-child(3){
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2%;
+    }
+    
+    .FooterContactTitle{
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 3vw;
+    }
+    
+    .footerContactList{
+        list-style: none;
+        align-items: center;
+    }
+    
+    .footerContactListItem{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.2vw;
+    }
+    
+    .footerClientBtn{
+        margin: 5% 0;
+        font-size: 2vw;
+        font-family: "Quicksand", sans-serif;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        background-color: var(--secondary);
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2%;
+        transition: .6s ease-out;
+        width: 100%;
+    }
+    .footerClientBtn:hover{
+        background-color: rgba(255, 255, 255, 1);
+        transition: .6s ease-out;
+    }
+    
+
+}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+
+    
+.footer{
+    width: 100%;
+    background-color: var(--MainColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    padding: 2% 0;
+    color: var(--fontColor);
+}
+
+.footerSection{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.title{
+    font-size: 2.5vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin: 5% 0;
+    color: var(--fontColor);
+}
+
+.socialIconFooterSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerSocialIcon{
+    width: 100%;
+    font-size: 2.8vw;
+    margin: 0 5%;
+    padding: 4% 4%;
+    border: solid 1px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: var(--MainColor);
+    position: relative;
+    
+}
+
+.footerSocialIcon::after{
+    content: "";
+    position: absolute;
+    left: 23%;
+    top: 19%;
+    width: 55%;
+    height: 1em;
+    background-color: #fff;
+    border-radius: 20em;
+    z-index: -1;
+    opacity: 0;
+    transition: ease-in transform .6s;
+    transform: scale(1);
+}
+
+.footerSocialIcon:hover::after{
+    opacity: 1;
+    transition: ease-in transform .6s ;
+    transform: scale(6);
+}
+
+
+
+
+
+
+.footerSection:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linksFooterTitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.7vw;
+    position: relative;
+}
+.linksFooterTitle::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary);
+}
+
+.LinkListFooter{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ListItemFooter{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.7vw;
+}
+.ListItemFooter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.footerSection:nth-child(3){
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+}
+
+.FooterContactTitle{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 3vw;
+}
+
+.footerContactList{
+    list-style: none;
+    align-items: center;
+}
+
+.footerContactListItem{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2vw;
+}
+
+.footerClientBtn{
+    margin: 5% 0;
+    font-size: 2vw;
+    font-family: "Quicksand", sans-serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: var(--secondary);
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    transition: .6s ease-out;
+    width: 100%;
+}
+.footerClientBtn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    transition: .6s ease-out;
+}
+
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+
+    
+    .footer{
+        width: 100%;
+        background-color: var(--MainColor);
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        flex-direction: row;
+        padding: 2% 0;
+        color: var(--fontColor);
+    }
+    
+    .footerSection{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    
+    }
+    
+    .title{
+        font-size: 2.5vw;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        display: block;
+        margin: 5% 0;
+        color: var(--fontColor);
+    }
+    
+    .socialIconFooterSection{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .footerSocialIcon{
+        width: 100%;
+        font-size: 2.8vw;
+        margin: 0 5%;
+        padding: 4% 4%;
+        border: solid 1px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: var(--MainColor);
+        position: relative;
+        
+    }
+    
+    .footerSocialIcon::after{
+        content: "";
+        position: absolute;
+        left: 23%;
+        top: 19%;
+        width: 55%;
+        height: 1em;
+        background-color: #fff;
+        border-radius: 20em;
+        z-index: -1;
+        opacity: 0;
+        transition: ease-in transform .6s;
+        transform: scale(1);
+    }
+    
+    .footerSocialIcon:hover::after{
+        opacity: 1;
+        transition: ease-in transform .6s ;
+        transform: scale(6);
+    }
+    
+    
+    
+    
+    
+    
+    .footerSection:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .linksFooterTitle{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.7vw;
+        position: relative;
+    }
+    .linksFooterTitle::after{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: var(--secondary);
+    }
+    
+    .LinkListFooter{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .ListItemFooter{
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.7vw;
+    }
+    .ListItemFooter:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    
+    .footerSection:nth-child(3){
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2%;
+    }
+    
+    .FooterContactTitle{
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 3vw;
+    }
+    
+    .footerContactList{
+        list-style: none;
+        align-items: center;
+    }
+    
+    .footerContactListItem{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.2vw;
+    }
+    
+    .footerClientBtn{
+        margin: 5% 0;
+        font-size: 2vw;
+        font-family: "Quicksand", sans-serif;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        background-color: var(--secondary);
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2%;
+        transition: .6s ease-out;
+        width: 100%;
+    }
+    .footerClientBtn:hover{
+        background-color: rgba(255, 255, 255, 1);
+        transition: .6s ease-out;
+    }
+    
+
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+
+    
+.footer{
+    width: 100%;
+    background-color: var(--MainColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    padding: 2% 0;
+    color: var(--fontColor);
+}
+
+.footerSection{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.title{
+    font-size: 2.3vw;
+    font-family: "Anta", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin: 5% 0;
+    color: var(--fontColor);
+}
+
+.socialIconFooterSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerSocialIcon{
+    font-size: 1.6vw;
+    margin: 0 5%;
+    padding: 4% 5%;
+    border: solid 1px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: var(--MainColor);
+    position: relative;
+}
+.footerSocialIcon::after{
+    content: "";
+    position: absolute;
+    left: 23%;
+    top: 19%;
+    width: 55%;
+    height: 1em;
+    background-color: #fff;
+    border-radius: 20em;
+    z-index: -1;
+    opacity: 0;
+    transition: ease-in transform .6s;
+    transform: scale(1);
+}
+
+.footerSocialIcon:hover::after{
+    opacity: 1;
+    transition: ease-in transform .6s ;
+    transform: scale(6);
+}
+
+
+
+
+
+
+.footerSection:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linksFooterTitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.6vw;
+    position: relative;
+}
+.linksFooterTitle::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary);
+}
+
+.LinkListFooter{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ListItemFooter{
+    font-family: "Quicksand", sans-serif;
+    font-size: 2vw;
+}
+.ListItemFooter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.footerSection:nth-child(3){
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+}
+
+.FooterContactTitle{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2vw;
+}
+
+.footerContactList{
+    list-style: none;
+    align-items: center;
+}
+
+.footerContactListItem{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+}
+
+.footerClientBtn{
+    margin: 5% 0;
+    font-size: 2.8vw;
+    font-family: "Quicksand", sans-serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: var(--secondary);
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    transition: .6s ease-out;
+    width: 100%;
+}
+.footerClientBtn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    transition: .6s ease-out;
+}
+
+}
+@media (max-width: 600px) and (orientation: portrait){
+
+    
+.footer{
+    width: 100%;
+    height: 40em;
+    background-color: var(--MainColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 0;
+    color: var(--fontColor);
+}
+
+.footerSection{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.title{
+    font-size: 7vw;
+    font-family: "Anta", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin: 5% 0;
+    color: var(--fontColor);
+}
+
+.socialIconFooterSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerSocialIcon{
+    font-size: 10vw;
+    margin: 0 5%;
+    padding: 14% 50%;
+    border: solid 1px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: var(--MainColor);
+    position: relative;
+}
+.footerSocialIcon::after{
+    content: "";
+    position: absolute;
+    left: 23%;
+    top: 19%;
+    width: 55%;
+    height: 1em;
+    background-color: #fff;
+    border-radius: 20em;
+    z-index: -1;
+    opacity: 0;
+    transition: ease-in transform .6s;
+    transform: scale(1);
+}
+
+.footerSocialIcon:hover::after{
+    opacity: 1;
+    transition: ease-in transform .6s ;
+    transform: scale(6);
+}
+
+
+
+
+
+
+.footerSection:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.linksFooterTitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 10vw;
+    position: relative;
+}
+.linksFooterTitle::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary);
+}
+
+.LinkListFooter{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ListItemFooter{
+    font-family: "Quicksand", sans-serif;
+    font-size: 7vw;
+}
+.ListItemFooter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.footerSection:nth-child(3){
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+}
+
+.FooterContactTitle{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 8vw;
+}
+
+.footerContactList{
+    list-style: none;
+    align-items: center;
+}
+
+.footerContactListItem{
+    font-family: "Montserrat", sans-serif;
+    font-size: 7vw;
+}
+
+.footerClientBtn{
+    margin: 5% 0;
+    font-size: 8vw;
+    font-family: "Quicksand", sans-serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: var(--secondary);
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    transition: .6s ease-out;
+    width: 100%;
+}
+.footerClientBtn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    transition: .6s ease-out;
+}
+
+}
+@media (max-width: 600px) and (orientation: landscape){
+
+    
+.footer{
+    width: 100%;
+    background-color: var(--MainColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    padding: 2% 0;
+    color: var(--fontColor);
+}
+
+.footerSection{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.title{
+    font-size: 1.6vw;
+    font-family: "Anta", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin: 5% 0;
+    color: var(--fontColor);
+}
+
+.socialIconFooterSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerSocialIcon{
+    font-size: 1.6vw;
+    margin: 0 5%;
+    padding: 4% 5%;
+    border: solid 1px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: var(--MainColor);
+    position: relative;
+}
+.footerSocialIcon::after{
+    content: "";
+    position: absolute;
+    left: 23%;
+    top: 19%;
+    width: 55%;
+    height: 1em;
+    background-color: #fff;
+    border-radius: 20em;
+    z-index: -1;
+    opacity: 0;
+    transition: ease-in transform .6s;
+    transform: scale(1);
+}
+
+.footerSocialIcon:hover::after{
+    opacity: 1;
+    transition: ease-in transform .6s ;
+    transform: scale(6);
+}
+
+
+
+
+
+
+.footerSection:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linksFooterTitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    position: relative;
+}
+.linksFooterTitle::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary);
+}
+
+.LinkListFooter{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ListItemFooter{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.4vw;
+}
+.ListItemFooter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.footerSection:nth-child(3){
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+}
+
+.FooterContactTitle{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.3vw;
+}
+
+.footerContactList{
+    list-style: none;
+    align-items: center;
+}
+
+.footerContactListItem{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4vw;
+}
+
+.footerClientBtn{
+    margin: 5% 0;
+    font-size: 2vw;
+    font-family: "Quicksand", sans-serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: var(--secondary);
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    transition: .6s ease-out;
+    width: 100%;
+}
+.footerClientBtn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    transition: .6s ease-out;
+}
+
+}
+
+

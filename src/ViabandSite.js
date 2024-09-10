@@ -4,6 +4,7 @@ import './viabandSite.css';
 // components
 import Navbar from './components/header/Navbar';
 import Main from './components/main/Main';
+import FooterWebsite from './components/footer/FooterWebsite'
 
 
 
@@ -26,6 +27,7 @@ function DarkModeWrapper() {
              <section className={darkMode === false ? "viabandSite light" : "viabandSite dark"}>
             <Navbar />
             <Main />
+            <FooterWebsite />
         </section>
     );
 }
