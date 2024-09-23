@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './aboutUs.css';
-import ScrollReveal from 'scrollreveal';
-
+import { HashLink } from 'react-router-hash-link';
 import image1 from '../../../imgs/aboutUs.jpg';
 import image2 from '../../../imgs/nossoServicosImg.jpg';
+import { Link } from 'react-router-dom';
 
 const loremText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -116,14 +116,14 @@ function AboutUs() {
 
 
     return (
-        <section className="aboutSection">
+        <section className="aboutSection" id='aboutUs'>
             <div className='aboutPart1'>
                 <h1 className='aboutUsTittle'>Sobre Nós</h1>
                 <div className='aboutUsPart1Info'>
                     <div className='AboutUsLinksSection'>
                         <p className='AboutUsLinks'>Sobre Nós</p>
-                        <p className='AboutUsLinks'>Serviços</p>
-                        <p className='AboutUsLinks'>Diferenciais</p>
+                        <HashLink smooth to={"#services"}><p className='AboutUsLinks'>Serviços</p></HashLink>
+                        <HashLink smooth to={"#differences"}><p className='AboutUsLinks'>Diferenciais</p></HashLink>
                     </div>
                     <div className='AboutUsText1'>
                         Desde sua fundação no início do século, a VIABAND tem se destacado por um
@@ -145,10 +145,9 @@ function AboutUs() {
                         que reflete nosso compromisso com a qualidade e a satisfação.
                     </div>
                 </div>
-                <div className='BackgroundAourTeam'>
-                </div>
+                <div className='BackgroundAourTeam'></div>
             </div>
-            <div className='aboutPart2'>
+            <div className='aboutPart2' id='services'>
                 <div className='aboutpart2InfoLeft'>
                     <h1 className='aboutUsTittleTwo'>Serviços</h1>
                     <p className='AboutUsText2'>
@@ -160,7 +159,7 @@ function AboutUs() {
                     <img className='NossoServicosImg' src={image1} alt='Nossos Serviços (imagem)' />
                 </div>
             </div>
-            <div className='aboutPart3'>
+            <div className='aboutPart3' id='differences'>
                 <div className='aboutPart3Left'>
                     <h1 className='titleAbout3'>Diferenciais</h1>
                     <p className='AboutUsText3'>{loremText}</p>

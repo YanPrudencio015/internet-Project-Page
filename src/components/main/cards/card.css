@@ -17,6 +17,9 @@
    transition: .6s ease-in;
   }
 
+  .card.Sublime{
+    background-color: #FF8343;
+  }
 
 .glassBackground{
   border: solid 1px var(--background);
@@ -29,23 +32,45 @@
   flex-direction: column;
   align-items: center;
 }
+.glassBackground.sublime{
+  border: none;
+}
 
 .cardTitle{
-    letter-spacing: 0.6vw;
-    font-size: 2vw;
-    text-transform: uppercase;
-    font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.6vw;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Anta", sans-serif;
+  position: relative;
+  top: -6.7%;
+  background-color: var(--MainColor);
+  border: solid 1px var(--background);
+  padding: 1% 3%;
+  border-radius: 10px;
+}
+.cardTitle.sublime{
+  background-color: #FF8343;
+  border: none;
+}
+
+  .cardMega{
+    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Finlandica", sans-serif;
     font-family: "Anta", sans-serif;
-    position: relative;
-    top: -6.7%;
-    background-color: var(--MainColor);
-    border: solid 1px var(--background);
-    padding: 1% 3%;
-    border-radius: 10px;
+    font-family: "Prompt", sans-serif;
+    font-size: 3vw;
+  }
+
+  .cardCdn{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9vw;
+    width: 57%;
+    display: flex;
   }
   
   .cardPrice{
-  font-size: 4vw;
+  font-size: 3.2vw;
   font-family: "Kanit", sans-serif;
 }
 
@@ -185,6 +210,23 @@
    padding: 1% 3%;
    border-radius: 10px;
  }
+
+ .cardMega{
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-size: 3vw;
+}
+
+.cardCdn{
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9vw;
+  width: 57%;
+  display: flex;
+}
+
+
  
  .cardPrice{
  font-size: 5.5vw;
@@ -314,6 +356,22 @@
      padding: 1% 3%;
      border-radius: 10px;
    }
+
+
+   .cardMega{
+    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Finlandica", sans-serif;
+    font-family: "Anta", sans-serif;
+    font-family: "Prompt", sans-serif;
+    font-size: 3vw;
+  }
+
+  .cardCdn{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9vw;
+    width: 57%;
+    display: flex;
+  }
    
    .cardPrice{
    font-size: 5.5vw;
@@ -445,6 +503,18 @@
    padding: 1% 3%;
    border-radius: 10px;
  }
+
+ .cardMega{
+  font-family: "Prompt", sans-serif;
+  font-size: 6vw;
+}
+
+.cardCdn{
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.3vw;
+  width: 68%;
+  display: flex;
+}
  
  .cardPrice{
  font-size: 8vw;
@@ -575,6 +645,21 @@
    padding: 1% 3%;
    border-radius: 10px;
  }
+
+ .cardMega{
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-size: 3vw;
+}
+
+.cardCdn{
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9vw;
+  width: 57%;
+  display: flex;
+}
  
  .cardPrice{
  font-size: 7vw;
@@ -704,9 +789,21 @@
   padding: 1% 3%;
   border-radius: 10px;
  }
+
+ .cardMega{
+        font-family: "Prompt", sans-serif;
+        font-size: 13vw;
+}
+
+.cardCdn{
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5vw;
+  width: 57%;
+  display: flex;
+}
  
  .cardPrice{
- font-size: 18vw;
+ font-size: 13vw;
  font-family: "Kanit", sans-serif;
 }
 
@@ -833,6 +930,22 @@
   padding: 1% 3%;
   border-radius: 10px;
  }
+
+ .cardMega{
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-size: 3vw;
+}
+
+.cardCdn{
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9vw;
+  width: 57%;
+  display: flex;
+}
+
  
  .cardPrice{
  font-size: 11vw;

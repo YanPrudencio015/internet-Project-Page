@@ -7,7 +7,7 @@ import "./office.css"
 
 export default function OfficeLocation(props){
     return(
-        <section className="officeLocation">
+        <section className="officeLocation" id="location">
             <div className="titleHeadLocation">
                 <h1 className="tittleLocation">Onde nós Estamos</h1>
                 <p className="textLocation">
@@ -34,7 +34,7 @@ export default function OfficeLocation(props){
                         RJ, 22785-091
                     </p>
                 </div>
-                <div className="locationInfosFooter">
+                <div className="locationInfosFooter" id="contact">
                     <div className="titlesOfficeFooters">
                         <h2 className="LocationInfosTitle">Informações de contatos</h2>
                         <i class="fa-solid fa-phone"></i>

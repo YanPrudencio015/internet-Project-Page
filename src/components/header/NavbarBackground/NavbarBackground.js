@@ -61,7 +61,7 @@ function NavbarBackground(props){
     //     </section>
     // )
     return(
-        <section className="navbarBackground">
+        <section className="navbarBackground" id='pagetop'>
               <div classNames="matrix-container">
                 <canvas ref={canvasRef} id="matrix" />
                 <div className='apresentationsContainer'>

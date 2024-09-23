@@ -1,17 +1,30 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './card.css'
 
 import { CardPricing } from "./cardDetails";
 
-function Card(props){
-    return(
-    <section className="card">
-        <div className="glassBackground">
 
-            {/* <h2 className="cardTitle">{CardPricing[0].name}</h2> */}
-            <h2 className="cardTitle">{props.name}</h2>
-            {/* <h1 className="cardPrice">{CardPricing[0].price}</h1> */}
-            <h1 className="cardPrice">{props.price}</h1>
+
+
+
+
+function Card(props){
+
+    useEffect(()=>{
+
+        if(props.name == "Sublime"){
+            console.log("está aqui")
+        }
+    
+    
+    },[props.name])
+
+    return(
+    <section className={ props.name ==="Sublime" ?  "card Sublime": "card"}>
+        <div className={ props.name ==="Sublime" ?  "glassBackground sublime": "glassBackground"}>
+            <h2 className={ props.name ==="Sublime" ?  "cardTitle sublime": "cardTitle"}>{props.name}</h2>
+            <h1 className="cardMega">{props.mega} Mega</h1>
+            <h1 className="cardCdn">{props.cdn}</h1>
             <hr className="pricingHr"/>
             <ul className="cardPlainDescriptionList">
                 <li className="cardPlainItems">
@@ -35,6 +48,7 @@ function Card(props){
                     <p className="cardPlainItemstext">Modem wi-fi 2.4</p>
                 </li>
             </ul>
+                 <h1 className="cardPrice">{props.price}</h1>
                 <button className="princingBtn">Assinar agora</button>
         </div>
     </section>)

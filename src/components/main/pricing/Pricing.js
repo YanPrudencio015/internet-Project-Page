@@ -59,9 +59,9 @@ export default function Pricing() {
     return (
         <div className='pricing'>
             <div className='pricingApresentation'>
-                <h4 className='pricingTitle'>
+                <h4 className='pricingTitle'  id='plain'>
                     Viaband
-                    <span className='pricingTitleSpan'>Fibra</span>
+                    <span className='pricingTitleSpan' >Fibra</span>
                 </h4>
                 <p className='pricingDescription'>Escolha seu plano de internet residencial</p>
             </div>
@@ -69,17 +69,17 @@ export default function Pricing() {
                 slidesPerView={slidesPerView}
                 spaceBetween={30}
                 loop={true}
-                autoplay={{
-                    delay: 4500,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 4500,
+                //     disableOnInteraction: false,
+                // }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
                 {CardPricing.map((card, index) => (
                     <SwiperSlide key={index}>
-                        <Card name={card.name} price={card.price} down={card.downloadValue} up={card.uploadValue} />
+                        <Card cdn={card.cdn} mega={card.mega} name={card.name} price={card.price} down={card.downloadValue} up={card.uploadValue} />
                     </SwiperSlide>
                 ))}
             </Swiper>

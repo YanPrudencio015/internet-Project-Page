@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import './viability.css'
-import ScrollReveal from 'scrollreveal';
 export default function Viability(props){
 
 
@@ -13,7 +12,9 @@ export default function Viability(props){
                 <h1 className="h1ViabilityTitle">Verifique se a Viaband está disponível no seu local</h1>
             </div>
 
-            <button className="viabilityBtn">Verificar disponibilidade</button>
+            <Link  className="viabilityBtn" to={"consulta-viabilidade"}>
+            <button className="viabilityButton">Verificar disponibilidade</button>
+            </Link>
         </section>
     )
 }

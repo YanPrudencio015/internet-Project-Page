@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Viaband from './ViabandSite';
+import MainPage from './pages/MainPage/MainPage'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Viaband />
+    <MainPage />
   </React.StrictMode>
 );
 

@@ -1,0 +1,1475 @@
+
+
+.loginPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.titleSectionLoginPage{
+    /* height: 100%; */
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titleLoginPage{
+    font-size: 7vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+.subTitleLoginPage{
+    font-size: 5vw;
+    width: 70%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.clientInputContainer{
+    width:  65%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8f44fd;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 1em;
+}
+
+.iconProfileLoginPage{
+    font-size: 3vw;
+    position: absolute;
+    top: -17%;
+    width: 8vw;
+    height: 39%;
+    border-radius: 20em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background-color: #424242;
+    box-shadow: 0px 3px 0px 3px #8f44fd;
+}
+
+.LoginTextTitle{
+    font-family: "Quicksand", sans-serif;
+    width: 86%;
+    height: 50%;
+    font-size: 1.3vw;
+    text-align: center;
+    background-color: #424242;
+    display: flex;
+    align-items: end;
+    padding: 2%;
+    border-radius: 4em 4em 1em 1em;
+    color: #fff;
+}
+.divTextInput{
+    width: 80%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+.textInputLogin{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1.7vw;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: solid 1px #fff;
+    /* color: #fff; */
+    position: relative;
+}
+
+.textInputLogin::selection{
+    background-color: #8f44fd;
+    color: #fff;
+}
+
+.loginBtn{
+    border: none;
+    height: 6vh;
+    width: 70%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    border-radius: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.loginBtn:hover{
+    background-color: #eee;
+    color: #424242;
+}
+
+
+
+.infoContainer{
+    height: 65%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.infoTitleLoginPage{
+    /* background-color: #8f44fd; */
+    padding: 2%;
+    margin: 2% 0;
+    border-bottom: solid 1px #8f44fd;
+    border-top: solid 1px #8f44fd;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.infoLoginList{
+    list-style: none;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 2% 0;
+}
+
+.infoLoginList::-webkit-scrollbar{
+    width: 10px;
+}
+.infoLoginList::-webkit-scrollbar-thumb{
+    background-color: #8f44fd;
+}
+
+
+.infoLoginItem{
+    width: 90%;
+    background-color: #424242;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+    font-family: "Poppins", sans-serif;
+}
+
+.iconLoginInfo{
+    height: 100%;
+    width: 15%;
+    font-size: 1.6vw;
+}
+
+
+
+.buttonCloseLoginPage{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f44fd;
+    height: 6%;
+    width: 7%;
+}
+
+.closeTextLoginPage{
+    font-size: 1.7vw;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+    
+
+.loginPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.titleSectionLoginPage{
+    /* height: 100%; */
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titleLoginPage{
+    font-size: 7vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+.subTitleLoginPage{
+    font-size: 5vw;
+    width: 70%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.clientInputContainer{
+    width:  65%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8f44fd;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 1em;
+}
+
+.iconProfileLoginPage{
+    font-size: 3vw;
+    position: absolute;
+    top: -17%;
+    width: 8vw;
+    height: 39%;
+    border-radius: 20em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background-color: #424242;
+    box-shadow: 0px 3px 0px 3px #8f44fd;
+}
+
+.LoginTextTitle{
+    font-family: "Quicksand", sans-serif;
+    width: 86%;
+    height: 50%;
+    font-size: 1.3vw;
+    text-align: center;
+    background-color: #424242;
+    display: flex;
+    align-items: end;
+    padding: 2%;
+    border-radius: 4em 4em 1em 1em;
+    color: #fff;
+}
+.divTextInput{
+    width: 80%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+.textInputLogin{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1.7vw;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: solid 1px #fff;
+    /* color: #fff; */
+    position: relative;
+}
+
+.textInputLogin::selection{
+    background-color: #8f44fd;
+    color: #fff;
+}
+
+.loginBtn{
+    border: none;
+    height: 6vh;
+    width: 70%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    border-radius: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.loginBtn:hover{
+    background-color: #eee;
+    color: #424242;
+}
+
+
+
+.infoContainer{
+    height: 65%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.infoTitleLoginPage{
+    /* background-color: #8f44fd; */
+    padding: 2%;
+    margin: 2% 0;
+    border-bottom: solid 1px #8f44fd;
+    border-top: solid 1px #8f44fd;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.infoLoginList{
+    list-style: none;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 2% 0;
+}
+
+.infoLoginList::-webkit-scrollbar{
+    width: 10px;
+}
+.infoLoginList::-webkit-scrollbar-thumb{
+    background-color: #8f44fd;
+}
+
+
+.infoLoginItem{
+    width: 90%;
+    background-color: #424242;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+    font-family: "Poppins", sans-serif;
+}
+
+.iconLoginInfo{
+    height: 100%;
+    width: 15%;
+    font-size: 1.6vw;
+}
+
+
+
+.buttonCloseLoginPage{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f44fd;
+    height: 6%;
+    width: 7%;
+}
+
+.closeTextLoginPage{
+    font-size: 1.7vw;
+    font-family: "Quicksand", sans-serif;
+}
+}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+    
+
+.loginPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.titleSectionLoginPage{
+    /* height: 100%; */
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titleLoginPage{
+    font-size: 7vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+.subTitleLoginPage{
+    font-size: 5vw;
+    width: 70%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.clientInputContainer{
+    width:  65%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8f44fd;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 1em;
+}
+
+.iconProfileLoginPage{
+    font-size: 3vw;
+    position: absolute;
+    top: -17%;
+    width: 8vw;
+    height: 39%;
+    border-radius: 20em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background-color: #424242;
+    box-shadow: 0px 3px 0px 3px #8f44fd;
+}
+
+.LoginTextTitle{
+    font-family: "Quicksand", sans-serif;
+    width: 86%;
+    height: 50%;
+    font-size: 1.3vw;
+    text-align: center;
+    background-color: #424242;
+    display: flex;
+    align-items: end;
+    padding: 2%;
+    border-radius: 4em 4em 1em 1em;
+    color: #fff;
+}
+.divTextInput{
+    width: 80%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+.textInputLogin{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1.7vw;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: solid 1px #fff;
+    /* color: #fff; */
+    position: relative;
+}
+
+.textInputLogin::selection{
+    background-color: #8f44fd;
+    color: #fff;
+}
+
+.loginBtn{
+    border: none;
+    height: 6vh;
+    width: 70%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    border-radius: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.loginBtn:hover{
+    background-color: #eee;
+    color: #424242;
+}
+
+
+
+.infoContainer{
+    height: 65%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.infoTitleLoginPage{
+    /* background-color: #8f44fd; */
+    padding: 2%;
+    margin: 2% 0;
+    border-bottom: solid 1px #8f44fd;
+    border-top: solid 1px #8f44fd;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.infoLoginList{
+    list-style: none;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 2% 0;
+}
+
+.infoLoginList::-webkit-scrollbar{
+    width: 10px;
+}
+.infoLoginList::-webkit-scrollbar-thumb{
+    background-color: #8f44fd;
+}
+
+
+.infoLoginItem{
+    width: 90%;
+    background-color: #424242;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+    font-family: "Poppins", sans-serif;
+}
+
+.iconLoginInfo{
+    height: 100%;
+    width: 15%;
+    font-size: 1.6vw;
+}
+
+
+
+.buttonCloseLoginPage{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f44fd;
+    height: 6%;
+    width: 7%;
+}
+
+.closeTextLoginPage{
+    font-size: 1.7vw;
+    font-family: "Quicksand", sans-serif;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+    
+
+.loginPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleSectionLoginPage{
+    height: 50%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.titleLoginPage{
+    font-size: 12vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+.subTitleLoginPage{
+    font-size: 5vw;
+    width: 70%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.clientInputContainer{
+    width: 55%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8f44fd;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 1em;
+}
+
+.iconProfileLoginPage{
+    font-size: 3vw;
+    position: absolute;
+    top: -12%;
+    width: 27%;
+    height: 24%;
+    border-radius: 20em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background-color: #424242;
+    box-shadow: 0px 3px 0px 3px #8f44fd;
+}
+
+.LoginTextTitle{
+    font-family: "Quicksand", sans-serif;
+    width: 86%;
+    height: 50%;
+    font-size: 2.7vw;
+    text-align: center;
+    background-color: #424242;
+    display: flex;
+    align-items: end;
+    padding: 2%;
+    border-radius: 4em 4em 1em 1em;
+    color: #fff;
+}
+.divTextInput{
+    width: 95%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+
+.textInputLogin{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 3.2vw;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: solid 1px #fff;
+    /* color: #fff; */
+    position: relative;
+}
+
+.textInputLogin::selection{
+    background-color: #8f44fd;
+    color: #fff;
+}
+
+.loginBtn{
+    border: none;
+    height: 6vh;
+    width: 70%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.7vw;
+    border-radius: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.loginBtn:hover{
+    background-color: #eee;
+    color: #424242;
+}
+
+
+
+.infoContainer{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.infoTitleLoginPage{
+    font-size: 2.6em;
+    /* background-color: #8f44fd; */
+    padding: 2%;
+    margin: 2% 0;
+    border-bottom: solid 1px #8f44fd;
+    border-top: solid 1px #8f44fd;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.infoLoginList{
+    list-style: none;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 2% 0;
+}
+
+.infoLoginList::-webkit-scrollbar{
+    width: 10px;
+}
+.infoLoginList::-webkit-scrollbar-thumb{
+    background-color: #8f44fd;
+}
+
+
+.infoLoginItem{
+    width: 90%;
+    background-color: #424242;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.3vw;
+
+}
+
+.iconLoginInfo{
+    height: 100%;
+    width: 15%;
+    font-size: 4.6vw;
+}
+
+
+
+.buttonCloseLoginPage{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f44fd;
+    height: 6%;
+    width: 20%;
+}
+
+.closeTextLoginPage{
+    font-size: 4vw;
+    font-family: "Quicksand", sans-serif;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+    
+
+.loginPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.titleSectionLoginPage{
+    /* height: 100%; */
+    width: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titleLoginPage{
+    font-size: 7vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+.subTitleLoginPage{
+    font-size: 5vw;
+    width: 70%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.clientInputContainer{
+    width: 32%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8f44fd;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 1em;
+}
+
+.iconProfileLoginPage{
+    font-size: 3vw;
+    position: absolute;
+    top: 0%;
+    width: 8vw;
+    height: 21%;
+    border-radius: 20em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background-color: #424242;
+    box-shadow: 0px 3px 0px 3px #8f44fd;
+}
+
+.LoginTextTitle{
+    font-family: "Quicksand", sans-serif;
+    width: 86%;
+    height: 50%;
+    font-size: 1.7vw;
+    text-align: center;
+    background-color: #424242;
+    display: flex;
+    align-items: end;
+    padding: 2%;
+    border-radius: 4em 4em 1em 1em;
+    color: #fff;
+}
+.divTextInput{
+    width: 80%;
+    height: 10vh;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+.textInputLogin{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 2.1vw;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: solid 1px #fff;
+    /* color: #fff; */
+    position: relative;
+}
+
+.textInputLogin::selection{
+    background-color: #8f44fd;
+    color: #fff;
+}
+
+.loginBtn{
+    border: none;
+    height: 9vh;
+    width: 82%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    border-radius: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.loginBtn:hover{
+    background-color: #eee;
+    color: #424242;
+}
+
+
+
+.infoContainer{
+    height: 95%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.infoTitleLoginPage{
+    /* background-color: #8f44fd; */
+    padding: 2%;
+    margin: 2% 0;
+    border-bottom: solid 1px #8f44fd;
+    border-top: solid 1px #8f44fd;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.infoLoginList{
+    list-style: none;
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 2% 0;
+}
+
+.infoLoginList::-webkit-scrollbar{
+    width: 10px;
+}
+.infoLoginList::-webkit-scrollbar-thumb{
+    background-color: #8f44fd;
+}
+
+
+.infoLoginItem{
+    width: 100%;
+    background-color: #424242;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.7vw;
+}
+
+.iconLoginInfo{
+    height: 100%;
+    width: 15%;
+    font-size: 2.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.buttonCloseLoginPage{
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f44fd;
+    height: 9%;
+    width: 14%;
+}
+
+.closeTextLoginPage{
+    font-size: 1.7vw;
+    font-family: "Quicksand", sans-serif;
+}
+}
+@media (max-width: 600px) and (orientation: portrait){
+    
+
+.loginPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleSectionLoginPage{
+    /* height: 100%; */
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titleLoginPage{
+    font-size: 15vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+.subTitleLoginPage{
+    font-size: 10vw;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.clientInputContainer{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8f44fd;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 1em;
+}
+
+.iconProfileLoginPage{
+    font-size: 6vw;
+    position: absolute;
+    top: 1%;
+    width: 14vw;
+    height: 18%;
+    border-radius: 20em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background-color: #424242;
+    box-shadow: 0px 3px 0px 3px #8f44fd;
+}
+
+.LoginTextTitle{
+    font-family: "Quicksand", sans-serif;
+    width: 86%;
+    height: 50%;
+    font-size: 3vw;
+    text-align: center;
+    background-color: #424242;
+    display: flex;
+    align-items: end;
+    padding: 2%;
+    border-radius: 4em 4em 1em 1em;
+    color: #fff;
+}
+.divTextInput{
+    width: 80%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+.textInputLogin{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 4vw;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: solid 1px #fff;
+    /* color: #fff; */
+    position: relative;
+}
+
+.textInputLogin::selection{
+    background-color: #8f44fd;
+    color: #fff;
+}
+
+.loginBtn{
+    border: none;
+    height: 6vh;
+    width: 70%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    border-radius: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.loginBtn:hover{
+    background-color: #eee;
+    color: #424242;
+}
+
+
+
+.infoContainer{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.infoTitleLoginPage{
+    /* background-color: #8f44fd; */
+    padding: 2%;
+    margin: 2% 0;
+    border-bottom: solid 1px #8f44fd;
+    border-top: solid 1px #8f44fd;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.infoLoginList{
+    list-style: none;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 2% 0;
+}
+
+.infoLoginList::-webkit-scrollbar{
+    width: 10px;
+}
+.infoLoginList::-webkit-scrollbar-thumb{
+    background-color: #8f44fd;
+}
+
+
+.infoLoginItem{
+    width: 90%;
+    background-color: #424242;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+    font-family: "Poppins", sans-serif;
+}
+
+.iconLoginInfo{
+    height: 100%;
+    width: 15%;
+    font-size: 6vw;
+    align-items: center;
+    display: flex;
+}
+
+
+
+.buttonCloseLoginPage{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f44fd;
+    height: 6%;
+    width: 20%;
+}
+
+.closeTextLoginPage{
+    font-size: 5vw;
+    font-family: "Quicksand", sans-serif;
+}
+}
+@media (max-width: 600px) and (orientation: landscape){
+    
+
+.loginPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.titleSectionLoginPage{
+    /* height: 100%; */
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titleLoginPage{
+    font-size: 7vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+.subTitleLoginPage{
+    font-size: 5vw;
+    width: 70%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.clientInputContainer{
+    width:  65%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8f44fd;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 1em;
+}
+
+.iconProfileLoginPage{
+    font-size: 3vw;
+    position: absolute;
+    top: -17%;
+    width: 8vw;
+    height: 39%;
+    border-radius: 20em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background-color: #424242;
+    box-shadow: 0px 3px 0px 3px #8f44fd;
+}
+
+.LoginTextTitle{
+    font-family: "Quicksand", sans-serif;
+    width: 86%;
+    height: 50%;
+    font-size: 1.3vw;
+    text-align: center;
+    background-color: #424242;
+    display: flex;
+    align-items: end;
+    padding: 2%;
+    border-radius: 4em 4em 1em 1em;
+    color: #fff;
+}
+.divTextInput{
+    width: 80%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+.textInputLogin{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1.7vw;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: solid 1px #fff;
+    /* color: #fff; */
+    position: relative;
+}
+
+.textInputLogin::selection{
+    background-color: #8f44fd;
+    color: #fff;
+}
+
+.loginBtn{
+    border: none;
+    height: 6vh;
+    width: 70%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    border-radius: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.loginBtn:hover{
+    background-color: #eee;
+    color: #424242;
+}
+
+
+
+.infoContainer{
+    height: 65%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.infoTitleLoginPage{
+    /* background-color: #8f44fd; */
+    padding: 2%;
+    margin: 2% 0;
+    border-bottom: solid 1px #8f44fd;
+    border-top: solid 1px #8f44fd;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.infoLoginList{
+    list-style: none;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 2% 0;
+}
+
+.infoLoginList::-webkit-scrollbar{
+    width: 10px;
+}
+.infoLoginList::-webkit-scrollbar-thumb{
+    background-color: #8f44fd;
+}
+
+
+.infoLoginItem{
+    width: 90%;
+    background-color: #424242;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+    font-family: "Poppins", sans-serif;
+}
+
+.iconLoginInfo{
+    height: 100%;
+    width: 15%;
+    font-size: 1.6vw;
+}
+
+
+
+.buttonCloseLoginPage{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f44fd;
+    height: 6%;
+    width: 7%;
+}
+
+.closeTextLoginPage{
+    font-size: 1.7vw;
+    font-family: "Quicksand", sans-serif;
+}
+}
+
+
+
+
+
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/

@@ -77,7 +77,11 @@
     scroll-behavior: smooth;
     transition: .3s ease-in-out;
     scroll-behavior: smooth;
-    
+    text-decoration: none;
+}
+
+a{
+  color: var(--fontColor);
 }
 
 ::selection{
