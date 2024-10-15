@@ -51,7 +51,7 @@ function Footer(props){
                     <li className="footerContactListItem">08005913041</li>
                     <li className="footerContactListItem">30054109</li>
                 </ul>
-                <Link to={"login"}>
+                <Link className="footerClientBtnLink" to={"login"}>
                     <button className="footerClientBtn">
                         <span>Sou cliente</span>
                     </button>

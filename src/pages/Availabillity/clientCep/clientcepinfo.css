@@ -1,0 +1,29 @@
+.avtPageClientCEP{
+    grid-area: Ss3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+}
+
+.ClientCEPTitle{
+    font-size: 1.2vw;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.ClientCEPRes{
+    font-size: 1.8;
+    color: #8f44fd;
+    
+}
+
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){}
+@media (max-width: 600px) and (orientation: portrait){}
+@media (max-width: 600px) and (orientation: landscape){}

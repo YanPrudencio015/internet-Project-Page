@@ -1,0 +1,85 @@
+.InputSectionInfo{
+    grid-area: SI;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+
+}
+
+
+.input-wrapper-default{
+    width: 23%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+
+
+.input-default{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.1vw;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.input-default::selection{
+background-color: #8f44fd;
+color: #fff;
+}
+
+
+.input-default:active,
+.input-default:focus{
+    border: none;
+    outline: none;
+}
+.input-default:focus + .label-default,
+.input-default:valid + .label-default{
+    top: -20%; 
+    left: 10%;
+    font-size: 1vw;
+    transition: .2s ease-in-out; 
+}
+
+
+.label-default{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 2vw;
+    font-family: "Montserrat", sans-serif;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){}
+@media (max-width: 600px) and (orientation: portrait){}
+@media (max-width: 600px) and (orientation: landscape){}

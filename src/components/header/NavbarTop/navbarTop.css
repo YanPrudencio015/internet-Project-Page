@@ -16,7 +16,10 @@
 }
 
 
-
+.viabandTitleLink{
+  width: 7%;
+  height: 80%;
+}
 .viabandTitle{
     font-size: 1.5vw;
     cursor: pointer;
@@ -30,6 +33,10 @@
     transition: 600ms;
     overflow: hidden;
 }
+
+
+
+
 .viabandTitle::before{
     content: "";
     width: 100%;
@@ -104,6 +111,17 @@
     gap: 5%;
     font-family: "Montserrat", sans-serif;
 }
+
+.menuItemLink {
+  width: 20%;
+  height: 92%;
+  /* background-color: #9BEC00; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .menuItem{
     position: relative;
     height: 60%;
@@ -350,6 +368,11 @@
     cursor: default;
 }
 
+.viabandTitleLink{
+  width: 7%;
+  height: 80%;
+}
+
 .viabandTitle{
   font-size: 1.5vw;
   cursor: pointer;
@@ -437,6 +460,16 @@
     gap: 5%;
     font-family: "Montserrat", sans-serif;
 }
+
+.menuItemLink {
+  width: 20%;
+  height: 92%;
+  background-color: #9BEC00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .menuItem{
     position: relative;
@@ -683,6 +716,11 @@
   position: fixed;
 }
 
+.viabandTitleLink{
+  width: 7%;
+  height: 80%;
+}
+
 .viabandTitle{
   font-size: 1.5vw;
   cursor: pointer;
@@ -770,6 +808,16 @@
     gap: 5%;
     font-family: "Montserrat", sans-serif;
 }
+
+.menuItemLink {
+  width: 30%;
+  height: 92%;
+  /* background-color: #9BEC00; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .menuItem{
     position: relative;
@@ -1106,6 +1154,25 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
+.menuItemLink {
+  width: 20%;
+  height: 92%;
+  background-color: #9BEC00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItemLink {
+  width: 20%;
+  height: 92%;
+  background-color: #9BEC00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menuItem{
     position: relative;
     height: 60%;
@@ -1328,6 +1395,11 @@
   position: fixed;
 }
 
+.viabandTitleLink{
+  width: 13%;
+  height: 55%;
+}
+
 .viabandTitle{
     font-size: 2.5vw;
     cursor: pointer;
@@ -1416,6 +1488,14 @@
     list-style: none;
     gap: 5%;
     font-family: "Montserrat", sans-serif;
+}
+
+.menuItemLink {
+  width: 20%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menuItem{
@@ -1664,7 +1744,7 @@
     align-items: center;
     cursor: default;
     z-index: 101;
-    position: relative;
+    position: fixed;
     transition: top 0.6s ease-in;
   }
   
@@ -1672,6 +1752,11 @@
     background-color: var(--MainColor);
     color: #fff;
     position: fixed;
+  }
+
+  .viabandTitleLink{
+    width: 36%;
+    height: 80%;
   }
   
   .viabandTitle{
@@ -1767,6 +1852,15 @@
       list-style: none;
       gap: 5%;
       font-family: "Montserrat", sans-serif;
+  }
+
+  .menuItemLink {
+    width: 38%;
+    height: 92%;
+    background-color: #9BEC00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .menuItem{
@@ -2111,6 +2205,16 @@
       list-style: none;
       gap: 5%;
       font-family: "Montserrat", sans-serif;
+  }
+
+
+  .menuItemLink {
+    width: 20%;
+    height: 92%;
+    background-color: #9BEC00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .menuItem{

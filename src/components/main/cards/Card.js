@@ -50,6 +50,9 @@ function Card(props){
             </ul>
                  <h1 className="cardPrice">{props.price}</h1>
                 <button className="princingBtn">Assinar agora</button>
+                <button className="princingBtnWhatsApp">
+                    <p className="princingBtnWhatsAppText">Assinar pelo WhatsApp</p>
+                </button>
         </div>
     </section>)
 }

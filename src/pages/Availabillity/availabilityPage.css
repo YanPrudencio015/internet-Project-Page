@@ -1,0 +1,249 @@
+.availabilityPage{
+    background-color: #FCFAEE;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:"S2 S1 S1 S1 S1"
+            "S2 S3 S3 S3 S3"
+            "S2 S3 S3 S3 S3"
+            "S2 S3 S3 S3 S3";
+}
+
+.availabilityPageHeader{
+    grid-area: S1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.availabilityPageHeaderLink{
+    width: 15%;
+}
+
+.availabilityPageHeaderBtn{
+    width: 100%;
+    height: 100%;
+    font-size: 1.8vw;
+    background-color: #8f44fd;
+    color: #000;
+    border: none;
+    font-family: "Quicksand", sans-serif;
+    cursor: pointer;
+    padding: 2%;
+    border-radius: 20em;
+}
+
+.availabilityPageHeaderTitle{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3vw;
+}
+
+
+
+.availabilityPageClientInfo{
+    grid-area: S3;
+    display: grid;
+    grid-template-areas:"Ss1 Ss1 Ss1 Ss1"
+                        "Ss1 Ss1 Ss1 Ss1"
+                        "Ss2 Ss2 Ss3 Ss3";
+}
+
+.avtPageInputSection{
+    grid-area: Ss1;
+    display: grid;
+    grid-template-areas:"ST SI SI SI" 
+                        "ST SI SI SI"
+                        "ST SF SF SF";
+}
+
+.InputSectionText{
+    grid-area: ST;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-Input{
+    font-size: 2vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+.InputSectionFooter{
+    grid-area: SF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.StepOptinsBtn{
+    width: 22%;
+    height: 35%;
+    background-color: #8f44fd;
+    border: none;
+    font-size: 2vw;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.StepOptinsBtn.disabled{
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.avtPageInput{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.8vw;
+    font-family: "Quicksand", sans-serif;
+    position: relative;
+}
+.avtPageInput::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 90%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.inputWrapper{
+    position: relative;
+    width: 18%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+
+}
+
+.inputAvtPage{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 2vw;
+    font-family: "Quicksand", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+.inputAvtPage:focus,.inputAvtPage:active{
+    border: none;
+    outline: none;
+}
+.inputAvtPage:focus + .avtPagelabel,
+.inputAvtPage:valid + .avtPagelabel{
+    left: 0%;
+    top: -50%;
+    transition: 3.s ease-in;
+    font-size: 1.2vw;
+}
+
+
+.avtPagelabel{
+    transition: 3.s ease-in;
+    left: 40%;
+    top: 20%;
+    position: absolute;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.7vw;
+    pointer-events: none;
+}
+
+.discoverCepLink{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1vw;
+    overflow: hidden;
+}
+.discoverCepLink::after{
+    bottom: 0;
+    left: -100%;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #d63535;
+    transition: .1s ease-in-out;
+}
+.discoverCepLink:hover::after{
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #d63535;
+    transition: .1s ease-in-out;
+}
+
+
+.nextStateBtn{
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    border: none;
+    width: 15%;
+    height: 12%;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){}
+@media (max-width: 600px) and (orientation: portrait){}
+@media (max-width: 600px) and (orientation: landscape){}
+
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+
+
+

@@ -28,7 +28,7 @@ function NavbarTop(props) {
     return (
         // <section className="NavbarTop">
         <section className={menuMobileToggleStore? "NavbarTop active": "NavbarTop"}>
-            <HashLink smooth to={"#pagetop"}>
+            <HashLink className="viabandTitleLink" smooth to={"#pagetop"}>
                 <h1 className="viabandTitle">Viaband</h1>
             </HashLink>
             <nav className="plains">
@@ -36,21 +36,21 @@ function NavbarTop(props) {
                 <button className="plainsBtnOption">sua empresa</button>
             </nav>
             <ul className="menu">
-                <HashLink smooth to={"#pagetop"}>
+                <HashLink className="menuItemLink" smooth to={"#pagetop"}>
                 <li tabIndex={0} className="menuItem">Menu</li>
                 </HashLink>
-                <HashLink smooth to={"#plain"}>
+                <HashLink className="menuItemLink" smooth to={"#plain"}>
                 <li tabIndex={0} className="menuItem">Planos</li>
                 </HashLink>
                 
-                <HashLink smooth to={"#aboutUs"}>
+                <HashLink className="menuItemLink" smooth to={"#aboutUs"}>
                     <li tabIndex={0} className="menuItem" >Sobre</li>
                 </HashLink>
 
-                <HashLink smooth to={"#location"}>
+                <HashLink className="menuItemLink" smooth to={"#location"}>
                 <li tabIndex={0} className="menuItem">Localização</li>
                 </HashLink>
-                <HashLink smooth to={"#contact"}>
+                <HashLink className="menuItemLink" smooth to={"#contact"}>
                 <li tabIndex={0} className="menuItem">Contato</li>
                 </HashLink>
             </ul>

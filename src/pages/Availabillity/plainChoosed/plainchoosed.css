@@ -1,0 +1,48 @@
+.avtPagePlainSection{
+    grid-area: Ss2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex-direction: column;
+    text-align: center;
+}
+.avtPagePlainSection:after{
+    position: absolute;
+    content: "";
+    right: -10px;
+    width: 1px;
+    height: 90%;
+    top: 5%;
+    background-color: #8f44fd;
+    
+}
+
+.plainChosedBtn{
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 1.1vw;    
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+
+.plainChosedSpan{
+    color: #8f44fd;
+    margin: 0 5%;
+}
+
+
+
+
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){}
+@media (max-width: 600px) and (orientation: portrait){}
+@media (max-width: 600px) and (orientation: landscape){}
