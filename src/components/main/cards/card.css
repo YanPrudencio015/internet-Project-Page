@@ -132,6 +132,12 @@
   background-color: var(--quarternary);
   border: solid 1px transparent;
 }
+
+.princingBtnLink{
+  width: 100%;
+}
+
+
 .princingBtn:hover{
   border: solid 1px var(--secondary);
   color: var(--secondary);

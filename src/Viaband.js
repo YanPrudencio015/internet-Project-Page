@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import './viaband.css';
-import { Provider } from "react-redux";
-import { createStore, combineReducers } from "redux";
+
 
 // components
 import Navbar from './components/header/Navbar';
@@ -17,12 +16,7 @@ import { DarkModeToggleProvider, darkModeContext } from './APIContext/BtnsContex
 
 // reducers
 
-import {CepValue} from './reducers/inputsRedux/reducer/inputsReducer'
 
-const ReducersList = combineReducers({
-    CEP: CepValue
-})
-const store = createStore(ReducersList);
 
 function Viaband(props) {
     return (
@@ -38,13 +32,11 @@ function DarkModeWrapper() {
 
 
     return (
-        <Provider store={store}>
             <section className={darkMode === false ? "viabandSite light" : "viabandSite dark"}>
                 <Navbar />
                 <Main />
                 <FooterWebsite />
             </section>
-        </Provider>
     );
 }
 

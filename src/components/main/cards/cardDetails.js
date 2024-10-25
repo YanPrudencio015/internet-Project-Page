@@ -7,6 +7,7 @@ aqui vai ter um object que vai pegar todos os valores dos planos para compor nos
 e adicionar no pricing
 */
 
+
 function formatPrice(price){
     return price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }

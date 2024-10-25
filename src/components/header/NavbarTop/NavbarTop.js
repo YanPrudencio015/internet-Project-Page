@@ -1,33 +1,28 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import { darkModeContext } from "../../../APIContext/BtnsContext";
-import { useSelector, useDispatch } from "react-redux";
-import {MenuMobileToggle} from '../../../reducers/btnMenuReducer'
 import './navbarTop.css'
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import Login from "../../../pages/loginPage/LoginPage";
-
-
-
-// Define the action type
+// redux
+import { useDispatch, useSelector } from "react-redux";
+import { REDUCERopenMenu, REDUCERcloseMenu } from "../../../reducers/btnMenuReducer";
 function NavbarTop(props) {
-    // Dark mode toggle 
+// Dark mode toggle 
     const [darkMode, setDarkMode] = useContext(darkModeContext);
 
-    // Menu mobile toggle 
+// redux
+    const selector = useSelector(state => state.menuMobile.isMenuOpen)
+    const dispath = useDispatch();
 
-    const dispatch = useDispatch()
+    function changeMenu(){
+        selector === false ? dispath(REDUCERopenMenu()): dispath(REDUCERcloseMenu())
+    }
 
-    const menuMobileToggleStore = useSelector(state => state)
-
-    // console.log(menuMobileToggleStore)
-
-
+    
 
     return (
-        // <section className="NavbarTop">
-        <section className={menuMobileToggleStore? "NavbarTop active": "NavbarTop"}>
+        <section className={selector? "NavbarTop active": "NavbarTop"}>
             <HashLink className="viabandTitleLink" smooth to={"#pagetop"}>
                 <h1 className="viabandTitle">Viaband</h1>
             </HashLink>
@@ -60,21 +55,13 @@ function NavbarTop(props) {
             
             <div className="clientButton">
                 <i className="fa-solid fa-user"></i>
-                {/* < Link to={<Login/>}> */}
                 < Link to="login" element>
                 <p className="clientTextBtn">Sou cliente</p>
                 </Link>
             </div>
             
-            {/* Button to toggle menu mobile */}
-            <button
-                onClick={() => {
-                    menuMobileToggleStore === false ?
-                     dispatch({type:"OPEN"}):dispatch({type:"CLOSE"})}}
-                className="button"
-            >
-                {/* Open Menu Toggle button */}
-                <span className={menuMobileToggleStore ? "burger-1 is-closed" : "burger-1"}>
+            <button className="button" onClick={()=>{changeMenu()}}>
+                <span className={selector ? "burger-1 is-closed" : "burger-1"}>
                     <span className="bars" id="bar1"></span>
                     <span className="bars" id="bar2"></span>
                     <span className="bars" id="bar3"></span>

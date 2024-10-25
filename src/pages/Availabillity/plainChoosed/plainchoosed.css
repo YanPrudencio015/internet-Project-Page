@@ -4,10 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 5%;
     flex-direction: column;
     text-align: center;
 }
+
 .avtPagePlainSection:after{
     position: absolute;
     content: "";
@@ -22,27 +24,134 @@
 .plainChosedBtn{
     border: none;
     outline: none;
-    width: 90%;
+    width: 45%;
     font-size: 1.1vw;    
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 
 .plainChosedSpan{
     color: #8f44fd;
-    margin: 0 5%;
+}
+
+
+.addAPlain{
+    width: 4.1vw;
+    height: 2em;
+    background-color: #8f44fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.addAPlain:hover{
+    transition: .6s ease-in-out;
+    border-radius: 0.4em;
 }
 
 
 
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+    .avtPagePlainSection{
+    grid-area: Ss2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    flex-direction: column;
+    text-align: center;
+}
+}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+    .avtPagePlainSection{
+    grid-area: Ss2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    flex-direction: column;
+    text-align: center;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+    .avtPagePlainSection{
+    grid-area: Ss2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    flex-direction: column;
+    text-align: center;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+    .avtPagePlainSection{
+    grid-area: Ss2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    flex-direction: column;
+    text-align: center;
+}
+}
+@media (max-width: 600px) and (orientation: portrait){
+    .avtPagePlainSection{
+    grid-area: Ss2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    flex-direction: column;
+    text-align: center;
+    height: 28vh;
+}
 
 
 
-@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){}
-@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){}
-@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){}
-@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){}
-@media (max-width: 600px) and (orientation: portrait){}
-@media (max-width: 600px) and (orientation: landscape){}
+.plainChosedBtn{
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 4.5vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+@media (max-width: 600px) and (orientation: landscape){
+    .avtPagePlainSection{
+    grid-area: Ss2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    flex-direction: column;
+    text-align: center;
+}
+}

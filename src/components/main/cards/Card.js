@@ -1,23 +1,35 @@
-import React, {useEffect, useState} from "react";
+import React, {useState,useEffect} from "react";
 import './card.css'
-
-import { CardPricing } from "./cardDetails";
-
-
+// redux
+import { useSelector, useDispatch } from "react-redux";
 
 
-
+// reducer
+import { setplainInfo } from "../../../reducers/plainReducer";
+import { Link } from "react-router-dom";
 
 function Card(props){
+    const selector = useSelector(state => state.PlainDetails.plainObject);
+    const dispatch = useDispatch();
 
-    useEffect(()=>{
+    const[plainDetails, setPlainDetails] = useState({name:"",mega:"",cdn:[],download:"",upload:"",price:""})
+    
+    function CardPlain(){
 
-        if(props.name == "Sublime"){
-            console.log("está aqui")
+        const plainChoosed= {
+            name: props.name,
+            mega: props.mega,
+            cdn: props.cdn,
+            download: props.down,
+            upload: props.up,
+            price: props.price
         }
-    
-    
-    },[props.name])
+
+
+
+        dispatch(setplainInfo(plainChoosed.name,plainChoosed.mega,plainChoosed.cdn,plainChoosed.download,plainChoosed.upload,plainChoosed.price))
+    }
+
 
     return(
     <section className={ props.name ==="Sublime" ?  "card Sublime": "card"}>
@@ -29,13 +41,11 @@ function Card(props){
             <ul className="cardPlainDescriptionList">
                 <li className="cardPlainItems">
                     <i className="fa-solid pricingIcon fa-cloud-arrow-down"></i>
-                    {/* {CardPricing[0].downloadValue} */}
                     <p className="cardPlainItemsValue">{props.down}</p>    
                     <p className="cardPlainItemstext"> Download</p>
                 </li>
                 <li className="cardPlainItems">
                 <i className="fa-solid pricingIcon fa-cloud-arrow-up"></i>
-                    {/* {CardPricing[0].uploadValue} */}
                     <p className="cardPlainItemsValue">{props.up}</p>
                     <p className="cardPlainItemstext"> Upload</p>
                 </li>
@@ -49,7 +59,9 @@ function Card(props){
                 </li>
             </ul>
                  <h1 className="cardPrice">{props.price}</h1>
-                <button className="princingBtn">Assinar agora</button>
+                 <Link className="princingBtnLink" to={'consulta-viabilidade'}>
+                    <button className="princingBtn" onClick={()=> CardPlain()}>Assinar agora</button>
+                 </Link>
                 <button className="princingBtnWhatsApp">
                     <p className="princingBtnWhatsAppText">Assinar pelo WhatsApp</p>
                 </button>
@@ -57,24 +69,5 @@ function Card(props){
     </section>)
 }
 
-
-/*
-
-nome do Plano: standard
-preço: 79,90 105 110 115
-
-colocar "menor valor" no primeiro card
-
-colocar os valores de Download e Upload
-
-modem wi-fi 2.4
-
-aviso: Todos os planos são pré-pagos, será enviado um boleto do valor do plano no dia da ativação
-
-
-
-colocar no 115, que é o mais vendido: "Top fibra"
-colocar no 79,90 que é o menor valor: "Top fibra"
-*/
 
 export default Card

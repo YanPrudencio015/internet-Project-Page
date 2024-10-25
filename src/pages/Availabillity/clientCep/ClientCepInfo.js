@@ -1,28 +1,29 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './clientcepinfo.css'
+
+
+// redux
 import { useSelector } from "react-redux";
-import { json } from "react-router";
-
-
-
 
 
 function ClientCEPInfo(props){
 
-    const cepInfo = useSelector(state => state.CEPObjectInfo.myObject)
-useEffect(()=>{
-    console.log(cepInfo)
-})
+    // redux
+    const selector = useSelector(state => state.CEPObjectInfo.myObject);
     return(
         <div className="avtPageClientCEP">
-        <p className="ClientCEPTitle">Endereço da Instalação:</p>
-        <p className="ClientCEPRes">
-            <p>{cepInfo.logradouro}</p>,
-            <p>{cepInfo.bairro}</p>,
-            <p>{cepInfo.estado}</p>,  
-            <p>{cepInfo.uf}</p>  
-            <p>{cepInfo.cep}</p>
-        </p>
+                    {selector.logradouro === ''?
+                    <p className="ClientCEPTitle">Insira suas informações para prosseguir</p>:  
+    
+                    <div className="ClientCEPRes">
+                    <p className="ClientCEPTitle-2">Endereço da Instalação:</p>
+                    <p className="AdressInfo">{selector.logradouro},</p>
+                    <p className="AdressInfo">{selector.bairro},</p>
+                    <p className="AdressInfo">{selector.estado},</p>  
+                    <p className="AdressInfo">{selector.uf} </p>  
+                    <p className="AdressInfo">{selector.cep} </p>
+                </div>
+                }
     </div>
     )
 }

@@ -13,9 +13,6 @@ function Footer(props){
             <div className="footerSection">
                 <h1 className="title">Viaband</h1>
                 <div className="socialIconFooterSection">
-                {/* <Link to={"https://www.instagram.com/viabandbrasil/"}>
-                    <i className="footerSocialIcon fa-brands fa-instagram"></i>
-                </Link> */}
                 <HashLink className="footerSocialIcon" smooth to={"https://www.facebook.com/Viabandtelecom/"}>
                 <i className="fa-brands fa-facebook-f"></i>
                 </HashLink>

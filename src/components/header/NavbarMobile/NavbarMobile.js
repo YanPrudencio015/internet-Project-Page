@@ -1,19 +1,27 @@
 import React, { useContext, useState } from "react";
-import { useSelector, useDispatch } from 'react-redux';
 import { darkModeContext, } from "../../../APIContext/BtnsContext";
 
 import './navbarmobile.css'
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
+
+// Redux
+import { useSelector,useDispatch } from "react-redux";
+import { REDUCERcloseMenu } from "../../../reducers/btnMenuReducer";
+
 function NavbarMobile(props) {
     const [darkMode, setDarkMode] = useContext(darkModeContext)
-    const menuMobileActived = useSelector(state =>state);
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
+    // redux
 
+    function CloseMenu(){
+        dispatch(REDUCERcloseMenu())
+    }
 
+    const selector = useSelector(state => state.menuMobile.isMenuOpen)
     return (
-        <section className={menuMobileActived ? "navbarMobile active" : "navbarMobile"}>
+        <section className={selector ? "navbarMobile active" : "navbarMobile"}>
             <Link to={'/login'}>
                 <button className="clientBtn">
                 <i className="clientIcon fa-solid fa-user"></i>
@@ -25,25 +33,21 @@ function NavbarMobile(props) {
                 <button className="plainsBtnOptions">sua Casa</button>
             </div>
             <ul className="optionsMenuList">
-                <HashLink smooth to={"#pagetop"} onClick={()=>{dispatch({type:"CLOSE"})}}>
-                <li className="optionsMenuItem">Menu</li>                    
+                <HashLink smooth to={"#pagetop"} onClick={()=>{CloseMenu()}}>
+                    <li className="optionsMenuItem">Menu</li>                    
                 </HashLink>
-                <HashLink smooth to={"#plain"} onClick={()=>{dispatch({type:"CLOSE"})}}>
-                <li className="optionsMenuItem">Planos</li> 
+                <HashLink smooth to={"#plain"} onClick={()=>{CloseMenu()}}>
+                    <li className="optionsMenuItem">Planos</li> 
                 </HashLink>
-                <HashLink smooth to={"#aboutUs"} onClick={()=>{dispatch({type:"CLOSE"})}}>
-                <li className="optionsMenuItem">Sobre</li>
+                <HashLink smooth to={"#aboutUs"} onClick={()=>{CloseMenu()}}>
+                    <li className="optionsMenuItem">Sobre</li>
                 </HashLink>
-                <HashLink smooth to={"#contact"} onClick={()=>{dispatch({type:"CLOSE"})}}>
-                <li className="optionsMenuItem">Contato</li>   
+                <HashLink smooth to={"#contact"} onClick={()=>{CloseMenu()}}>
+                    <li className="optionsMenuItem">Contato</li>   
                 </HashLink>
-                <HashLink smooth to={"#location"} onClick={()=>{dispatch({type:"CLOSE"})}}>
-                <li className="optionsMenuItem">Localização</li>   
-                </HashLink>
-               
-               
-                
-                
+                <HashLink smooth to={"#location"} onClick={()=>{CloseMenu()}}>
+                    <li className="optionsMenuItem">Localização</li>   
+                </HashLink> 
             </ul>
             <div className={darkMode=== true ? "darkModeOption": "darkModeOption active"}>
                 <i className={darkMode=== true ? "iconAparence fa-solid fa-circle-half-stroke": 

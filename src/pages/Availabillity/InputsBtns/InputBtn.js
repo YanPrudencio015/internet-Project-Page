@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { setCepObject } from "../../../reducers/inputsRedux/reducer/inputsReducer";
-import { json } from "react-router";
 
+
+// redux
+import { setCepObject } from "../../../reducers/inputsReducer";
+import { useSelector, useDispatch } from "react-redux";
 
 
 export default function InputBtnProgress(props){
     const [userCEPInfo, setUserCEPInfo] = useState({logradouro:"", bairro:"", estado:"", uf:"", cep:""});
-    const selector = useSelector(state => state.CEPReduce.myString)
 
+    // redux
+
+    const selector = useSelector(state => state.CEPValueString.myString)
+    const CEpInfo = useSelector( state => state.CEPObjectInfo.myObject)
     const dispatch = useDispatch();
-
     function UpdateClientInfo(){
         let value = selector.replace(/\D/g, "")
         let cepForm  = ""
@@ -33,26 +36,21 @@ export default function InputBtnProgress(props){
                     cep:data.cep}))
                 } catch(error){console.log(error.message)}
             }
-            CEPAPI()
+            CEPAPI();
         }
         
         useEffect(()=>{
-    console.log(dispatch(setCepObject(
-                            userCEPInfo.logradouro,
-                            userCEPInfo.bairro,
-                            userCEPInfo.estado,
-                            userCEPInfo.uf,
-                            userCEPInfo.cep)))
-
-},[userCEPInfo])
+            dispatch(setCepObject(userCEPInfo.logradouro,userCEPInfo.bairro,userCEPInfo.estado,
+                                                        userCEPInfo.uf,userCEPInfo.cep))
+        },[userCEPInfo])
 
 
     return(
         <div className="InputSectionFooter">
             <button className={"StepOptinsBtn"} 
-                onClick={props.decrementing}>Voltar</button>
+                onClick={props.decrementing} disabled={props.value === 1}>Voltar</button>
             <button className={"StepOptinsBtn"} 
-                onClick={()=>{props.incrementing();UpdateClientInfo();}} >Avançar</button>
+                onClick={()=>{props.incrementing();UpdateClientInfo()}} disabled={props.value === 7}>Avançar</button>
               
         </div>
     )

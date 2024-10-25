@@ -7,16 +7,18 @@ import Doubts from '../main/doubts/Doubts';
 import ClientComment from './clientsComments/ClientsComments'
 import OfficeLocation from "./officeLocation/OfficeLocation";
 
+
 function Main(props){
+
     return(
-        <section className="main">
-            <Pricing/>
-            <AboutUs/>
-            <ClientComment/>
-            <Viability/>
-            <Doubts/>
-            <OfficeLocation/>
-        </section>
+            <section className="main">
+                <Pricing/>
+                <AboutUs/>
+                <ClientComment/>
+                <Viability/>
+                <Doubts/>
+                <OfficeLocation/>
+            </section>
     )
 }
 

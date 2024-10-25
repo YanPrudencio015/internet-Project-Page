@@ -69,10 +69,10 @@ export default function Pricing() {
                 slidesPerView={slidesPerView}
                 spaceBetween={30}
                 loop={true}
-                // autoplay={{
-                //     delay: 4500,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 4500,
+                    disableOnInteraction: false,
+                }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"

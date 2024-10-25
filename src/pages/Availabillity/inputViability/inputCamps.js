@@ -1,23 +1,21 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { useDispatch } from "react-redux";
-import {setString} from '../../../reducers/inputsRedux/reducer/inputsReducer'
+// redux
+import { useSelector, useDispatch } from "react-redux";
+// reducers
+import { setString } from "../../../reducers/inputsReducer";
 
 
 
 
 export function FirstInput(props){
 
+    const selector = useSelector(state => state.CEPValueString.myString)
+    const dispatch = useDispatch()
+
     const CEPLink = "https://buscacepinter.correios.com.br/app/endereco/index.php";
     const[cepInput, setCepInput] = useState("");
-
-    const dispatch = useDispatch();
-
-
-
-
-
     // receber as informações do Cep do Cliente.
     function cepInputUpdate(input){
         let value = input.target.value.replace(/\D/g,'');
@@ -29,12 +27,12 @@ export function FirstInput(props){
             cepForm = value;
         }
         setCepInput(cepForm);
-        dispatch(setString(cepForm))
     }
+
+    useEffect(()=>{
+        dispatch(setString(cepInput))
+    },[cepInput])
     
-
-
-
     return(
         <div className="InputSectionInfo" key="input0">
         <div className="input-wrapper-default">

@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './availabilityPage.css';
 import StepsProgressBar from './stepprogressbar/PageSteps';
 
-// Reducers and Actions
-
-import { Provider } from "react-redux";
-import { combineReducers, createStore } from "redux";
-import { CepValue, CepObject } from "../../reducers/inputsRedux/reducer/inputsReducer";
 // components
 import InputViability from "./inputViability/InputViability";
 import PlainChoosed from "./plainChoosed/PlainChoosed";
@@ -16,52 +11,50 @@ import BtnProgress from "./InputsBtns/InputBtn";
 
 
 function AvailabilityPage(props){
-    const[stepPosition, setStepPosition] = useState(1) 
-    const[progressStep, SetprogressStep] = useState(0) 
+    const[CircleColor, setCircleColor] = useState(1) 
+    const[progressStep, SetLineprogress] = useState(0) 
     const[inputChange, setInputchange] = useState(0)
-    
-
-    const rootReducer = combineReducers({
-        CEPReduce: CepValue,
-        CEPObjectInfo: CepObject,
-    })
-
-
-    const store= createStore(rootReducer)
 
     function IncrementToProgressStep(){
-        setStepPosition((prev)=> prev + 1)
-        SetprogressStep((prev)=> prev + 20)
+        setCircleColor((prev)=> prev + 1)
+        SetLineprogress((prev)=> prev + 20)
         setInputchange(prev => prev +1)
+        
         if(progressStep === 100){
-            SetprogressStep((prev)=> prev = 100)
+            SetLineprogress((prev)=> prev = 100)
         }
-        if(inputChange === 5){
-            setInputchange(prev => prev = 5)   
-        }
+        checkXtrems()
     }
 
     function DecrementToProgressStep(){
-        setStepPosition((prev)=> prev - 1)
-        SetprogressStep((prev)=> prev - 20)
+        setCircleColor((prev)=> prev - 1)
+        SetLineprogress((prev)=> prev - 20)
         setInputchange(prev => prev -1)
-        
-        if(stepPosition === 1){
-            setStepPosition((prev)=> prev = 1)
-        }
+       
         if(progressStep === 0){
-            SetprogressStep((prev)=> prev = 0)
+            SetLineprogress((prev)=> prev = 0)
         }
         if(inputChange === 0){
             setInputchange(prev => prev = 0)   
         }
+
+        checkXtrems()
     }
 
 
+    function checkXtrems(){
+        if(CircleColor > 6){
+            setCircleColor(6)
+        }
+        
+        if(CircleColor < 1){
+            setCircleColor(1)
+        }
+
+    }
+
 
     return(
-        <Provider store={store}>
-
             <section className="availabilityPage">
                     <div className="availabilityPageHeader">
                     <Link className="availabilityPageHeaderLink" to={"/"}>
@@ -70,7 +63,7 @@ function AvailabilityPage(props){
 
                         <h1 className="availabilityPageHeaderTitle">Verifique a Disponibilidade da Viaband na sua área: </h1>
                     </div>
-                    <StepsProgressBar updateStep={stepPosition} progressStep={progressStep}/>
+                    <StepsProgressBar updateStep={CircleColor} progressStep={progressStep}/>
                     <div className="availabilityPageClientInfo">
                         <div className="avtPageInputSection">
                             <div className="InputSectionText">
@@ -81,15 +74,13 @@ function AvailabilityPage(props){
 
                             <InputViability changeInput={inputChange}/>
                             <BtnProgress    incrementing={IncrementToProgressStep}
-                                            decrementing={DecrementToProgressStep}/>
+                                            decrementing={DecrementToProgressStep}
+                                            value={CircleColor}/>
                         </div>
-
                         <PlainChoosed/>
                         <ClientCEPInfo/>
-                    
                     </div>
             </section>
-        </Provider>
     )
 }
 

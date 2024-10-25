@@ -424,7 +424,7 @@
     }
   
     .clientBtn{
-      width: 80%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -459,14 +459,12 @@
     }
   
     .plainsBtnOptions{
-      font-size: 6.3vw;
+      font-size: 6vw;
       text-transform: uppercase;
-      padding: 5% 10%;
+      padding: 2% 10%;
       border: solid 1px var(--background);
       border-radius: 5px;
-      color: var(--fontColor-secondary);
       color: var(--fontColor);
-      background-color: var(--background);
       background-color: var(--MainColor);
       font-family: "Roboto", sans-serif;
       transition: .2s ease-in;
