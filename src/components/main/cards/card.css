@@ -916,8 +916,10 @@
 .cardCdn{
   font-family: "Montserrat", sans-serif;
   font-size: 3.5vw;
-  width: 57%;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  margin: 2% 0;
 }
  
  .cardPrice{
@@ -954,12 +956,12 @@
 .pricingIcon{
  position: absolute;
  left: 0;
- font-size: 7vw;
+ font-size: 5vw;
 }
 
 
 .cardPlainItemsValue{
-  font-size: 9vw;
+  font-size: 7vw;
 }
 
 .cardPlainItems:nth-last-child(2) .cardPlainItemstext {

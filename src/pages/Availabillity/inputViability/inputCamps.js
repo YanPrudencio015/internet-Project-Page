@@ -10,12 +10,13 @@ import { setString } from "../../../reducers/inputsReducer";
 
 
 export function FirstInput(props){
-
+    // script for input Cep
     const selector = useSelector(state => state.CEPValueString.myString)
     const dispatch = useDispatch()
 
     const CEPLink = "https://buscacepinter.correios.com.br/app/endereco/index.php";
     const[cepInput, setCepInput] = useState("");
+
     // receber as informações do Cep do Cliente.
     function cepInputUpdate(input){
         let value = input.target.value.replace(/\D/g,'');
@@ -32,6 +33,12 @@ export function FirstInput(props){
     useEffect(()=>{
         dispatch(setString(cepInput))
     },[cepInput])
+
+
+
+
+
+
     
     return(
         <div className="InputSectionInfo" key="input0">
@@ -51,9 +58,14 @@ export function FirstInput(props){
     )
 }
 
+
 export function SecondInput(props){
     return(
-        <div className="InputSectionInfo" key="input1">
+        // <div className="InputSectionInfo" key="input1">
+        <div className="InputSectionInfo" 
+            style={props.windowSize <= 600 && props.changeInput === 1? 
+            {height: "30vh", gap:"15%"}:{height: "22vh", gap:"5%"}} key="input1"
+        >
         <div className="input-wrapper-default">
             <input className="input-default" id="inputCEP2" required />
             <label htmlFor="inputCEP2" className="label-default">input2</label>
@@ -67,7 +79,10 @@ export function SecondInput(props){
 }
 export function ThirdInput(props){
     return(
-        <div className="InputSectionInfo" key="input2">
+        <div className="InputSectionInfo" 
+            style={props.windowSize <= 600 && props.changeInput === 2?
+            {height:"40vh", gap:"10%"}:{height:"22vh", gap:"5%"}} key="input2"
+        >
         <div className="input-wrapper-default">
             <input className="input-default" id="inputCEP4" required />
             <label htmlFor="inputCEP4" className="label-default">input3</label>
@@ -89,7 +104,10 @@ export function ThirdInput(props){
 }
 export function FourthInput(props){
     return(
-        <div className="InputSectionInfo" key="input3">
+        <div className="InputSectionInfo"
+            style={props.windowSize <= 600 && props.changeInput === 3?
+            {height:"40vh", gap:"10%"}:{height:"22vh", gap:"5%"}} key="input3"
+        >
         <div className="input-wrapper-default">
             <input className="input-default" id="inputCEP8" required />
             <label htmlFor="inputCEP8" className="label-default">input4</label>
@@ -111,7 +129,9 @@ export function FourthInput(props){
 }
 export function FifthInput(props){
     return(
-        <div className="InputSectionInfo" key="input4">
+        <div className="InputSectionInfo" style={props.windowSize <= 600 && props.changeInput === 4? 
+            {height:"30vh", gap:"12%"}:{height:"22vh", gap:"5%"}} key="input4"
+        >
         <div className="input-wrapper-default">
             <input className="input-default" id="inputCEP12" required />
             <label htmlFor="inputCEP12" className="label-default">input5</label>
@@ -131,7 +151,7 @@ export function FifthInput(props){
 
 export function SixthInput(props){
     return(
-        <div className="InputSectionInfo" key="input5">
+        <div className="InputSectionInfo"style={props.windowSize <= 600 && props.changeInput === 5? {height:"44vh", gap:"7%"}:{height:"22vh", gap:"5%"}} key="input5">
         <div className="input-wrapper-default">
             <input className="input-default" id="inputCEP15" required />
             <label htmlFor="inputCEP15" className="label-default">input6</label>

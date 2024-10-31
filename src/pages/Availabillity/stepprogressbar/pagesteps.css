@@ -21,19 +21,19 @@
     align-items: center;
 }
 
-.progress-bar{
+.progress-barY{
     width: 3px;
     height: 73vh;
     background-color: #B7B7B7;
     top: 50%;
-    left: 12%;
+    left: 11.7%;
     position: absolute;
     transform: translateY(-50%);
     z-index: -1;
 
 }
 
-.progress{
+.progressY{
     width: 100%;
     height: 100%;
     background-color: #8f44fd;
@@ -725,23 +725,42 @@
     align-items: center;
 }
 
-.progress-bar{
+.progress-barY{
     width: 85%;
-    height: 0.5vh;
+    height: 5vh;
     background-color: #B7B7B7;
-    top: 50%;
+    top: 5%;
     left: 2%;
     position: absolute;
     transform: translateY(-50%);
     z-index: -1;
 }
 
-.progress{
+.progressY{
     width: 100%;
     height: 100%;
     background-color: #8f44fd;
     transform: scaleY(0);
     transform-origin: top;
+    transition: .3s all .3s ease-in-out ;
+}
+.progress-barX{
+    width: 85%;
+    height: 0.5vh;
+    background-color: #B7B7B7;
+    top: 50%;
+    left: 44%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.progressX{
+    width: 100%;
+    height: 100%;
+    background-color: #8f44fd;
+    transform: scaleX(0);
+    transform-origin: left;
     transition: .3s all .3s ease-in-out ;
 }
 

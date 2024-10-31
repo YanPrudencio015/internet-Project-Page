@@ -95,6 +95,14 @@
         font-family: "Open Sans", sans-serif;
         height: 22vh;
     }
+
+    .ClientCEPTitle{
+        font-size: 5vw;
+        color: rgba(0, 0, 0, 0.7);
+        display: block;
+    }
+
+
     .ClientCEPTitle-2{
     font-size: 5vw;
     color: rgba(0, 0, 0, 0.7);

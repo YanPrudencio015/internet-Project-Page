@@ -141,6 +141,19 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
+.addAPlain{
+    width: 24vw;
+    height: 4em;
+    background-color: #8f44fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    font-size: 6vw;
+    cursor: pointer;
+}
 }
 @media (max-width: 600px) and (orientation: landscape){
     .avtPagePlainSection{
