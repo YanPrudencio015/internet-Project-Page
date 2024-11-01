@@ -1,21 +1,15 @@
-import React, {useState,useEffect} from "react";
+import React from "react";
 import './card.css'
 // redux
-import { useSelector, useDispatch } from "react-redux";
-
+import {useDispatch } from "react-redux";
 
 // reducer
 import { setplainInfo } from "../../../reducers/plainReducer";
 import { Link } from "react-router-dom";
 
 function Card(props){
-    const selector = useSelector(state => state.PlainDetails.plainObject);
-    const dispatch = useDispatch();
-
-    const[plainDetails, setPlainDetails] = useState({name:"",mega:"",cdn:[],download:"",upload:"",price:""})
-    
+    const dispatch = useDispatch();    
     function CardPlain(){
-
         const plainChoosed= {
             name: props.name,
             mega: props.mega,
@@ -24,9 +18,6 @@ function Card(props){
             upload: props.up,
             price: props.price
         }
-
-
-
         dispatch(setplainInfo(plainChoosed.name,plainChoosed.mega,plainChoosed.cdn,plainChoosed.download,plainChoosed.upload,plainChoosed.price))
     }
 

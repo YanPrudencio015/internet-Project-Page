@@ -72,6 +72,19 @@
     flex-direction: column;
     text-align: center;
 }
+
+
+.addAPlain{
+    width: 4.1vw;
+    height: 2em;
+    background-color: #8f44fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    font-size: 2vw;
+    cursor: pointer;
+}
 }
 @media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
     .avtPagePlainSection{
@@ -84,6 +97,20 @@
     gap: 5%;
     flex-direction: column;
     text-align: center;
+}
+
+
+
+.addAPlain{
+    width: 4.1vw;
+    height: 2em;
+    background-color: #8f44fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    font-size: 2vw;
+    cursor: pointer;
 }
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
@@ -98,6 +125,35 @@
     flex-direction: column;
     text-align: center;
 }
+
+
+
+.addAPlain{
+    width: 20vw;
+    height: 3em;
+    background-color: #8f44fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    font-size: 6vw;
+    cursor: pointer;
+}
+
+
+.plainChosedBtn{
+    border: none;
+    outline: none;
+    width: 70%;
+    font-size: 3vw;    
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
     .avtPagePlainSection{
@@ -110,6 +166,35 @@
     gap: 5%;
     flex-direction: column;
     text-align: center;
+}
+
+
+
+.addAPlain{
+    width: 4.1vw;
+    height: 2em;
+    background-color: #8f44fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+
+.plainChosedBtn{
+    border: none;
+    outline: none;
+    width: 70%;
+    font-size: 3vw;    
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 }
 @media (max-width: 600px) and (orientation: portrait){
@@ -166,5 +251,20 @@
     gap: 5%;
     flex-direction: column;
     text-align: center;
+}
+
+
+
+
+.addAPlain{
+    width: 4.1vw;
+    height: 2em;
+    background-color: #8f44fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    font-size: 2vw;
+    cursor: pointer;
 }
 }

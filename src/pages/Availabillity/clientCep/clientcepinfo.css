@@ -58,12 +58,35 @@
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
     .ClientCEPTitle-2{
-    font-size: 1.2vw;
+    font-size: 4vw;
     color: rgba(0, 0, 0, 0.7);
     display: block;
     position: absolute;
     bottom: 100%;
 }
+
+.avtPageClientCEP{
+    grid-area: Ss3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    height: 25vh;
+}
+
+
+.ClientCEPRes{
+    font-size: 3vw;
+    color: #8f44fd;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
     .ClientCEPTitle-2{
@@ -83,6 +106,15 @@
     align-items: center;
     flex-wrap: wrap;
     position: absolute;
+}
+
+.avtPageClientCEP{
+    grid-area: Ss3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
 }
 }
 @media (max-width: 600px) and (orientation: portrait){

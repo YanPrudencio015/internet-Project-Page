@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ScrollReveal from 'scrollreveal';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -69,10 +68,10 @@ export default function Pricing() {
                 slidesPerView={slidesPerView}
                 spaceBetween={30}
                 loop={true}
-                // autoplay={{
-                //     delay: 4500,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 4500,
+                    disableOnInteraction: false,
+                }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"

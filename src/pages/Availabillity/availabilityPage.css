@@ -454,18 +454,19 @@
 
 
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
-        .availabilityPage{
+    .availabilityPage{
         background-color: #FCFAEE;
         width: 100%;
         height: 100vh;
         display: grid;
-        grid-template-areas:"S2 S1 S1 S1 S1"
-                "S2 S3 S3 S3 S3"
-                "S2 S3 S3 S3 S3"
-                "S2 S3 S3 S3 S3";
+        grid-template-areas:"S1 S1 S1 S1 S1"
+                            "S2 S2 S2 S2 S2"
+                            "S3 S3 S3 S3 S3"
+                            "S3 S3 S3 S3 S3";
         scroll-behavior: smooth;
         transition: 2.s ease-in;
     }
+
 
     .availabilityPageHeader{
         grid-area: S1;
@@ -476,6 +477,101 @@
         height: 30vh;
     }
 
+    .availabilityPageHeaderTitle{
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 5vw;
+        text-align: center;
+        height: 10vh;
+    }
+
+
+    .availabilityPageHeaderBtn{
+        width: 60%;
+        height: 100%;
+        font-size: 5vw;
+        background-color: #8f44fd;
+        color: #000;
+        border: none;
+        font-family: "Quicksand", sans-serif;
+        cursor: pointer;
+        padding: 2%;
+        border-radius: 0.2em;
+    }
+
+
+    .availabilityPageHeaderLink{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+
+
+
+    .availabilityPageClientInfo{
+        grid-area: S3;
+        display: grid;
+        grid-template-areas:"Ss1 Ss1 Ss1 Ss1"
+                            "Ss2 Ss2 Ss2 Ss2"
+                            "Ss3 Ss3 Ss3 Ss3";
+    }
+
+
+    .avtPageInputSection{
+        grid-area: Ss1;
+        display: grid;
+        grid-template-areas:"ST ST ST ST" 
+                            "SI SI SI SI"
+                            "SF SF SF SF";
+    }
+
+
+    .text-Input{
+        font-size: 7vw;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+    }
+    
+
+
+
+
+    .InputSectionFooter{
+        grid-area: SF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        height: 15vh;
+    }
+
+
+
+
+
+    .StepOptinsBtn{
+        width: 40%;
+        height: 6vh;
+        background-color: #8f44fd;
+        border: none;
+        font-size: 5vw;
+        font-family: "Quicksand", sans-serif;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+
+
+    .InputSectionText{
+        grid-area: ST;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+    }
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
         .availabilityPage{

@@ -18,5 +18,5 @@ export const CardPricing = [
     {name:"Básico",mega:150, price:formatPrice(110.00), downloadValue:300,uploadValue:150,},
     {name:"Top",mega:300, price:formatPrice(115.00), downloadValue:600,uploadValue:300,},
     {name:"Sublime",mega:500, price:formatPrice(150.00), downloadValue:600,uploadValue:300, 
-        cdn:[<i className="fa-solid fa-plus"></i>,"CDN TV PLAY para televisões compatíveis"] },
+        cdn:[<i className="fa-solid fa-plus"></i>," CDN TV PLAY para televisões compatíveis"] },
 ]

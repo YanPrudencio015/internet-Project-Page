@@ -425,144 +425,159 @@
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
     .availabilityPageSteps{
-    /* background-color: #8f44fd; */
-    grid-area: S2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-
-
-
-}
-
-
-.progress-container{
-    position: relative;
-    z-index: 1;
-    height: 80%;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-}
-
-.progress-bar{
-    width: 3px;
-    height: 73vh;
-    background-color: #B7B7B7;
-    top: 50%;
-    left: 12%;
-    position: absolute;
-    transform: translateY(-50%);
-    z-index: -1;
-
-}
-
-.progress{
-    width: 100%;
-    height: 100%;
-    background-color: #8f44fd;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: .3s all .3s ease-in-out ;
-}
-
-.steps{
-    width: 11vw;
-    height: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    flex-direction: column;
-}
-
-.step{
-    width: 90%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5vw;
-    transition: .3s all .3s;
-    transform: none;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    border-radius: 5px  20px 20px 5px;
-}
-
-
-
-.number{
-    height: 100%;
-    width: 35%;
-    background-color: #B7B7B7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 26%;
-    font-family: "Kanit", sans-serif;
-    cursor: default;
-    z-index: 1;
-}
-
-.number.active{
-    background-color: #FE6244;
-    background-color: #eee;
-    background-color: #8f44fd;
-    color: #8f44fd;
-    color: #eee;
-    border-radius: 50%;
-    transform: scale(.8);
-    z-index: 1;
-    border: solid 3px;
-}
-
-.number.active:not(:first-child){
-    @keyframes pulsate {
-        0%, 100%{
-            transform:scale(1);
-        }
-        50%{
-            transform: scale(1.25);
-        }
-        
+        grid-area: S2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
     }
-}
-
-
-.stepText{
-    font-family: "Quicksand", sans-serif;
-    text-transform: uppercase;
-    font-size: 0.7vw;
-    background-color: #8f44fd;
-    color: #eee;
-    width: 100%;
-    height: 55%;
-    border-radius: 2px;
-    cursor: default;
-    position: absolute;
-    left: 0;
-    padding: 6%;
-    z-index: 0;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    border-radius: 15px 10px 10px 15px
-}
-
-.stepText.active{
-    height: 85%; 
-}
-
-
-.checkStepProgress{
-    color: #eee;
-}
-
-
+    
+    
+    .progress-container{
+        position: relative;
+        z-index: 1;
+        height: 80%;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .progress-barY{
+        width: 85%;
+        height: 5vh;
+        background-color: #B7B7B7;
+        top: 5%;
+        left: 2%;
+        position: absolute;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+    
+    .progressY{
+        width: 100%;
+        height: 100%;
+        background-color: #8f44fd;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: .3s all .3s ease-in-out ;
+    }
+    .progress-barX{
+        width: 85%;
+        height: 0.5vh;
+        background-color: #B7B7B7;
+        top: 50%;
+        left: 44%;
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    
+    .progressX{
+        width: 100%;
+        height: 100%;
+        background-color: #8f44fd;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: .3s all .3s ease-in-out ;
+    }
+    
+    .steps{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .step{
+        width: 50%;
+        height: 13vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+        transition: .3s all .3s;
+        transform: none;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        border-radius: 5px 20px 20px 5px;
+    
+    }
+    
+    .number{
+        height: 60%;
+        width: 70%;
+        background-color: #B7B7B7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 26%;
+        font-family: "Kanit", sans-serif;
+        cursor: default;
+        z-index: 1;
+    }
+    
+    .number.active{
+        background-color: #FE6244;
+        background-color: #eee;
+        background-color: #8f44fd;
+        color: #8f44fd;
+        color: #eee;
+        border-radius: 50%;
+        transform: scale(.8);
+        z-index: 1;
+        border: solid 3px;
+    }
+    
+    .number.active:not(:first-child){
+        @keyframes pulsate {
+            0%, 100%{
+                transform:scale(1);
+            }
+            50%{
+                transform: scale(1.25);
+            }
+            
+        }
+    }
+    
+    
+    .stepText{
+        font-family: "Quicksand", sans-serif;
+        text-transform: uppercase;
+        font-size: 3.1vw;
+        background-color: #8f44fd;
+        color: #eee;
+        width: 100%;
+        height: 55%;
+        border-radius: 2px;
+        cursor: default;
+        position: absolute;
+        left: 0;
+        padding: 6%;
+        z-index: 0;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        border-radius: 15px 10px 10px 15px;
+        display: none;
+    }
+    
+    .stepText.active{
+        height: 85%; 
+    }
+    
+    
+    .checkStepProgress{
+        color: #eee;
+    }
+    
+    
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
     .availabilityPageSteps{

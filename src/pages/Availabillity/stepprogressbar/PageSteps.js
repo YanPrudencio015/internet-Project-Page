@@ -41,9 +41,9 @@ return(
 
         <section className="availabilityPageSteps">
             <div className="progress-container">
-               <div className={sizeWindow >= 600 ? "progress-barY": "progress-barX"}>
-                <div className={sizeWindow >= 600? "progressY":"progressX"} 
-                    style={sizeWindow >= 600? {transform: `scaleY(${props.progressStep}%)`}:
+               <div className={sizeWindow >= 900? "progress-barY": "progress-barX"}>
+                <div className={sizeWindow >= 900? "progressY":"progressX"} 
+                    style={sizeWindow >= 900? {transform: `scaleY(${props.progressStep}%)`}:
                     {transform: `scaleX(${props.progressStep}%)`}}
                 ></div>
                </div>

@@ -1,0 +1,749 @@
+.plainPage{
+    width: 100%;
+    background-color: #8f44fd;
+}
+
+.plainPageHeader{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.backViabiliyPageBtn{
+    width: 10vw;
+    height: 5vh;
+    border: none; outline: none;
+    background-color: #E9C46A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6vw;
+    cursor: pointer;
+}
+
+
+
+.cardsSectionSquad{
+    width: 100%;
+    height: 90%;
+    border: solid 1px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0%;
+    flex-wrap: wrap;
+}
+
+.cardsPlainPage{
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: solid 1px #eee;
+    align-items: center;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+.cardPlainDetail{
+    list-style: none;
+    font-size: 1.3vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    gap: 2%;
+}
+
+.cardPlainName{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2vw;
+    letter-spacing: 5px;
+    color: #eee;
+}
+
+.cardPlainPrice{
+    font-size: 2vw;
+    font-family: "Anta", sans-serif;
+    color: #eee;
+}
+
+.cardPlainMegas{
+    font-size: 1.5vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.cardPlainCdn{
+    margin: 2% 0;
+    font-size: .8vw;
+}
+
+.cardPlainChoose{
+    border: none;
+    outline: none;
+    width: 12vw;
+    font-size: 1.6vw;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #300368;
+    transition: .3s ease-out;
+}
+.cardPlainChoose:hover{
+    transition: .3s ease-out;
+    letter-spacing: 3px;
+}
+
+.plainPageIcon{
+    color: #eee;
+}
+
+
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+    
+.plainPageHeader{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.backViabiliyPageBtn{
+    width: 10vw;
+    height: 5vh;
+    border: none; outline: none;
+    background-color: #E9C46A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6vw;
+    cursor: pointer;
+}
+
+.cardsSectionSquad{
+    width: 100%;
+    height: 90%;
+    border: solid 1px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.cardsPlainPage{
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: solid 1px #eee;
+    align-items: center;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+.cardPlainDetail{
+    list-style: none;
+    font-size: 1.3vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    gap: 2%;
+}
+
+.cardPlainName{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2vw;
+    letter-spacing: 5px;
+    color: #eee;
+}
+
+
+.cardPlainPrice {
+    font-size: 3vw;
+    font-family: "Anta", sans-serif;
+    color: #eee;
+}
+
+.cardPlainMegas{
+    font-size: 1.5vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.cardPlainCdn{
+    margin: 2% 0;
+    font-size: .8vw;
+}
+
+.cardPlainChoose{
+    border: none;
+    outline: none;
+    width: 12vw;
+    font-size: 1.6vw;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #300368;
+    transition: .3s ease-out;
+}
+.cardPlainChoose:hover{
+    transition: .3s ease-out;
+    letter-spacing: 3px;
+}
+
+.plainPageIcon{
+    color: #eee;
+}
+
+
+}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+    
+.plainPageHeader{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.backViabiliyPageBtn{
+    width: 10vw;
+    height: 5vh;
+    border: none; outline: none;
+    background-color: #E9C46A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6vw;
+    cursor: pointer;
+}
+
+
+.cardsSectionSquad{
+    width: 100%;
+    height: 90%;
+    border: solid 1px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.cardsPlainPage{
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: solid 1px #eee;
+    align-items: center;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+.cardPlainDetail{
+    list-style: none;
+    font-size: 1.6vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    gap: 2%;
+}
+
+.cardPlainName{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3vw;
+    letter-spacing: 5px;
+    color: #eee;
+}
+
+.cardPlainPrice {
+    font-size: 3vw;
+    font-family: "Anta", sans-serif;
+    color: #eee;
+}
+
+.cardPlainMegas{
+    font-size: 1.5vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.cardPlainCdn{
+    margin: 2% 0;
+    font-size: .8vw;
+}
+
+.cardPlainChoose{
+    border: none;
+    outline: none;
+    width: 20vw;
+    font-size: 2vw;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #300368;
+    transition: .3s ease-out;
+}
+.cardPlainChoose:hover{
+    transition: .3s ease-out;
+    letter-spacing: 3px;
+}
+
+.plainPageIcon{
+    color: #eee;
+}
+
+
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+    
+.plainPageHeader{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.backViabiliyPageBtn{
+    width: 15vw;
+    height: 6vh;
+    border: none;
+    outline: none;
+    background-color: #E9C46A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.6vw;
+    cursor: pointer;
+}
+
+
+
+.cardsSectionSquad{
+    width: 100%;
+    height: 90%;
+    border: solid 1px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.cardsPlainPage{
+    width: 40%;
+    height: 42vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: solid 1px #eee;
+    align-items: center;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+.cardPlainDetail{
+    list-style: none;
+    font-size: 2.6vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    gap: 2%;
+}
+
+.cardPlainName{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4vw;
+    letter-spacing: 5px;
+    color: #eee;
+}
+
+.cardPlainPrice {
+    font-size: 4vw;
+    font-family: "Anta", sans-serif;
+    color: #eee;
+}
+
+.cardPlainMegas{
+    font-size: 3vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.cardPlainCdn{
+    margin: 2% 0;
+    font-size: 1.7vw;
+}
+
+.cardPlainChoose{
+    border: none;
+    outline: none;
+    width: 33vw;
+    font-size: 4vw;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #300368;
+    transition: .3s ease-out;
+}
+.cardPlainChoose:hover{
+    transition: .3s ease-out;
+    letter-spacing: 3px;
+}
+
+.plainPageIcon{
+    color: #eee;
+}
+
+
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+    
+.plainPageHeader{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.backViabiliyPageBtn{
+    width: 10vw;
+    height: 8vh;
+    border: none;
+    outline: none;
+    background-color: #E9C46A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.3vw;
+    cursor: pointer;
+}
+
+
+.cardsSectionSquad{
+    width: 100%;
+    height: 90%;
+    border: solid 1px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+
+.cardsPlainPage{
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: solid 1px #eee;
+    align-items: center;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+.cardPlainDetail{
+    list-style: none;
+    font-size: 1.7vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    gap: 2%;
+}
+
+.cardPlainName{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.5vw;
+    letter-spacing: 5px;
+    color: #eee;
+}
+
+.cardPlainPrice {
+    font-size: 2.9vw;
+    font-family: "Anta", sans-serif;
+    color: #eee;
+}
+
+.cardPlainMegas{
+    font-size: 2.9vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.cardPlainCdn{
+    margin: 2% 0;
+    font-size: .8vw;
+}
+
+.cardPlainChoose{
+    border: none;
+    outline: none;
+    width: 23vw;
+    font-size: 2.3vw;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #300368;
+    transition: .3s ease-out;
+}
+.cardPlainChoose:hover{
+    transition: .3s ease-out;
+    letter-spacing: 3px;
+}
+
+.plainPageIcon{
+    color: #eee;
+}
+
+}
+@media (max-width: 600px) and (orientation: portrait){
+    
+.plainPageHeader{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #8f44fd;
+}
+
+.backViabiliyPageBtn{
+    width: 90vw;
+    height: 7vh;
+    border: none;
+    outline: none;
+    background-color: #E9C46A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 6vw;
+    cursor: pointer;
+}
+
+
+.cardsSectionSquad{
+    width: 100%;
+    height: 90%;
+    border: solid 1px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 13% 0;
+    padding: 15% 0;
+}
+
+.cardsPlainPage{
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    border: solid 1px #eee;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 0;
+    border-radius: 20px;
+}
+
+.cardPlainDetail{
+    list-style: none;
+    font-size: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    gap: 2%;
+}
+
+.cardPlainName{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10vw;
+    letter-spacing: 5px;
+    color: #eee;
+}
+
+
+.cardPlainPrice {
+    font-size: 11vw;
+    font-family: "Anta", sans-serif;
+    color: #eee;
+}
+
+
+.cardPlainMegas{
+    font-size: 10vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.cardPlainCdn{
+    margin: 7% 0;
+    font-size: 5vw;
+}
+
+
+
+.cardPlainChoose{
+    border: none;
+    outline: none;
+    width: 55vw;
+    font-size: 8vw;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #300368;
+    transition: .3s ease-out;
+}
+.cardPlainChoose:hover{
+    transition: .3s ease-out;
+    letter-spacing: 3px;
+}
+
+.plainPageIcon{
+    color: #eee;
+}
+
+
+
+}
+@media (max-width: 600px) and (orientation: landscape){
+    
+.plainPageHeader{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    justify-content: center;
+}
+
+.backViabiliyPageBtn{
+    width: 70vw;
+    height: 7vh;
+    border: none;
+    outline: none;
+    background-color: #E9C46A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 7vw;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+.cardsSectionSquad{
+    width: 100%;
+    height: 90%;
+    border: solid 1px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.cardsPlainPage{
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: solid 1px #eee;
+    align-items: center;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+.cardPlainDetail{
+    list-style: none;
+    font-size: 1.3vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    gap: 2%;
+}
+
+.cardPlainName{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2vw;
+    letter-spacing: 5px;
+    color: #eee;
+}
+
+.cardPlainMegas{
+    font-size: 1.5vw;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.cardPlainCdn{
+    margin: 2% 0;
+    font-size: .8vw;
+}
+
+.cardPlainChoose{
+    border: none;
+    outline: none;
+    width: 12vw;
+    font-size: 1.6vw;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #300368;
+    transition: .3s ease-out;
+}
+.cardPlainChoose:hover{
+    transition: .3s ease-out;
+    letter-spacing: 3px;
+}
+
+.plainPageIcon{
+    color: #eee;
+}
+
+}

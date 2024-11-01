@@ -20,15 +20,15 @@ export default function Pages(props){
 
     },
     {
-        path:"consulta-viabilidade",
+        path:"/consulta-viabilidade",
         element: <Viability/>
     },
     {
-        path:"login",
+        path:"/login",
         element: <Login/>
     },
     {
-        path:'Escolher-Plano',
+        path:'/Escolher-Plano',
          element: <PlainPage/>
     }
 

@@ -463,7 +463,6 @@
 .menuItemLink {
   width: 20%;
   height: 92%;
-  background-color: #9BEC00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -811,7 +810,6 @@
 .menuItemLink {
   width: 30%;
   height: 92%;
-  /* background-color: #9BEC00; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1157,7 +1155,6 @@
 .menuItemLink {
   width: 20%;
   height: 92%;
-  background-color: #9BEC00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1166,7 +1163,6 @@
 .menuItemLink {
   width: 20%;
   height: 92%;
-  background-color: #9BEC00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1856,7 +1852,6 @@
   .menuItemLink {
     width: 38%;
     height: 92%;
-    background-color: #9BEC00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2210,7 +2205,6 @@
   .menuItemLink {
     width: 20%;
     height: 92%;
-    background-color: #9BEC00;
     display: flex;
     justify-content: center;
     align-items: center;
