@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import '../../ViabandSite.css'
 import './loginpage.css'
 import { Link } from "react-router-dom";
 
@@ -158,16 +157,18 @@ export default function Login(props){
             <h1 className="titleLoginPage">Viaband</h1>
             <p className="subTitleLoginPage">Área do Cliente</p>
           </div>
-          <div className="clientInputContainer">
+          <form className="clientInputContainer">
           <i className="iconProfileLoginPage fa-solid fa-user"></i>
             <p className="LoginTextTitle">{genericText}</p>
             <div className="divTextInput" tabIndex={0}>
               <input className="textInputLogin" type="text"  placeholder="Digite seu CPF ou CNPJ" value={documentInput} onChange={handleDocument}></input>
             </div>
-            <button className="loginBtn" type="submit">
-                <p className="loginBtntext">Entrar na conta</p>
-            </button>
-          </div>
+              <button className="loginBtn" type="submit">
+                <Link to={'/Pagina-do-cliente'}>
+                  <p className="loginBtntext">Entrar na conta</p>
+                </Link>
+              </button>
+          </form>
           <div className="infoContainer">
                 <h1 className="infoTitleLoginPage"> Encontre as principais soluções: </h1>
                 

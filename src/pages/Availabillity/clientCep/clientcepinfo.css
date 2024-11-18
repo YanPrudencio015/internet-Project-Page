@@ -46,6 +46,13 @@
     position: absolute;
     bottom: 100%;
 }
+
+
+.ClientCEPTitle{
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+}
 }
 @media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
     .ClientCEPTitle-2{
@@ -55,6 +62,14 @@
     position: absolute;
     bottom: 100%;
 }
+
+.ClientCEPTitle{
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+}
+
+
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
     .ClientCEPTitle-2{
@@ -87,6 +102,13 @@
     position: absolute;
 }
 
+
+.ClientCEPTitle{
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+}
+
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
     .ClientCEPTitle-2{
@@ -116,6 +138,16 @@
     flex-direction: column;
     font-family: "Open Sans", sans-serif;
 }
+
+
+
+.ClientCEPTitle{
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+}
+
+
 }
 @media (max-width: 600px) and (orientation: portrait){
     .avtPageClientCEP{

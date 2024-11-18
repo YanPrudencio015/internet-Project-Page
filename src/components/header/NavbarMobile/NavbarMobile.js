@@ -22,7 +22,7 @@ function NavbarMobile(props) {
     const selector = useSelector(state => state.menuMobile.isMenuOpen)
     return (
         <section className={selector ? "navbarMobile active" : "navbarMobile"}>
-            <Link to={'/login'}>
+            <Link to={'/login'} className="clientBtnLink">
                 <button className="clientBtn">
                 <i className="clientIcon fa-solid fa-user"></i>
                 <p className="clientText">sou cliente</p>

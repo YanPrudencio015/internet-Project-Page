@@ -1,0 +1,1716 @@
+
+:root{
+    --width-close: 3.5vw;
+    --width-open: 16vw 
+}
+
+.ClientPageMenu{
+    position: fixed;
+    left: 1vw;
+    top: 1vh;
+    height: 95vh;
+    width: 6vw;
+    width: var(--width-close);
+    background-color: #8f44fd;
+    border-radius: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: .3s ease-in;
+    z-index: 100;
+}
+
+.ClientPageMenu.open{
+    width: var(--width-open);
+    border-radius: 1em;
+}
+
+
+.ClientPageMenuHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: 1ms;
+}
+
+.menuToggleBtn{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 300ms ease-in;
+}
+
+.menuToggleBtn.open{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 10ms ease-in;
+    color: #ffff;
+}
+
+.arrowIconMenu{
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIconMenu.active{
+    transform: rotateZ(180deg);
+}
+
+
+.clientTitle{
+    width: 90%;
+    padding: 2%;
+    border-radius: 2px;
+    color: #ffff;
+    font-size: 1.6vw;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    transition: .1ms;
+    position: relative;
+}
+.clientTitle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+.clientTitle::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+
+.clientTitle.close::after,
+ .clientTitle.close::before{
+    height: 0;
+    width: 0;
+}
+
+.sidebarNavMenuClientPage{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidebarNavMenuClientPage.open{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: .6s ease;
+}
+
+
+
+
+
+
+.navbarBtns{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 7vh;
+    padding: 0 5%;
+    background-color: transparent;
+    position: relative;
+    transition: .1ms;
+}
+
+
+ .navbarBtns.active:focus{
+    background-color: #fff;
+    width: 3vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+
+.navbarBtns:focus{
+    padding: 0 8%;
+    background-color: transparent;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+}
+.navbarBtns:nth-last-child(1){
+    justify-content: center;
+    gap: 5%;
+}
+
+.IconBtnsClientPage{
+    font-size: 1.3vw;
+    z-index: 3;
+    position: relative;
+}
+
+
+.bavbarsBntTitle{
+    font-size: 1.1vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbarsBntBackground{
+    left: 150%;
+}
+
+.navbarsBntBackground.active{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 9vh;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(calc(var(--btnClicked) * 10vh));
+    border-radius: 20px 0px 0px 20px;
+    transition: 1s;
+}
+
+.navbarsBntBackground.active::after{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    top: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 0px 31px 0;
+    box-shadow: 25px 2px 0px 0px #fff;   
+    transition: .1ms;
+}
+
+.navbarsBntBackground.active::before{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    bottom: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 31px 0px 0;
+    box-shadow: 25px -2px 0px 0px #fff;
+    transition: .1ms;
+}
+
+
+
+
+.ClientePageMenuMobile{
+    display: none;
+}
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+
+
+    :root{
+        --width-close: 3.5vw;
+        --width-open: 16vw 
+    }
+    
+    
+.ClientPageMenu{
+    position: fixed;
+    left: 1vw;
+    top: 1vh;
+    height: 95vh;
+    width: 6vw;
+    width: var(--width-close);
+    background-color: #8f44fd;
+    border-radius: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: 1ms;
+}
+
+.ClientPageMenu.open{
+    width: var(--width-open);
+    border-radius: 1em;
+}
+
+
+.ClientPageMenuHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: 1ms;
+}
+
+.menuToggleBtn{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 300ms ease-in;
+}
+
+.menuToggleBtn.open{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 10ms ease-in;
+    color: #ffff;
+}
+
+.arrowIconMenu{
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIconMenu.active{
+    transform: rotateZ(180deg);
+}
+
+
+.clientTitle{
+    width: 90%;
+    padding: 2%;
+    border-radius: 2px;
+    color: #ffff;
+    font-size: 1.6vw;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    transition: .1ms;
+    position: relative;
+}
+.clientTitle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+.clientTitle::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+
+.clientTitle.close::after,
+ .clientTitle.close::before{
+    height: 0;
+    width: 0;
+}
+
+.sidebarNavMenuClientPage{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidebarNavMenuClientPage.open{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: .6s ease;
+}
+
+
+
+
+
+
+.navbarBtns{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 7vh;
+    padding: 0 5%;
+    background-color: transparent;
+    position: relative;
+    transition: .1ms;
+}
+
+
+ .navbarBtns.active:focus{
+    background-color: #fff;
+    width: 3vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+
+.navbarBtns:focus{
+    padding: 0 8%;
+    background-color: transparent;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+}
+.navbarBtns:nth-last-child(1){
+    justify-content: center;
+    gap: 5%;
+}
+
+.IconBtnsClientPage{
+    font-size: 1.3vw;
+    z-index: 3;
+    position: relative;
+}
+
+
+.bavbarsBntTitle{
+    font-size: 1.1vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbarsBntBackground{
+    left: 150%;
+}
+
+.navbarsBntBackground.active{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 9vh;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(calc(var(--btnClicked) * 10vh));
+    border-radius: 20px 0px 0px 20px;
+    transition: 1s;
+}
+
+.navbarsBntBackground.active::after{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    top: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 0px 31px 0;
+    box-shadow: 25px 0px 0px 0px #fff;   
+    transition: .1ms;
+}
+
+.navbarsBntBackground.active::before{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    bottom: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 31px 0px 0;
+    box-shadow: 25px 0px 0px 0px #fff;
+    transition: .1ms;
+}
+}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+
+
+    :root{
+        --width-close: 3.5vw;
+        --width-open: 16vw 
+    }
+    
+    
+.ClientPageMenu{
+    position: fixed;
+    left: 1vw;
+    top: 1vh;
+    height: 95vh;
+    width: 6vw;
+    width: var(--width-close);
+    background-color: #8f44fd;
+    border-radius: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: 1ms;
+}
+
+.ClientPageMenu.open{
+    width: var(--width-open);
+    border-radius: 1em;
+}
+
+
+.ClientPageMenuHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: 1ms;
+}
+
+.menuToggleBtn{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 300ms ease-in;
+}
+
+.menuToggleBtn.open{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 10ms ease-in;
+    color: #ffff;
+}
+
+.arrowIconMenu{
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIconMenu.active{
+    transform: rotateZ(180deg);
+}
+
+
+.clientTitle{
+    width: 90%;
+    padding: 2%;
+    border-radius: 2px;
+    color: #ffff;
+    font-size: 1.4vw;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    transition: .1ms;
+    position: relative;
+}
+.clientTitle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+.clientTitle::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+
+.clientTitle.close::after,
+ .clientTitle.close::before{
+    height: 0;
+    width: 0;
+}
+
+.sidebarNavMenuClientPage{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidebarNavMenuClientPage.open{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: .6s ease;
+}
+
+
+
+
+
+
+.navbarBtns{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 7vh;
+    padding: 0 5%;
+    background-color: transparent;
+    position: relative;
+    transition: .1ms;
+}
+
+
+ .navbarBtns.active:focus{
+    background-color: #fff;
+    width: 3vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+
+.navbarBtns:focus{
+    padding: 0 8%;
+    background-color: transparent;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+}
+.navbarBtns:nth-last-child(1){
+    justify-content: center;
+    gap: 5%;
+}
+
+.IconBtnsClientPage{
+    font-size: 1.7vw;
+    z-index: 3;
+    position: relative;
+}
+
+
+.bavbarsBntTitle{
+    font-size: 1.2vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbarsBntBackground{
+    left: 150%;
+}
+
+.navbarsBntBackground.active{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 9vh;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(calc(var(--btnClicked) * 10vh));
+    border-radius: 20px 0px 0px 20px;
+    transition: 1s;
+}
+
+.navbarsBntBackground.active::after{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    top: -3vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 0px 31px 0;
+    box-shadow: 10px 0px 0px 0px #fff;   
+    transition: .1ms;
+}
+
+.navbarsBntBackground.active::before{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    bottom: -3vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 31px 0px 0;
+    box-shadow: 10px 0px 0px 0px #fff;
+    transition: .1ms;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+
+    :root{
+        --width-close: 7.5vw;
+        --width-open: 32vw 
+    }
+    
+    
+.ClientPageMenu{
+    position: fixed;
+    left: 1vw;
+    top: 1vh;
+    height: 95vh;
+    width: 6vw;
+    width: var(--width-close);
+    background-color: #8f44fd;
+    border-radius: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: .3s ease-in;
+}
+
+.ClientPageMenu.open{
+    width: var(--width-open);
+    border-radius: 1em;
+}
+
+
+.ClientPageMenuHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: 1ms;
+}
+
+.menuToggleBtn{
+    position: absolute;
+    right: -3vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 7vw;
+    height: 5vh;
+    cursor: pointer;
+    border-radius: 59px;
+    transition: 300ms ease-in;
+
+}
+
+.menuToggleBtn.open{
+    position: absolute;
+    right: -4vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 8vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 10ms ease-in;
+    color: #ffff;
+}
+
+.arrowIconMenu{
+    font-size: 3vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIconMenu.active{
+    transform: rotateZ(180deg);
+}
+
+
+.clientTitle{
+    width: 90%;
+    padding: 2%;
+    border-radius: 2px;
+    color: #ffff;
+    font-size: 3.2vw;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    transition: .1ms;
+    position: relative;
+}
+.clientTitle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+.clientTitle::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+
+.clientTitle.close::after,
+ .clientTitle.close::before{
+    height: 0;
+    width: 0;
+}
+
+.sidebarNavMenuClientPage{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidebarNavMenuClientPage.open{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: .6s ease;
+}
+
+
+
+
+
+
+.navbarBtns{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 7vh;
+    padding: 0 5%;
+    background-color: transparent;
+    position: relative;
+    transition: .1ms;
+}
+
+
+ .navbarBtns.active:focus{
+    background-color: #fff;
+    width: 5vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+
+.navbarBtns:focus{
+    padding: 0 8%;
+    background-color: transparent;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+}
+.navbarBtns:nth-last-child(1){
+    justify-content: center;
+    gap: 5%;
+}
+
+.IconBtnsClientPage{
+    font-size: 3vw;
+    z-index: 3;
+    position: relative;
+}
+
+
+.bavbarsBntTitle{
+    font-size: 2.3vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbarsBntBackground{
+    left: 150%;
+}
+
+.navbarsBntBackground.active{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 9vh;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(calc(var(--btnClicked) * 10vh));
+    border-radius: 20px 0px 0px 20px;
+    transition: 1s;
+}
+
+.navbarsBntBackground.active::after{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    top: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 0px 31px 0;
+    box-shadow: 25px 1px 0px 0px #fff;   
+    transition: .1ms;
+}
+
+.navbarsBntBackground.active::before{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    bottom: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 31px 0px 0;
+    box-shadow: 21px -4px 0px 0px #fff;
+    transition: .1ms;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+
+
+    :root{
+        --width-close: 3.5vw;
+        --width-open: 16vw 
+    }
+    
+    
+.ClientPageMenu{
+    position: fixed;
+    left: 1vw;
+    top: 1vh;
+    height: 95vh;
+    width: 6vw;
+    width: var(--width-close);
+    background-color: #8f44fd;
+    border-radius: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: 1ms;
+}
+
+.ClientPageMenu.open{
+    width: var(--width-open);
+    border-radius: 1em;
+}
+
+
+.ClientPageMenuHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: 1ms;
+}
+
+.menuToggleBtn{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 300ms ease-in;
+}
+
+.menuToggleBtn.open{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 10ms ease-in;
+    color: #ffff;
+}
+
+.arrowIconMenu{
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIconMenu.active{
+    transform: rotateZ(180deg);
+}
+
+
+.clientTitle{
+    width: 90%;
+    padding: 2%;
+    border-radius: 2px;
+    color: #ffff;
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    transition: .1ms;
+    position: relative;
+}
+.clientTitle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+.clientTitle::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+
+.clientTitle.close::after,
+ .clientTitle.close::before{
+    height: 0;
+    width: 0;
+}
+
+.sidebarNavMenuClientPage{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidebarNavMenuClientPage.open{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: .6s ease;
+}
+
+
+
+
+
+
+.navbarBtns{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 7vh;
+    padding: 0 5%;
+    background-color: transparent;
+    position: relative;
+    transition: .1ms;
+}
+
+
+ .navbarBtns.active:focus{
+    background-color: #fff;
+    width: 3vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+
+.navbarBtns:focus{
+    padding: 0 8%;
+    background-color: transparent;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+}
+.navbarBtns:nth-last-child(1){
+    justify-content: center;
+    gap: 5%;
+}
+
+.IconBtnsClientPage{
+    font-size: 1.3vw;
+    z-index: 3;
+    position: relative;
+}
+
+
+.bavbarsBntTitle{
+    font-size: 1.1vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbarsBntBackground{
+    left: 150%;
+}
+
+.navbarsBntBackground.active{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 9vh;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(calc(var(--btnClicked) * 10vh));
+    border-radius: 20px 0px 0px 20px;
+    transition: 1s;
+}
+
+.navbarsBntBackground.active::after{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    top: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 0px 31px 0;
+    box-shadow: 6px 4px 0px 4px #fff;
+    transition: .1ms;
+}
+
+.navbarsBntBackground.active::before{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    bottom: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 31px 0px 0;
+    box-shadow: 6px -3px 0px 3px #fff;
+    transition: .1ms;
+}
+}
+@media (max-width: 600px) and (orientation: portrait){
+
+
+    :root{
+        --width-close: 100%;
+        --width-open: 100%;
+    }
+    
+    
+.ClientPageMenu{
+        position: fixed;
+        left: 1vw;
+        top: 158vw;
+        height: 7vh;
+        width: var(--width-close);
+        background-color: #8f44fd;
+        border-radius: 0em;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transition: 1ms;
+        display: none;
+}
+
+.ClientPageMenu.open{
+    width: var(--width-open);
+    border-radius: 1em;
+}
+
+
+.ClientPageMenuHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: 1ms;
+}
+
+.menuToggleBtn{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 300ms ease-in;
+}
+
+.menuToggleBtn.open{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 10ms ease-in;
+    color: #ffff;
+}
+
+.arrowIconMenu{
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIconMenu.active{
+    transform: rotateZ(180deg);
+}
+
+
+.clientTitle{
+    width: 90%;
+    padding: 2%;
+    border-radius: 2px;
+    color: #ffff;
+    font-size: 1.6vw;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    transition: .1ms;
+    position: relative;
+}
+.clientTitle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+.clientTitle::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+
+.clientTitle.close::after,
+ .clientTitle.close::before{
+    height: 0;
+    width: 0;
+}
+
+.sidebarNavMenuClientPage{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidebarNavMenuClientPage.open{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: .6s ease;
+}
+
+
+
+
+
+
+.navbarBtns{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 7vh;
+    padding: 0 5%;
+    background-color: transparent;
+    position: relative;
+    transition: .1ms;
+}
+
+
+ .navbarBtns.active:focus{
+    background-color: #fff;
+    width: 3vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+
+.navbarBtns:focus{
+    padding: 0 8%;
+    background-color: transparent;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+}
+.navbarBtns:nth-last-child(1){
+    justify-content: center;
+    gap: 5%;
+}
+
+.IconBtnsClientPage{
+    font-size: 1.3vw;
+    z-index: 3;
+    position: relative;
+}
+
+
+.bavbarsBntTitle{
+    font-size: 1.1vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbarsBntBackground{
+    left: 150%;
+}
+
+.navbarsBntBackground.active{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 9vh;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(calc(var(--btnClicked) * 10vh));
+    border-radius: 20px 0px 0px 20px;
+    transition: 1s;
+}
+
+.navbarsBntBackground.active::after{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    top: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 0px 31px 0;
+    box-shadow: 25px 0px 0px 0px #fff;   
+    transition: .1ms;
+}
+
+.navbarsBntBackground.active::before{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    bottom: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 31px 0px 0;
+    box-shadow: 25px 0px 0px 0px #fff;
+    transition: .1ms;
+}
+
+
+
+
+
+.ClientePageMenuMobile{
+    background-color: #8f44fd;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border-radius: 20px 20px 0 0;
+    align-items: center;
+    cursor: default;
+    z-index: 100;
+}
+
+.clientPage-MenuMobile-Btn{
+    background-color: transparent;
+    width: 15%;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0vh;
+
+}
+.clientPage-MenuMobile-Btn.active{
+    background-color: #300368;
+    width: 20%;
+    height: 11vh;
+    border: none;
+    border-radius: 65px;
+    bottom: 5vh;
+    transition: .3s ease-out;
+}
+
+.clientPage-MenuMobile-icon{
+    color: #fff;
+    font-size: 2.5vh;
+}
+
+.clientPage-MenuMobile-icon.active{
+    font-size: 4vh;
+    color: #8f44fd;
+}
+
+
+}
+@media (max-width: 600px) and (orientation: landscape){
+
+
+    :root{
+        --width-close: 3.5vw;
+        --width-open: 16vw 
+    }
+    
+    
+.ClientPageMenu{
+    position: fixed;
+    left: 1vw;
+    top: 1vh;
+    height: 95vh;
+    width: 6vw;
+    width: var(--width-close);
+    background-color: #8f44fd;
+    border-radius: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: 1ms;
+}
+
+.ClientPageMenu.open{
+    width: var(--width-open);
+    border-radius: 1em;
+}
+
+
+.ClientPageMenuHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: 1ms;
+}
+
+.menuToggleBtn{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 300ms ease-in;
+}
+
+.menuToggleBtn.open{
+    position: absolute;
+    right: -2vw;
+    top: 4vh;
+    border: none;
+    background: #E9C46A;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 10ms ease-in;
+    color: #ffff;
+}
+
+.arrowIconMenu{
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIconMenu.active{
+    transform: rotateZ(180deg);
+}
+
+
+.clientTitle{
+    width: 90%;
+    padding: 2%;
+    border-radius: 2px;
+    color: #ffff;
+    font-size: 1.6vw;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    transition: .1ms;
+    position: relative;
+}
+.clientTitle::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+.clientTitle::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 45%;
+    background-color: #ffff;
+}
+
+.clientTitle.close::after,
+ .clientTitle.close::before{
+    height: 0;
+    width: 0;
+}
+
+.sidebarNavMenuClientPage{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidebarNavMenuClientPage.open{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: .6s ease;
+}
+
+
+
+
+
+
+.navbarBtns{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 7vh;
+    padding: 0 5%;
+    background-color: transparent;
+    position: relative;
+    transition: .1ms;
+}
+
+
+ .navbarBtns.active:focus{
+    background-color: #fff;
+    width: 3vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+
+.navbarBtns:focus{
+    padding: 0 8%;
+    background-color: transparent;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+}
+.navbarBtns:nth-last-child(1){
+    justify-content: center;
+    gap: 5%;
+}
+
+.IconBtnsClientPage{
+    font-size: 1.3vw;
+    z-index: 3;
+    position: relative;
+}
+
+
+.bavbarsBntTitle{
+    font-size: 1.1vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbarsBntBackground{
+    left: 150%;
+}
+
+.navbarsBntBackground.active{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 9vh;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(calc(var(--btnClicked) * 10vh));
+    border-radius: 20px 0px 0px 20px;
+    transition: 1s;
+}
+
+.navbarsBntBackground.active::after{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    top: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 0px 31px 0;
+    box-shadow: 25px 0px 0px 0px #fff;   
+    transition: .1ms;
+}
+
+.navbarsBntBackground.active::before{
+    content: '';
+    position: absolute;
+    right: 0vh;
+    bottom: -4vh;
+    width: 20%;
+    height: 48%;
+    border-radius: 0 31px 0px 0;
+    box-shadow: 25px 0px 0px 0px #fff;
+    transition: .1ms;
+}
+}

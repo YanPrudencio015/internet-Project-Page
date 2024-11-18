@@ -1,0 +1,774 @@
+.paymentSection-CP{
+  width: 80vw;
+  height: 60vh;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+}
+
+
+.paymentTitle-CP{
+  font-size: 3vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.paymentCard-CP{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.paymentCardBtn-CP{
+  width: 11vw;
+  height: 30vh;
+  background-color: #8f44fd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+  padding: 3% 0 0 0;
+  z-index: 1;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.9);
+}
+.paymentCardBtn-CP:focus{
+  transition: .3ms;
+  scale: 0.9;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0);
+}
+
+.paymentCardLabel-CP{
+  font-size: 2vw;
+  font-family: "Quicksand", sans-serif;
+}
+
+.paymentCardFooter-CP{
+  position: absolute;
+  bottom: -12vh;
+  left: -11vh;
+  width: 11vw;
+  height: 24vh;
+  background-color: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20em;
+  padding: 6px;
+  transform: rotateZ(-45deg);
+  transition: .6s ease-in-out;
+  z-index: -1;
+}
+
+.paymentCardIcon-CP{
+  transform: rotateZ(45deg);
+  color: #8f44fd;
+  width: 3vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20em;
+  transition: .6s ease-in-out;
+  position: relative;
+}
+
+.paymentCardBtn-CP:hover .paymentCardIcon-CP, .paymentCardBtn-CP:focus .paymentCardIcon-CP{
+  transition: .1s ease-in-out;
+  transform: rotateZ(0deg);
+  top: 7vh;
+  font-size: 2vw;
+}
+
+.paymentCardBtn-CP:hover .paymentCardLabel-CP, .paymentCardBtn-CP:focus .paymentCardLabel-CP{
+  color: #8f44fd;
+  
+}
+.paymentCardBtn-CP:hover .paymentCardFooter-CP, .paymentCardBtn-CP:focus .paymentCardFooter-CP{
+  bottom: -4vh;
+  width: 21vw;
+  height: 40vh;
+  background-color: #000;
+  padding: 6px;
+  transform: rotateZ(0deg);
+  transition: .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+  font-family: "Ysabeau Infant", sans-serif;
+  font-family: "Finlandica", sans-serif;
+  font-family: "Anta", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+*/
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+  .paymentSection-CP{
+  width: 80vw;
+  height: 60vh;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+}
+
+
+.paymentTitle-CP{
+  font-size: 3vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.paymentCard-CP{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.paymentCardBtn-CP{
+  width: 11vw;
+  height: 30vh;
+  background-color: #8f44fd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+  padding: 3% 0 0 0;
+  z-index: 1;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.9);
+}
+.paymentCardBtn-CP:focus{
+  transition: .3ms;
+  scale: 0.9;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0);
+}
+
+.paymentCardLabel-CP{
+  font-size: 2vw;
+  font-family: "Quicksand", sans-serif;
+}
+
+.paymentCardFooter-CP{
+  position: absolute;
+  bottom: -12vh;
+  left: -11vh;
+  width: 11vw;
+  height: 24vh;
+  background-color: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20em;
+  padding: 6px;
+  transform: rotateZ(-45deg);
+  transition: .6s ease-in-out;
+  z-index: -1;
+}
+
+.paymentCardIcon-CP{
+  transform: rotateZ(45deg);
+  color: #8f44fd;
+  width: 3vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20em;
+  transition: .6s ease-in-out;
+  position: relative;
+}
+
+.paymentCardBtn-CP:hover .paymentCardIcon-CP, .paymentCardBtn-CP:focus .paymentCardIcon-CP{
+  transition: .1s ease-in-out;
+  transform: rotateZ(0deg);
+  top: 7vh;
+  font-size: 2vw;
+}
+
+.paymentCardBtn-CP:hover .paymentCardLabel-CP, .paymentCardBtn-CP:focus .paymentCardLabel-CP{
+  color: #8f44fd;
+  
+}
+.paymentCardBtn-CP:hover .paymentCardFooter-CP, .paymentCardBtn-CP:focus .paymentCardFooter-CP{
+  bottom: -4vh;
+  width: 21vw;
+  height: 40vh;
+  background-color: #000;
+  padding: 6px;
+  transform: rotateZ(0deg);
+  transition: .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+  .paymentSection-CP{
+  width: 80vw;
+  height: 60vh;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+}
+
+
+.paymentTitle-CP{
+  font-size: 3vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.paymentCard-CP{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.paymentCardBtn-CP{
+  width: 11vw;
+  height: 30vh;
+  background-color: #8f44fd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+  padding: 3% 0 0 0;
+  z-index: 1;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.9);
+}
+.paymentCardBtn-CP:focus{
+  transition: .3ms;
+  scale: 0.9;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0);
+}
+
+.paymentCardLabel-CP{
+  font-size: 2vw;
+  font-family: "Quicksand", sans-serif;
+}
+
+.paymentCardFooter-CP{
+  position: absolute;
+  bottom: -12vh;
+  left: -11vh;
+  width: 11vw;
+  height: 24vh;
+  background-color: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20em;
+  padding: 6px;
+  transform: rotateZ(-45deg);
+  transition: .6s ease-in-out;
+  z-index: -1;
+}
+
+.paymentCardIcon-CP{
+  transform: rotateZ(45deg);
+  color: #8f44fd;
+  width: 3vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20em;
+  transition: .6s ease-in-out;
+  position: relative;
+}
+
+.paymentCardBtn-CP:hover .paymentCardIcon-CP, .paymentCardBtn-CP:focus .paymentCardIcon-CP{
+  transition: .1s ease-in-out;
+  transform: rotateZ(0deg);
+  top: 7vh;
+  font-size: 2vw;
+}
+
+.paymentCardBtn-CP:hover .paymentCardLabel-CP, .paymentCardBtn-CP:focus .paymentCardLabel-CP{
+  color: #8f44fd;
+  
+}
+.paymentCardBtn-CP:hover .paymentCardFooter-CP, .paymentCardBtn-CP:focus .paymentCardFooter-CP{
+  bottom: -4vh;
+  width: 21vw;
+  height: 40vh;
+  background-color: #000;
+  padding: 6px;
+  transform: rotateZ(0deg);
+  transition: .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+  .paymentSection-CP{
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+
+
+.paymentTitle-CP{
+  font-size: 5vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.paymentCard-CP{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0%; 
+}
+
+.paymentCardBtn-CP{
+  width: 30vw;
+  height: 25vh;
+  background-color: #8f44fd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+  padding: 3% 0 0 0;
+  z-index: 1;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.9);
+}
+.paymentCardBtn-CP:focus{
+  transition: .3ms;
+  scale: 0.9;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0);
+}
+
+.paymentCardLabel-CP{
+  font-size: 4vw;
+  font-family: "Quicksand", sans-serif;
+}
+
+.paymentCardFooter-CP{
+  position: absolute;
+  bottom: -13vh;
+  left: -15vh;
+  width: 33vw;
+  height: 24vh;
+  background-color: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20em;
+  padding: 6px;
+  transform: rotateZ(-45deg);
+  transition: .6s ease-in-out;
+  z-index: -1;
+}
+
+.paymentCardIcon-CP{
+  transform: rotateZ(45deg);
+  color: #8f44fd;
+  width: 6vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20em;
+  transition: .6s ease-in-out;
+  position: relative;
+  font-size: 4vw;
+}
+
+.paymentCardBtn-CP:hover .paymentCardIcon-CP, .paymentCardBtn-CP:focus .paymentCardIcon-CP{
+  transition: .1s ease-in-out;
+  transform: rotateZ(0deg);
+  top: 7vh;
+  left: -10vw;
+  font-size: 6vw;
+}
+
+.paymentCardBtn-CP:hover .paymentCardLabel-CP, .paymentCardBtn-CP:focus .paymentCardLabel-CP{
+  color: #8f44fd;
+  
+}
+.paymentCardBtn-CP:hover .paymentCardFooter-CP, .paymentCardBtn-CP:focus .paymentCardFooter-CP{
+  bottom: -4vh;
+  left: 0vw;
+  width: 50vw;
+  height: 40vh;
+  border-radius: 0;
+  background-color: #000;
+  padding: 6px;
+  transform: rotateZ(0deg);
+  transition: .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+  .paymentSection-CP{
+  width: 80vw;
+  height: 60vh;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+}
+
+
+.paymentTitle-CP{
+  font-size: 3vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.paymentCard-CP{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.paymentCardBtn-CP{
+  width: 11vw;
+  height: 30vh;
+  background-color: #8f44fd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+  padding: 3% 0 0 0;
+  z-index: 1;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.9);
+}
+.paymentCardBtn-CP:focus{
+  transition: .3ms;
+  scale: 0.9;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0);
+}
+
+.paymentCardLabel-CP{
+  font-size: 2vw;
+  font-family: "Quicksand", sans-serif;
+}
+
+.paymentCardFooter-CP{
+  position: absolute;
+  bottom: -12vh;
+  left: -11vh;
+  width: 11vw;
+  height: 24vh;
+  background-color: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20em;
+  padding: 6px;
+  transform: rotateZ(-45deg);
+  transition: .6s ease-in-out;
+  z-index: -1;
+}
+
+.paymentCardIcon-CP{
+  transform: rotateZ(45deg);
+  color: #8f44fd;
+  width: 3vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20em;
+  transition: .6s ease-in-out;
+  position: relative;
+}
+
+.paymentCardBtn-CP:hover .paymentCardIcon-CP, .paymentCardBtn-CP:focus .paymentCardIcon-CP{
+  transition: .1s ease-in-out;
+  transform: rotateZ(0deg);
+  top: 7vh;
+  font-size: 2vw;
+}
+
+.paymentCardBtn-CP:hover .paymentCardLabel-CP, .paymentCardBtn-CP:focus .paymentCardLabel-CP{
+  color: #8f44fd;
+  
+}
+.paymentCardBtn-CP:hover .paymentCardFooter-CP, .paymentCardBtn-CP:focus .paymentCardFooter-CP{
+  bottom: -4vh;
+  width: 21vw;
+  height: 40vh;
+  background-color: #000;
+  padding: 6px;
+  transform: rotateZ(0deg);
+  transition: .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+}
+@media (max-width: 600px) and (orientation: portrait){
+  .paymentSection-CP{
+    width: 80vw;
+    height: 169vh;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 20% 0;
+    gap: 5vh;
+}
+
+
+.paymentTitle-CP{
+  font-size: 5vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.paymentCard-CP{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4vh;
+  flex-direction: column;  
+}
+
+.paymentCardBtn-CP{
+  width: 70vw;
+  height: 35vh;
+  background-color: #8f44fd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+  padding: 3% 0 0 0;
+  z-index: 1;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.9);
+}
+.paymentCardBtn-CP:focus{
+  transition: .3ms;
+  scale: 0.9;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0);
+}
+
+.paymentCardLabel-CP{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4vh;
+  flex-direction: column;
+  font-size: 6vw;
+
+}
+
+.paymentCardFooter-CP{
+  position: absolute;
+  bottom: -14vh;
+  left: -11vh;
+  width: 53vw;
+  height: 31vh;
+  background-color: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20em;
+  padding: 6px;
+  transform: rotateZ(-45deg);
+  transition: .1s ease-in-out;
+  z-index: -1;
+}
+
+.paymentCardIcon-CP{
+  transform: rotateZ(45deg);
+  color: #8f44fd;
+  width: 29vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20em;
+  transition: .1ms ease-in-out;
+  position: relative;
+  font-size: 13vw;
+}
+
+.paymentCardBtn-CP:hover .paymentCardIcon-CP, .paymentCardBtn-CP:focus .paymentCardIcon-CP{
+  transition: .1ms ease-in-out;
+  transform: rotateZ(0deg);
+  top: 7vh;
+  left: 1.5vw;
+  font-size: 7vw;
+}
+
+.paymentCardBtn-CP:hover .paymentCardLabel-CP, .paymentCardBtn-CP:focus .paymentCardLabel-CP{
+  color: #8f44fd;
+}
+.paymentCardBtn-CP:hover .paymentCardFooter-CP, .paymentCardBtn-CP:focus .paymentCardFooter-CP{
+  bottom: -35vh;
+  left: -10vh;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  background-color: #000;
+  padding: 6px;
+  transform: rotateZ(0deg);
+  transition: .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+}
+@media (max-width: 600px) and (orientation: landscape){
+  .paymentSection-CP{
+  width: 80vw;
+  height: 60vh;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+}
+
+
+.paymentTitle-CP{
+  font-size: 3vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.paymentCard-CP{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.paymentCardBtn-CP{
+  width: 11vw;
+  height: 30vh;
+  background-color: #8f44fd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+  padding: 3% 0 0 0;
+  z-index: 1;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.9);
+}
+.paymentCardBtn-CP:focus{
+  transition: .3ms;
+  scale: 0.9;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0);
+}
+
+.paymentCardLabel-CP{
+  font-size: 2vw;
+  font-family: "Quicksand", sans-serif;
+}
+
+.paymentCardFooter-CP{
+  position: absolute;
+  bottom: -12vh;
+  left: -11vh;
+  width: 11vw;
+  height: 24vh;
+  background-color: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20em;
+  padding: 6px;
+  transform: rotateZ(-45deg);
+  transition: .6s ease-in-out;
+  z-index: -1;
+}
+
+.paymentCardIcon-CP{
+  transform: rotateZ(45deg);
+  color: #8f44fd;
+  width: 3vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20em;
+  transition: .6s ease-in-out;
+  position: relative;
+}
+
+.paymentCardBtn-CP:hover .paymentCardIcon-CP, .paymentCardBtn-CP:focus .paymentCardIcon-CP{
+  transition: .1s ease-in-out;
+  transform: rotateZ(0deg);
+  top: 7vh;
+  font-size: 2vw;
+}
+
+.paymentCardBtn-CP:hover .paymentCardLabel-CP, .paymentCardBtn-CP:focus .paymentCardLabel-CP{
+  color: #8f44fd;
+  
+}
+.paymentCardBtn-CP:hover .paymentCardFooter-CP, .paymentCardBtn-CP:focus .paymentCardFooter-CP{
+  bottom: -4vh;
+  width: 21vw;
+  height: 40vh;
+  background-color: #000;
+  padding: 6px;
+  transform: rotateZ(0deg);
+  transition: .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+}

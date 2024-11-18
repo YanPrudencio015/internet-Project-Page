@@ -95,7 +95,7 @@
     }
   
     .clientBtn{
-      width: 80%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -105,6 +105,10 @@
       border: none;
       gap: 5%;
       color: var(--purple2);
+    }
+
+    .clientBtnLink{
+      width: 80%;
     }
   
     .clientIcon,.clientText{
@@ -269,6 +273,10 @@
       border: none;
       gap: 5%;
       color: var(--purple2);
+    }
+
+    .clientBtnLink{
+      width: 80%;
     }
   
     .clientIcon,.clientText{
@@ -435,6 +443,15 @@
       gap: 5%;
       color: var(--purple2);
     }
+
+    .clientBtnLink{
+      width: 80%;
+    }
+
+
+
+
+
   
     .clientIcon,.clientText{
       font-size: 7vw;
@@ -593,6 +610,10 @@
   border: none;
   gap: 5%;
   color: var(--purple2);
+}
+
+.clientBtnLink{
+  width: 80%;
 }
 
 .clientIcon,.clientText{

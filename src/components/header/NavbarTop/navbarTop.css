@@ -1370,6 +1370,11 @@
     transform: rotate(180deg);
   }
 
+  .viabandTitleLink{
+    width: 15%;
+    height: 80%;
+  }
+
   }
   @media (min-width: 601px) and (max-width: 900px) and (orientation:landscape){
      /* NavbarTop style */

@@ -1,0 +1,916 @@
+.ClienteCardSection{
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Information client card Section */
+.ClientInfoCard-CP{
+    width: 20vw;
+    height: 33vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #8f44fd;
+    box-shadow: 4px 4px 28px -5px rgba(0, 0, 0, 1);
+    box-shadow: 9px 14px 0px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 0vh;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.ClientInfoCard-CP:after{
+    content: "";
+    position: absolute;
+    bottom: -43vh;
+    left: -14vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20em;
+    transition: .1s ease-out;
+}
+.ClientInfoCard-CP:hover:after{
+    content: "";
+    position: absolute;
+    bottom: -11vh;
+    left: -3vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20em;
+    transition: .2s ease-in;
+}
+.ClientInfoCard-CP:before{
+    content: "";
+    position: absolute;
+    bottom: -57vh;
+    right: -18vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20em;
+    transition: .4s ease-in-out;
+}
+.ClientInfoCard-CP:hover::before{
+    bottom: -39vh;
+    right: -16vw;
+    transition: .4s ease-in-out;
+}
+
+.ClientInfoCard-CP:hover{
+    bottom: 1vh;
+    transition: .3s ease-in;
+    box-shadow: 9px 20px 0px 3px rgba(0, 0, 0, 0.3);
+    /* background-color: #6A42C2; */
+}
+
+.title-CP{
+    width: 100%;
+    font-size: 1.3vw;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.icon-CP{
+    width: 14%;
+    height: 20%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 1vw;
+    bottom: 17vh;
+    color: #fff;
+}
+
+.clientInf-CP{
+    font-size: 1.5vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.iconArrow-CP{
+    position: relative;
+    top: 0vw;
+    left: 15vh;
+    transform: rotateZ(-131deg);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 25%;
+    height: 15%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    color: #fff;
+}
+.ClientInfoCard-CP:hover .iconArrow-CP{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-size: 2.5vw;
+    top: -2vw;
+    left: 12vh;
+}
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+
+    .ClienteCardSection{
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Information client card Section */
+.ClientInfoCard-CP{
+    width: 20vw;
+    height: 33vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #8f44fd;
+    box-shadow: 4px 4px 28px -5px rgba(0, 0, 0, 1);
+    box-shadow: 9px 14px 0px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 0vh;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.ClientInfoCard-CP:after{
+    content: "";
+    position: absolute;
+    bottom: -43vh;
+    left: -14vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20em;
+    transition: .1s ease-out;
+}
+.ClientInfoCard-CP:hover:after{
+    content: "";
+    position: absolute;
+    bottom: -11vh;
+    left: -3vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20em;
+    transition: .2s ease-in;
+}
+.ClientInfoCard-CP:before{
+    content: "";
+    position: absolute;
+    bottom: -57vh;
+    right: -18vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20em;
+    transition: .4s ease-in-out;
+}
+.ClientInfoCard-CP:hover::before{
+    bottom: -39vh;
+    right: -16vw;
+    transition: .4s ease-in-out;
+}
+
+.ClientInfoCard-CP:hover{
+    bottom: 1vh;
+    transition: .3s ease-in;
+    box-shadow: 9px 20px 0px 3px rgba(0, 0, 0, 0.3);
+    /* background-color: #6A42C2; */
+}
+
+.title-CP{
+    width: 100%;
+    font-size: 1.3vw;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.icon-CP{
+    width: 14%;
+    height: 20%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 1vw;
+    bottom: 17vh;
+    color: #fff;
+}
+
+.clientInf-CP{
+    font-size: 1.5vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.iconArrow-CP{
+    position: relative;
+    top: 0vw;
+    left: 15vh;
+    transform: rotateZ(-131deg);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 25%;
+    height: 15%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    color: #fff;
+}
+.ClientInfoCard-CP:hover .iconArrow-CP{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-size: 2.5vw;
+    top: -2vw;
+    left: 12vh;
+}
+
+}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+
+    .ClienteCardSection{
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Information client card Section */
+.ClientInfoCard-CP{
+    width: 20vw;
+    height: 33vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #8f44fd;
+    box-shadow: 4px 4px 28px -5px rgba(0, 0, 0, 1);
+    box-shadow: 9px 14px 0px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 0vh;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.ClientInfoCard-CP:after{
+    content: "";
+    position: absolute;
+    bottom: -43vh;
+    left: -14vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20em;
+    transition: .1s ease-out;
+}
+.ClientInfoCard-CP:hover:after{
+    content: "";
+    position: absolute;
+    bottom: -11vh;
+    left: -3vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20em;
+    transition: .2s ease-in;
+}
+.ClientInfoCard-CP:before{
+    content: "";
+    position: absolute;
+    bottom: -57vh;
+    right: -18vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20em;
+    transition: .4s ease-in-out;
+}
+.ClientInfoCard-CP:hover::before{
+    bottom: -39vh;
+    right: -16vw;
+    transition: .4s ease-in-out;
+}
+
+.ClientInfoCard-CP:hover{
+    bottom: 1vh;
+    transition: .3s ease-in;
+    box-shadow: 9px 20px 0px 3px rgba(0, 0, 0, 0.3);
+    /* background-color: #6A42C2; */
+}
+
+.title-CP{
+    width: 100%;
+    font-size: 1.3vw;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.icon-CP{
+    width: 14%;
+    height: 20%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 1vw;
+    bottom: 17vh;
+    color: #fff;
+}
+
+.clientInf-CP{
+    font-size: 1.5vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.iconArrow-CP{
+    position: relative;
+    top: 0vw;
+    left: 15vh;
+    transform: rotateZ(-131deg);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 25%;
+    height: 15%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    color: #fff;
+}
+.ClientInfoCard-CP:hover .iconArrow-CP{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-size: 2.5vw;
+    top: -2vw;
+    left: 12vh;
+}
+
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+
+    .ClienteCardSection{
+        width: 80vw;
+        height: 50vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+
+/* Information client card Section */
+.ClientInfoCard-CP{
+    width: 37vw;
+    height: 22vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #8f44fd;
+    box-shadow: 4px 4px 28px -5px rgba(0, 0, 0, 1);
+    box-shadow: 9px 14px 0px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 0vh;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.ClientInfoCard-CP:after{
+    content: "";
+    position: absolute;
+    bottom: -50vh;
+    left: -14vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20em;
+    transition: .1s ease-out;
+}
+.ClientInfoCard-CP:hover:after{
+    content: "";
+    position: absolute;
+    bottom: -31vh;
+    left: -1vw;
+    width: 42vw;
+    height: 68vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20em;
+    transition: .2s ease-in;
+}
+.ClientInfoCard-CP:before{
+    content: "";
+    position: absolute;
+    bottom: -57vh;
+    right: -18vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20em;
+    transition: .4s ease-in-out;
+}
+.ClientInfoCard-CP:hover::before{
+    bottom: -46vh;
+    right: -11vw;
+    transition: .4s ease-in-out;
+}
+
+.ClientInfoCard-CP:hover{
+    bottom: 1vh;
+    transition: .3s ease-in;
+    box-shadow: 9px 20px 0px 3px rgba(0, 0, 0, 0.3);
+    /* background-color: #6A42C2; */
+}
+
+.title-CP{
+    width: 100%;
+    font-size: 2vw;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.icon-CP{
+    width: 17%;
+    height: 21%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.3vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 1vw;
+    bottom: 13vh;
+    color: #fff;
+}
+
+.clientInf-CP{
+    font-size: 3vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.iconArrow-CP{
+    position: relative;
+    top: 0vw;
+    left: 10vh;
+    transform: rotateZ(-131deg);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 25%;
+    height: 15%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    color: #fff;
+}
+.ClientInfoCard-CP:hover .iconArrow-CP{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-size: 3.8vw;
+    top: -4vw;
+    left: 7vh;
+}
+
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+
+    .ClienteCardSection{
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Information client card Section */
+.ClientInfoCard-CP{
+    width: 20vw;
+    height: 33vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #8f44fd;
+    box-shadow: 4px 4px 28px -5px rgba(0, 0, 0, 1);
+    box-shadow: 9px 14px 0px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 0vh;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.ClientInfoCard-CP:after{
+    content: "";
+    position: absolute;
+    bottom: -43vh;
+    left: -14vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20em;
+    transition: .1s ease-out;
+}
+.ClientInfoCard-CP:hover:after{
+    content: "";
+    position: absolute;
+    bottom: -11vh;
+    left: -3vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20em;
+    transition: .2s ease-in;
+}
+.ClientInfoCard-CP:before{
+    content: "";
+    position: absolute;
+    bottom: -57vh;
+    right: -18vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20em;
+    transition: .4s ease-in-out;
+}
+.ClientInfoCard-CP:hover::before{
+    bottom: -39vh;
+    right: -16vw;
+    transition: .4s ease-in-out;
+}
+
+.ClientInfoCard-CP:hover{
+    bottom: 1vh;
+    transition: .3s ease-in;
+    box-shadow: 9px 20px 0px 3px rgba(0, 0, 0, 0.3);
+    /* background-color: #6A42C2; */
+}
+
+.title-CP{
+    width: 100%;
+    font-size: 1.3vw;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.icon-CP{
+    width: 14%;
+    height: 20%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 1vw;
+    bottom: 17vh;
+    color: #fff;
+}
+
+.clientInf-CP{
+    font-size: 1.5vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.iconArrow-CP{
+    position: relative;
+    top: 0vw;
+    left: 15vh;
+    transform: rotateZ(-131deg);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 25%;
+    height: 15%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    color: #fff;
+}
+.ClientInfoCard-CP:hover .iconArrow-CP{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-size: 2.5vw;
+    top: -2vw;
+    left: 12vh;
+}
+
+}
+@media (max-width: 600px) and (orientation: portrait){
+
+    .ClienteCardSection{
+        width: 100vw;
+        height: 160vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+}
+
+
+/* Information client card Section */
+.ClientInfoCard-CP{
+    width: 76vw;
+    height: 37vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #8f44fd;
+    box-shadow: 9px 14px 0px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 0vh;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.ClientInfoCard-CP:after{
+    content: "";
+    position: absolute;
+    bottom: -43vh;
+    left: -14vw;
+    width: 34vw;
+    height: 52vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20em;
+    transition: .1s ease-out;
+}
+.ClientInfoCard-CP:hover:after{
+    content: "";
+    position: absolute;
+    bottom: -13vh;
+    left: -2vw;
+    width: 100vw;
+    height: 52vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0em;
+    transition: .2s ease-in;
+}
+.ClientInfoCard-CP:before{
+    content: "";
+    position: absolute;
+    bottom: -60vh;
+    right: -35vw;
+    width: 70vw;
+    height: 58vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20em;
+    transition: .4s ease-in-out;
+}
+.ClientInfoCard-CP:hover::before{
+    bottom: -40vh;
+    right: -29vw;
+    transition: .4s ease-in-out;
+}
+
+.ClientInfoCard-CP:hover{
+    bottom: 1vh;
+    transition: .3s ease-in;
+    box-shadow: 9px 20px 0px 3px rgba(0, 0, 0, 0.3);
+    /* background-color: #6A42C2; */
+}
+
+.title-CP{
+    width: 100%;
+    font-size: 4.5vw;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.icon-CP{
+    width: 22%;
+    height: 20%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5.6vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 1vw;
+    bottom: 22vh;
+    color: #fff;
+}
+
+.clientInf-CP{
+    font-size: 7.5vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.iconArrow-CP{
+    position: relative;
+    top: 2vw;
+    left: 17vh;
+    transform: rotateZ(-131deg);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 25%;
+    height: 15%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    color: #fff;
+}
+.ClientInfoCard-CP:hover .iconArrow-CP{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-size: 12vw;
+    top: -10vw;
+    left: 10vh;
+}
+
+}
+@media (max-width: 600px) and (orientation: landscape){
+
+    .ClienteCardSection{
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Information client card Section */
+.ClientInfoCard-CP{
+    width: 20vw;
+    height: 33vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #8f44fd;
+    box-shadow: 4px 4px 28px -5px rgba(0, 0, 0, 1);
+    box-shadow: 9px 14px 0px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 0vh;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.ClientInfoCard-CP:after{
+    content: "";
+    position: absolute;
+    bottom: -43vh;
+    left: -14vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20em;
+    transition: .1s ease-out;
+}
+.ClientInfoCard-CP:hover:after{
+    content: "";
+    position: absolute;
+    bottom: -11vh;
+    left: -3vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20em;
+    transition: .2s ease-in;
+}
+.ClientInfoCard-CP:before{
+    content: "";
+    position: absolute;
+    bottom: -57vh;
+    right: -18vw;
+    width: 27vw;
+    height: 56vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20em;
+    transition: .4s ease-in-out;
+}
+.ClientInfoCard-CP:hover::before{
+    bottom: -39vh;
+    right: -16vw;
+    transition: .4s ease-in-out;
+}
+
+.ClientInfoCard-CP:hover{
+    bottom: 1vh;
+    transition: .3s ease-in;
+    box-shadow: 9px 20px 0px 3px rgba(0, 0, 0, 0.3);
+    /* background-color: #6A42C2; */
+}
+
+.title-CP{
+    width: 100%;
+    font-size: 1.3vw;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.icon-CP{
+    width: 14%;
+    height: 20%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    right: 1vw;
+    bottom: 17vh;
+    color: #fff;
+}
+
+.clientInf-CP{
+    font-size: 1.5vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.iconArrow-CP{
+    position: relative;
+    top: 0vw;
+    left: 15vh;
+    transform: rotateZ(-131deg);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 25%;
+    height: 15%;
+    border-radius: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7vw;
+    color: #fff;
+}
+.ClientInfoCard-CP:hover .iconArrow-CP{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-size: 2.5vw;
+    top: -2vw;
+    left: 12vh;
+}
+
+}

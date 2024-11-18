@@ -3,7 +3,7 @@ import MainPage from '../../Viaband'
 import Viability from "../Availabillity/AvailabilityPage";
 import ClientPage from "../clientPage/clientPage";
 import Login from '../loginPage/LoginPage'
-import { createBrowserRouter, Route, Link,RouterProvider } from "react-router-dom";
+import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import PlainPage from "../pricePage/PlainPage";
 // redux
 import { createStore, combineReducers } from "redux";
@@ -30,6 +30,10 @@ export default function Pages(props){
     {
         path:'/Escolher-Plano',
          element: <PlainPage/>
+    },
+    {
+        path:'/Pagina-do-cliente',
+        element: <ClientPage/>
     }
 
 ])

@@ -51,8 +51,8 @@
 }
 
 .AboutUsLinks{
+    width: 20vw;
     font-size: 2vw;
-
     padding: 2%;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
@@ -1533,7 +1533,7 @@
     
     .AboutUsLinks{
         font-size: 8vw;
-    
+        width: 60vw;
         padding: 2%;
         cursor: pointer;
         font-family: "Montserrat", sans-serif;
