@@ -760,7 +760,7 @@
     
     .square-Body-PSub{
         width: 100%;
-        height: 100%;
+        height: 80%;
         overflow: hidden;
         overflow-y: auto;
     }
@@ -801,11 +801,11 @@
     
     
     .square-Body-Item-Value-PSub{
-        width: 100%;
+        width: 17%;
         font-family: "Poppins", sans-serif;
         display: flex;
         justify-content: center;
-        font-size: 2.3vw;
+        font-size: 3.1vw;
     }
     
     .square-Body-Item-Option-PSub{
