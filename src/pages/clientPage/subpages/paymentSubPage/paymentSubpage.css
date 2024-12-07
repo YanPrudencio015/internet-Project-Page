@@ -667,7 +667,7 @@
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
-    font-size: 1.5vw;
+    font-size: 3.1vw;
 }
 
 .square-Body-Item-Option-PSub{
@@ -703,7 +703,7 @@
         padding: 2% 0;
     }
     .paymentSection{
-        width: 90%;
+        width: 95%;
         height: 100%;
         padding: 2% 0;
         display: flex;
@@ -739,7 +739,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2%;
+        gap: 1%;
         flex-direction: row;
     }
     
@@ -754,6 +754,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        font-weight: 900;
     }
     
     .square-Body-PSub{
@@ -791,8 +793,8 @@
         align-items: center;
         z-index: 2;
         list-style: none;
-        gap: 5%;
-        padding: 0 3%;
+        gap: 1%;
+        padding: 0 0%;
         border-radius: 5px;
         text-transform: uppercase;
     }
