@@ -5,6 +5,16 @@ import ClientPage from "../clientPage/clientPage";
 import Login from '../loginPage/LoginPage'
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import PlainPage from "../pricePage/PlainPage";
+
+
+
+// Client SubPages
+
+import ClientInfoSubpage from "../clientPage/subpages/clientinfosubpage/ClientInfoSubpage";
+import PaymentSubpage from "../clientPage/subpages/paymentSubPage/PaymentSubpage";
+import ContactSubPage from "../clientPage/subpages/contactSubpage/ContactSubPage"
+
+
 // redux
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
@@ -34,7 +44,19 @@ export default function Pages(props){
     {
         path:'/Pagina-do-cliente',
         element: <ClientPage/>
-    }
+    },
+    {
+        path: '/Informacoes-do-Cliente',
+        element: <ClientInfoSubpage/>
+    },
+    {
+        path: '/Informacoes-de-Pagamento',
+        element: <PaymentSubpage/>
+    },
+    {
+        path: '/Pagina-do-cliente-Contatos',
+        element: <ContactSubPage/>
+    },
 
 ])
 // redux

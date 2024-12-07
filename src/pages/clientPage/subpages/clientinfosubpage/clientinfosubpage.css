@@ -1,0 +1,873 @@
+.clientInfoSubPage{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSquadSectionCP{
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 115vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoSquadCP-Header{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: #8f44fd;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.infoSquadCP-HeaderTitle{
+    width: 100%;
+    padding: 0 5%;
+    font-size: 1.9vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.infoSquadCP-HeaderSubTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.infoSquadForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1% ;
+}
+
+.clientInputBtn-CP{
+    width: 50%;
+    height: 6vh;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.clientInputInfoSpan-CP{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #8f44fd;
+    color: #8f44fd;
+    color: #fff;
+}
+
+.clientInputInfo-CP{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 2%;
+    font-size: 1.2vw;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
+}
+.clientInputInfo-CP:focus{
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-bottom: solid 1px #8f44fd;
+    border-radius: 0px 5px 0px 0px;   
+}
+
+
+.infoSquadForm-controlers{
+    width: 30%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infoSquadFormBtn{
+    border: none;
+    outline: none;
+    background: #8f44fd;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    width: 30%;
+    height: 5vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: portrait){
+    .clientInfoSubPage{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSquadSectionCP{
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 115vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoSquadCP-Header{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: #8f44fd;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.infoSquadCP-HeaderTitle{
+    width: 100%;
+    padding: 0 5%;
+    font-size: 1.9vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.infoSquadCP-HeaderSubTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.infoSquadForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1% ;
+}
+
+.clientInputBtn-CP{
+    width: 50%;
+    height: 6vh;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.clientInputInfoSpan-CP{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #8f44fd;
+    color: #8f44fd;
+    color: #fff;
+}
+
+.clientInputInfo-CP{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 2%;
+    font-size: 1.2vw;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
+}
+.clientInputInfo-CP:focus{
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-bottom: solid 1px #8f44fd;
+    border-radius: 0px 5px 0px 0px;   
+}
+
+
+.infoSquadForm-controlers{
+    width: 30%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infoSquadFormBtn{
+    border: none;
+    outline: none;
+    background: #8f44fd;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    width: 30%;
+    height: 5vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+}
+@media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
+    .clientInfoSubPage{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSquadSectionCP{
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 115vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoSquadCP-Header{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: #8f44fd;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.infoSquadCP-HeaderTitle{
+    width: 100%;
+    padding: 0 5%;
+    font-size: 1.9vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.infoSquadCP-HeaderSubTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.infoSquadForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1% ;
+}
+
+.clientInputBtn-CP{
+    width: 50%;
+    height: 6vh;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.clientInputInfoSpan-CP{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #8f44fd;
+    color: #8f44fd;
+    color: #fff;
+}
+
+.clientInputInfo-CP{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 2%;
+    font-size: 1.2vw;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
+}
+.clientInputInfo-CP:focus{
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-bottom: solid 1px #8f44fd;
+    border-radius: 0px 5px 0px 0px;   
+}
+
+
+.infoSquadForm-controlers{
+    width: 30%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infoSquadFormBtn{
+    border: none;
+    outline: none;
+    background: #8f44fd;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    width: 30%;
+    height: 5vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
+    .clientInfoSubPage{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSquadSectionCP{
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    height: 106vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.infoSquadCP-Header{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: #8f44fd;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.infoSquadCP-HeaderTitle{
+    width: 100%;
+    padding: 0 5%;
+    font-size: 3.9vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.infoSquadCP-HeaderSubTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.7vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.infoSquadForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1% ;
+}
+
+.clientInputBtn-CP{
+    width: 90%;
+    height: 5.2vh;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.clientInputInfoSpan-CP{
+    font-size: 2.7vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #8f44fd;
+    color: #8f44fd;
+    color: #fff;
+}
+
+.clientInputInfo-CP{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 2%;
+    font-size: 2vw;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
+}
+.clientInputInfo-CP:focus{
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-bottom: solid 1px #8f44fd;
+    border-radius: 0px 5px 0px 0px;   
+}
+
+
+.infoSquadForm-controlers{
+    width: 50%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infoSquadFormBtn{
+    border: none;
+    outline: none;
+    background: #8f44fd;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    width: 30%;
+    height: 5vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
+    .clientInfoSubPage{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSquadSectionCP{
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 115vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoSquadCP-Header{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: #8f44fd;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.infoSquadCP-HeaderTitle{
+    width: 100%;
+    padding: 0 5%;
+    font-size: 1.9vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.infoSquadCP-HeaderSubTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.infoSquadForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1% ;
+}
+
+.clientInputBtn-CP{
+    width: 50%;
+    height: 6vh;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.clientInputInfoSpan-CP{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #8f44fd;
+    color: #8f44fd;
+    color: #fff;
+}
+
+.clientInputInfo-CP{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 2%;
+    font-size: 1.2vw;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
+}
+.clientInputInfo-CP:focus{
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-bottom: solid 1px #8f44fd;
+    border-radius: 0px 5px 0px 0px;   
+}
+
+
+.infoSquadForm-controlers{
+    width: 50%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infoSquadFormBtn{
+    border: none;
+    outline: none;
+    background: #8f44fd;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    width: 30%;
+    height: 5vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+}
+@media (max-width: 600px) and (orientation: portrait){
+    .clientInfoSubPage{
+    width: 100%;
+    height: 145vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSquadSectionCP{
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 115vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoSquadCP-Header{
+    background-color: #8f44fd;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.infoSquadCP-HeaderTitle{
+    width: 100%;
+    padding: 0 0%;
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.infoSquadCP-HeaderSubTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.infoSquadForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1% ;
+}
+
+.clientInputBtn-CP{
+    width: 80%;
+    height: 6vh;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.clientInputInfoSpan-CP{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    width: 28%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #8f44fd;
+    color: #fff;
+
+}
+
+.clientInputInfo-CP{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 2%;
+    font-size: 2.2vw;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
+}
+.clientInputInfo-CP:focus{
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-bottom: solid 1px #8f44fd;
+    border-radius: 0px 5px 0px 0px;   
+}
+
+
+.infoSquadForm-controlers{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infoSquadFormBtn{
+    border: none;
+    outline: none;
+    background: #8f44fd;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    width: 30%;
+    height: 5vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+}
+@media (max-width: 600px) and (orientation: landscape){
+    .clientInfoSubPage{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSquadSectionCP{
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 115vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoSquadCP-Header{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: #8f44fd;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.infoSquadCP-HeaderTitle{
+    width: 100%;
+    padding: 0 5%;
+    font-size: 1.9vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.infoSquadCP-HeaderSubTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.infoSquadForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1% ;
+}
+
+.clientInputBtn-CP{
+    width: 50%;
+    height: 6vh;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.clientInputInfoSpan-CP{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #8f44fd;
+    color: #8f44fd;
+    color: #fff;
+}
+
+.clientInputInfo-CP{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 2%;
+    font-size: 1.2vw;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
+}
+.clientInputInfo-CP:focus{
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-bottom: solid 1px #8f44fd;
+    border-radius: 0px 5px 0px 0px;   
+}
+
+
+.infoSquadForm-controlers{
+    width: 30%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infoSquadFormBtn{
+    border: none;
+    outline: none;
+    background: #8f44fd;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    width: 30%;
+    height: 5vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+}

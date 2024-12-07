@@ -209,29 +209,9 @@
     transition: 1s;
 }
 
-.navbarsBntBackground.active::after{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    top: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 0px 31px 0;
-    box-shadow: 25px 2px 0px 0px #fff;   
-    transition: .1ms;
-}
 
-.navbarsBntBackground.active::before{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    bottom: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 31px 0px 0;
-    box-shadow: 25px -2px 0px 0px #fff;
-    transition: .1ms;
-}
+
+
 
 
 
@@ -454,29 +434,9 @@
     transition: 1s;
 }
 
-.navbarsBntBackground.active::after{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    top: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 0px 31px 0;
-    box-shadow: 25px 0px 0px 0px #fff;   
-    transition: .1ms;
-}
 
-.navbarsBntBackground.active::before{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    bottom: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 31px 0px 0;
-    box-shadow: 25px 0px 0px 0px #fff;
-    transition: .1ms;
-}
+
+
 }
 @media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape){
 
@@ -691,29 +651,9 @@
     transition: 1s;
 }
 
-.navbarsBntBackground.active::after{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    top: -3vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 0px 31px 0;
-    box-shadow: 10px 0px 0px 0px #fff;   
-    transition: .1ms;
-}
 
-.navbarsBntBackground.active::before{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    bottom: -3vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 31px 0px 0;
-    box-shadow: 10px 0px 0px 0px #fff;
-    transition: .1ms;
-}
+
+
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
 
@@ -928,29 +868,9 @@
     transition: 1s;
 }
 
-.navbarsBntBackground.active::after{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    top: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 0px 31px 0;
-    box-shadow: 25px 1px 0px 0px #fff;   
-    transition: .1ms;
-}
 
-.navbarsBntBackground.active::before{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    bottom: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 31px 0px 0;
-    box-shadow: 21px -4px 0px 0px #fff;
-    transition: .1ms;
-}
+
+
 }
 @media (min-width: 601px) and (max-width: 900px) and (orientation: landscape){
 
@@ -1165,29 +1085,9 @@
     transition: 1s;
 }
 
-.navbarsBntBackground.active::after{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    top: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 0px 31px 0;
-    box-shadow: 6px 4px 0px 4px #fff;
-    transition: .1ms;
-}
 
-.navbarsBntBackground.active::before{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    bottom: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 31px 0px 0;
-    box-shadow: 6px -3px 0px 3px #fff;
-    transition: .1ms;
-}
+
+
 }
 @media (max-width: 600px) and (orientation: portrait){
 
@@ -1402,29 +1302,9 @@
     transition: 1s;
 }
 
-.navbarsBntBackground.active::after{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    top: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 0px 31px 0;
-    box-shadow: 25px 0px 0px 0px #fff;   
-    transition: .1ms;
-}
 
-.navbarsBntBackground.active::before{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    bottom: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 31px 0px 0;
-    box-shadow: 25px 0px 0px 0px #fff;
-    transition: .1ms;
-}
+
+
 
 
 
@@ -1690,27 +1570,7 @@
     transition: 1s;
 }
 
-.navbarsBntBackground.active::after{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    top: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 0px 31px 0;
-    box-shadow: 25px 0px 0px 0px #fff;   
-    transition: .1ms;
-}
 
-.navbarsBntBackground.active::before{
-    content: '';
-    position: absolute;
-    right: 0vh;
-    bottom: -4vh;
-    width: 20%;
-    height: 48%;
-    border-radius: 0 31px 0px 0;
-    box-shadow: 25px 0px 0px 0px #fff;
-    transition: .1ms;
-}
+
+
 }
