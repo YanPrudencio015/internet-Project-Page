@@ -43,8 +43,6 @@ export function ClientPageMenu(props){
 
     // to check the subpage chosed 
 
-    const [pageChosed, setPageChosed] = useState('')
-
     const navigation = useNavigate()
     function adressChosed(index){
         let route =''
@@ -68,11 +66,8 @@ export function ClientPageMenu(props){
                 route = '/Pagina-do-cliente'
                 break;
         }
-
         navigation(route)
-        // setPageChosed(route)
     }
-
 
     return(
         <section 
@@ -135,13 +130,42 @@ export function ClientePageMenuMobile(props){
     }
 
 
+
+
+    const navigation = useNavigate()
+    function adressChosed(index){
+        let route =''
+        switch (index) {
+            case 0:
+                route= "/Pagina-do-cliente"
+                break;
+            case 1:
+                route = '/Informacoes-do-Cliente'
+                break;
+            case 2:
+                route = '/Informacoes-de-Pagamento'
+                break;
+            case 3:
+                route = '/Pagina-do-cliente-Contatos'
+                break;
+            case 4:
+                route = '/Pagina-do-cliente'
+                break;
+            default:
+                route = '/Pagina-do-cliente'
+                break;
+        }
+        navigation(route)
+    }
+
+
+
     return(
         <section className="ClientePageMenuMobile">
             {menuIconsMobile.map((item,index)=>(
             <button key={index} 
                 className={ index === buttonIndex ?item.button + " active" : item.button} 
-                onClick={()=>{handleButtonClicked(index)
-                }}>
+                onClick={()=>{handleButtonClicked(index);adressChosed(index)}}>
                 <i className={ iconChoosed === item.icon ? 
                             `clientPage-MenuMobile-icon active ${item.icon}`:
                             ` clientPage-MenuMobile-icon ${item.icon}`}>

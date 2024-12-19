@@ -1337,11 +1337,11 @@
 }
 .clientPage-MenuMobile-Btn.active{
     background-color: #300368;
-    width: 20%;
-    height: 11vh;
+    width: 14%;
+    height: 7vh;
     border: none;
     border-radius: 65px;
-    bottom: 5vh;
+    bottom: 1vh;
     transition: .3s ease-out;
 }
 

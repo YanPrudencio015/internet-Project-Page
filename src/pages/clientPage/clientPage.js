@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import './clientpage.css';
 import { Link } from "react-router-dom";
 import {ClientPageMenu, ClientePageMenuMobile} from "./sidebarComponent/ClientSideBar";
 import { ClienteCardSection } from "./clientCardSection/ClientCardSection";
 import CPServices from "./Services/CPServices";
 import CPPayment from "./Payment/CPPayment";
+import LogoutContainer from "./subpages/logout/logoutContainer";
 
 const clientName = 'Marcelo'
 const clientFullName = 'Marcelo Martins de Oliveira'
@@ -33,6 +34,12 @@ function ClientPage(props){
             <ClienteCardSection/>
             <CPServices/>
             <CPPayment/>
+
+            {/* create a logic to click in get out btn and show the component.
+                if the client to click out the card, to click at baclground, 
+                the option to get out will be closed
+                 vvvvvvvvvv */}
+            {/* <LogoutContainer/> */}
         </section>
     )
 }
