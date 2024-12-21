@@ -1313,15 +1313,15 @@
 .ClientePageMenuMobile{
     background-color: #8f44fd;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     position: fixed;
     bottom: 0;
-    display: flex;
+    display: flex
+;
     justify-content: space-evenly;
     flex-direction: row;
-    border-radius: 20px 20px 0 0;
+    border-radius: 0px 0px 0 0;
     align-items: center;
-    cursor: default;
     z-index: 100;
 }
 
@@ -1337,8 +1337,8 @@
 }
 .clientPage-MenuMobile-Btn.active{
     background-color: #300368;
-    width: 14%;
-    height: 7vh;
+    width: 18%;
+    height: 9vh;
     border: none;
     border-radius: 65px;
     bottom: 1vh;
@@ -1347,11 +1347,11 @@
 
 .clientPage-MenuMobile-icon{
     color: #fff;
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 
 .clientPage-MenuMobile-icon.active{
-    font-size: 4vh;
+    font-size: 3.5vh;
     color: #8f44fd;
 }
 
