@@ -129,9 +129,6 @@ export function ClientePageMenuMobile(props){
         setIconChoosed(menuIconsMobile[button].icon)
     }
 
-
-
-
     const navigation = useNavigate()
     function adressChosed(index){
         let route =''
@@ -158,14 +155,19 @@ export function ClientePageMenuMobile(props){
         navigation(route)
     }
 
-
+    function OutfromClientpage(index){
+        // if(index == 4 ){
+        // }
+        // console.log("cliquei para sair")
+        console.log(index)
+    }
 
     return(
         <section className="ClientePageMenuMobile">
             {menuIconsMobile.map((item,index)=>(
             <button key={index} 
                 className={ index === buttonIndex ?item.button + " active" : item.button} 
-                onClick={()=>{handleButtonClicked(index);adressChosed(index)}}>
+                onClick={()=>{handleButtonClicked(index);adressChosed(index); OutfromClientpage(index)}}>
                 <i className={ iconChoosed === item.icon ? 
                             `clientPage-MenuMobile-icon active ${item.icon}`:
                             ` clientPage-MenuMobile-icon ${item.icon}`}>
